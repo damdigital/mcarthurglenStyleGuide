@@ -1635,8 +1635,8 @@ dialog[open] {
 /* purgecss start ignore */
 @font-face {
   font-family: 'magFont';
-  src: url("/Static/fonts/magfont//magFont.eot?ecqmrq");
-  src: url("/Static/fonts/magfont//magFont.eot?ecqmrq#iefix") format("embedded-opentype"), url("/Static/fonts/magfont//magFont.ttf?ecqmrq") format("truetype"), url("/Static/fonts/magfont//magFont.woff?ecqmrq") format("woff"), url("/Static/fonts/magfont//magFont.svg?ecqmrq#magFont") format("svg");
+  src: url("/Static/fonts/magfont/magFont.eot?ecqmrq");
+  src: url("/Static/fonts/magfont/magFont.eot?ecqmrq#iefix") format("embedded-opentype"), url("/Static/fonts/magfont/magFont.ttf?ecqmrq") format("truetype"), url("/Static/fonts/magfont/magFont.woff?ecqmrq") format("woff"), url("/Static/fonts/magfont/magFont.svg?ecqmrq#magFont") format("svg");
   font-weight: normal;
   font-style: normal; }
 
