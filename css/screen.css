@@ -7229,6 +7229,25 @@ body {
     .store-card-wrapper:hover .card-logo {
       opacity: 0; } }
 
+.alphabet-divider {
+  width: 100%; }
+
+.expected-visits-module .expected-visits-module-ctas .btn {
+  width: 100%;
+  margin: 0; }
+
+.expected-visits-module .expected-visits-module-ctas .dropdown-panel ul {
+  margin: 0; }
+  .expected-visits-module .expected-visits-module-ctas .dropdown-panel ul button {
+    width: 100%;
+    padding: var(--spacer-1) var(--spacer-2);
+    text-align: left;
+    white-space: normal; }
+    .expected-visits-module .expected-visits-module-ctas .dropdown-panel ul button:hover, .expected-visits-module .expected-visits-module-ctas .dropdown-panel ul button:focus {
+      background-color: var(--color-gray-10); }
+    .expected-visits-module .expected-visits-module-ctas .dropdown-panel ul button.is-selected {
+      font-weight: bold; }
+
 .filters-section {
   position: relative; }
 
