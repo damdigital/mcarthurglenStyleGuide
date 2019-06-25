@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MAG outlets - UI/pattern library</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="generator" content="kss-node">
+
+  <link rel="stylesheet" href="kss-assets/css/vendors/prism.css">
+  <link rel="stylesheet" href="kss-assets/css/atomic-bulldog-kss-theme.min.css"> <link rel="stylesheet" href="../css/screen.css">
+
+</head>
+
+<body class="kss-body"
+  style="--kssBrandColorH: 350; --kssBrandColorS: 84; --kssBrandColorL: 44;">
+
+  <div class="kss-page-container">
+    <div class="kss-burger-container">
+      <button class="kss-burger"><span class="burger-icon"><span></span></span></button>
+    </div>
+
+    <div class="kss-sidebar">
+      <div class="kss-brand">
+        <img src="https://www.mcarthurglen.com/Static/images/mag-logo.svg" alt="">
+        <p>MAG outlets - UI/pattern library</p>
+      </div>
+      <div class="kss-search">
+        <input type="text" id="kss-search__input" onkeyup="kssSearch()" placeholder="Search in this library..">
+        <ul id="kss-search__list">
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-atoms.html">
+              1 - Atoms
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-a11y">
+              1.1 - Accessibility (A11Y)
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-a11y-screenreaderonly">
+              1.1.1 - Screen reader Only
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-aspectratiocontainer">
+              1.2 - Aspect ratio container
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-brand">
+              1.3 - Brand
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-burger">
+              1.4 - Burger
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-button">
+              1.5 - Buttons
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-cover-bg">
+              1.6 - Background cover
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-cover-media">
+              1.7 - Media cover
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-cover-media-video">
+              1.7.1 - Media cover responsive embedded video
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-focus">
+              1.8 - Focus - global style
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-forms">
+              1.9 - Atoms.Forms
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-forms-formtext">
+              1.9.1 - Form Text
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-forms-inputs">
+              1.9.2 - ------------------------------ KSS Documentation ------------------------------ Form elements
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-forms-label">
+              1.9.3 - Label
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-hr">
+              1.10 - Hr
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-images">
+              1.11 - Images
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-images-responsive">
+              1.11.1 - Responsive image, Srcset (&#x60;img&#x60; tag)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers">
+              1.12 - Modifiers
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-bgcolors">
+              1.12.1 - Background colors
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-boxshadow">
+              1.12.2 - Box shadow
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-display">
+              1.12.3 - Display utilities
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-flex">
+              1.12.4 - Flex utilities
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-font-families">
+              1.12.5 - Font families
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-font-sizes">
+              1.12.6 - Font sizes
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-noscroll">
+              1.12.7 - No Scroll
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-rounded">
+              1.12.8 - Rounded element
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-spacing">
+              1.12.9 - Spacing
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-textcolor">
+              1.12.10 - Text colors
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-textposition">
+              1.12.11 - Text position
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-texttransform">
+              1.12.12 - Text transform
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-overlay">
+              1.13 - Overlay
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography">
+              1.14 - Typography
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-blockquotes">
+              1.14.1 - Blockquotes
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-languages">
+              1.14.2 - Languages
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-list">
+              1.14.3 - List
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-paragraph">
+              1.14.4 - Paragraph
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-titles">
+              1.14.5 - Titles
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-molecules.html">
+              2 - Molecules
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-dropdown">
+              2.1 - Dropdown
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-dropdown-country">
+              2.1.1 - Dropdown Country picker
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-form">
+              2.2 - Form
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-form-formgroup">
+              2.2.1 - Form Group
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-form-inputgroup">
+              2.2.2 - Input group
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-navigation">
+              2.3 - Navigation
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-navigation-mainnavigation">
+              2.3.1 - Main navigation
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-navigation-skip">
+              2.3.2 - Skip Navigation
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-organisms.html">
+              3 - Organisms
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-accessibility-settings">
+              3.1 - Accessibility settings panel
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-filters">
+              3.2 - Filter - listing pages
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-form">
+              3.3 - Form
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-headerimgblock">
+              3.4 - Header with image block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-navigationbar">
+              3.5 - Navigation Bar
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-pdfdownloadblock">
+              3.6 - PDF download block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-restaurantcard">
+              3.7 - Restaurant card
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-storestoppicks">
+              3.8 - Top picks block for stores
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-storestoppicks">
+              3.8 - Top picks block for stores
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-layout.html">
+              4 - Layouts
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-container">
+              4.1 - Container
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-container-fixed">
+              4.1.1 - Container fixed
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-container-fluid">
+              4.1.2 - Container Fluid
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-container-narrow">
+              4.1.3 - Container &#x60;.is-narrow&#x60;
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-grid">
+              4.2 - Grid
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-grid-b">
+              4.2.1 - Grid - Set number of columns
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-grid-modifiers">
+              4.2.2 - Grid Modifiers
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-grid-z">
+              4.2.3 - Grid Fallback
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-templates.html">
+              5 - Templates
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-templates.html#kssref-templates-pagecontainer">
+              5.1 - Page Container
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-variables.html">
+              6 - Sass variables
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-aspectratio">
+              6.1 - Aspect ratios
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-boxshadow">
+              6.2 - Box shadow
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-breakpoints">
+              6.3 - Breakpoints
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-colors">
+              6.4 - Colors
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-colors-grays">
+              6.4.1 - Grays
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-colors-swatches">
+              6.4.2 - Color Swatches
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-container">
+              6.5 - Container Sizes
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-fontfamilies">
+              6.6 - Font Families
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-fontsizes">
+              6.7 - Font Sizes
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-grid">
+              6.8 - Grid
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-spacers">
+              6.9 - Spacers
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-themeclasses">
+              6.10 - ------------------------------ KSS Documentation ------------------------------ Theme classes
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-zindex">
+              6.11 - z-index
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-mixins.html">
+              7 - Sass Mixins
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-mixins.html#kssref-mixins-colortransition">
+              7.1 - color-transition
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-mixins.html#kssref-mixins-focustyle">
+              7.2 - focus-style
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-mixins.html#kssref-mixins-max">
+              7.3 - max(#{bp(your bp)}){}
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-mixins.html#kssref-mixins-min">
+              7.4 - min(#{bp(your bp)}){}
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-functions.html">
+              8 - Sass Functions
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-functions.html#kssref-functions-em">
+              8.1 - em($size, $context: 16)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-functions.html#kssref-functions-mapdeepget">
+              8.2 - map-deep-get($map, $keys...)
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-vendors.html">
+              9 - Vendors
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-a11ycss">
+              9.1 - a11y.css
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-family">
+              9.2 - Family.scss
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-reboot">
+              9.3 - bootstrap-reboot.scss
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-sass">
+              9.4 - Sass/CSS Vendors
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-sass-bootstrapgrid">
+              9.4.1 - bootstrap grid 4.1.0 (Not used)
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-themes.html">
+              10 - Themes
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-themes.html#kssref-themes-invert">
+              10.1 - Theme Invert
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-themes.html#kssref-themes-invert-atoms">
+              10.1.1 - Themes.Invert.Atoms
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-themes.html#kssref-themes-invert-variables">
+              10.1.2 - Themes.Invert.Variables
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-settings.html">
+              11 - Project settings
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-settings.html#kssref-settings-usecssvar">
+              11.1 - Use CSS variable Flag
+            </a>
+          </li>
+           
+          </li>
+        </ul>
+      </div>
+      <!-- navigation. -->
+      <nav class="kss-navigation">
+        <ul class="kss-nav">
+          <li>
+            <a class="kss-nav-link " href="index.html">
+              <span class="kss-nav__ref">0 - </span>
+              <span class="kss-nav__name">Introduction</span>
+            </a>
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-atoms.html">
+              <span class="kss-nav__ref">1 - </span>
+              <span class="kss-nav__name">Atoms</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-molecules.html">
+              <span class="kss-nav__ref">2 - </span>
+              <span class="kss-nav__name">Molecules</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-organisms.html">
+              <span class="kss-nav__ref">3 - </span>
+              <span class="kss-nav__name">Organisms</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-layout.html">
+              <span class="kss-nav__ref">4 - </span>
+              <span class="kss-nav__name">Layouts</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-templates.html">
+              <span class="kss-nav__ref">5 - </span>
+              <span class="kss-nav__name">Templates</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-variables.html">
+              <span class="kss-nav__ref">6 - </span>
+              <span class="kss-nav__name">Sass variables</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-mixins.html">
+              <span class="kss-nav__ref">7 - </span>
+              <span class="kss-nav__name">Sass Mixins</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-functions.html">
+              <span class="kss-nav__ref">8 - </span>
+              <span class="kss-nav__name">Sass Functions</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-vendors.html">
+              <span class="kss-nav__ref">9 - </span>
+              <span class="kss-nav__name">Vendors</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-themes.html">
+              <span class="kss-nav__ref">10 - </span>
+              <span class="kss-nav__name">Themes</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-settings.html">
+              <span class="kss-nav__ref">11 - </span>
+              <span class="kss-nav__name">Project settings</span>
+            </a>
+            
+          </li>
+        </ul>
+      </nav>
+      <!-- /navigation. -->
+    </div>
+
+    <main class="kss-main">
+      <div class="kss-container">
+        <!-- documentation. -->
+        <section class="kss-documentation">
+
+          <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+           
+          <header class="kss-section" id="kssref-organisms-navigationbar">
+
+              <div class="kss-section__content">
+                <a class="kss-section__permalink" href="#kssref-organisms-navigationbar">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">3.5</span> -
+                    <span class="kss-section__name">Navigation Bar</span>
+                  </h2>
+                </a>
+                <p class="kss-section__source">Source:
+                  <span>organisms/_navigation-bar.scss</span>, line
+                  <span>61</span>
+                </p>
+                <div>
+                  <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-navigationbar.html" target="_blank">Open in new
+                    window</a>
+                </div>
+                 
+                <div class="kss-section__description"><p>Resize me</p>
+<p>Have accessible keys for mobile as well <code>esc</code> to close
+and <code>tab</code> to navigate inside, using trapTabKey js function so we don't focus outside.</p>
+</div>
+                               </div>
+
+              <div class="kss-section__example-container">
+                <div class="kss-section__examples">
+                  <p class="kss-modifiers__heading">Example:</p>
+
+
+
+                  <div class="kss-modifiers__example"><div class="nav-container has-px-3 has-px-sm-4">
+    <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/" class="brand has-py-2">
+        <div class="brand-img">
+            <img src="/Static/images/mag-logo.svg" alt="McArthurGlen Logo">
+        </div>
+        <div class="brand-text">
+            <p>CHESHIRE OAKS</p>
+            <p>DESIGNER OUTLET</p>
+        </div>
+    </a>
+    <ul class="nav-mobile-icons list-unstyled">
+        <li class="active">
+            <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/">
+                <div class="mag-font mag-font_shopping_bag"></div>
+                <span>Stores</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/plan-your-visit/">
+                <div class="mag-font mag-font_location_pin_outline"></div>
+                <span>Directions</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/">
+                <div class="mag-font mag-font_food_drink"></div>
+                <span>Food</span>
+            </a>
+        </li>
+        <li class="mobile-search-icon ">
+            <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/search/">
+                <div class="mag-font mag-font_search"></div>
+            </a>
+        </li>
+    </ul>
+    <button class="burger nav-cta" aria-label="open navigation menu" role="button">
+        <span class="burger-icon" aria-hidden="true">
+            <span></span>
+        </span>
+    </button>
+    <nav class="nav">
+        <ul class="nav-items list-unstyled has-m-0">
+            <li class="is-d-sm-none">
+                <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/">Cheshire Oaks</a>
+            </li>
+            <li class="has-nav-panel" aria-haspopup="true" role="menu">
+                <button role="button" aria-expanded="false" class="nav-panel-cta has-chevron-animated is-active">Stores</button>
+                <div class="nav-panel" aria-hidden="true" inert="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <p class="is-h4">Categories</p>
+                                <ul class="list-unstyled">
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c=328" tabindex="-1">Men</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c=301" tabindex="-1">Food</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c=302" tabindex="-1">Denim</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c=326" tabindex="-1">Women</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c=329" tabindex="-1">Children</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c=330" tabindex="-1">Home</a></li>
+                                        <li class="d-none is-d-lg-block"><a class="hightlight has-text-secondary has-font-weight-normal" href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/" tabindex="-1">See all stores</a></li>
+                                </ul>
+                            </div>
+                                <div class="col-lg-4">
+                                    <p class="is-h4">Stores</p>
+                                    <div class="row no-gutters">
+                                        <ul class="col-sm list-unstyled">
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/polo-ralph-lauren/" tabindex="-1">Polo Ralph Lauren</a></li>
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/boss/" tabindex="-1">BOSS</a></li>
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/kate-spade-new-york/" tabindex="-1">Kate Spade New York</a></li>
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/burberry/" tabindex="-1">Burberry</a></li>
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/michael-kors/" tabindex="-1">Michael Kors</a></li>
+                                        </ul>
+                                        <ul class="col-sm list-unstyled">
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/mulberry/" tabindex="-1">Mulberry</a></li>
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/tommy-hilfiger/" tabindex="-1">Tommy Hilfiger</a></li>
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/coach/" tabindex="-1">Coach</a></li>
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/furla/" tabindex="-1">Furla</a></li>
+                                                <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/karl-lagerfeld/" tabindex="-1">Karl Lagerfeld</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class="col-lg-2 is-d-none is-d-lg-block">
+                                <div class="aspect-ratio-container 1x1 card">
+                                    <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/french-connection/" class="aspect-ratio-content has-bg-primary is-d-flex is-justify-center is-align-center" tabindex="-1">
+                                        <img class="img-fluid is-lazy" src="/globalassets/global--page-specific/global--stores--store-images/french-connection/french-connection-bw-logo.jpg" data-src="/globalassets/global--page-specific/global--stores--store-images/french-connection/french-connection-bw-logo.jpg" alt="French Connection">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 is-d-none is-d-lg-block">
+                                <div class="aspect-ratio-container 1x1 card">
+                                    <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/stores/ted-baker/" class="aspect-ratio-content has-bg-primary is-d-flex is-justify-center is-align-center" tabindex="-1">
+                                        <img class="img-fluid is-lazy" src="/globalassets/global--page-specific/global--stores--store-images/ted-baker/ted-baker-bw-logo.jpg" data-src="/globalassets/global--page-specific/global--stores--store-images/ted-baker/ted-baker-bw-logo.jpg" alt="Ted Baker">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="">
+                <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/map/">Map</a>
+            </li>
+            <li class="">
+                <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/plan-your-visit/">Plan Your Visit</a>
+            </li>
+            <li class="">
+                <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/offers/">Offers</a>
+            </li>
+            <li class="">
+                <a href="/en/outlets/uk/designer-outlet-cheshire-oaks/whats-on/">What's on</a>
+            </li>
+            <li class="has-nav-panel" aria-haspopup="true" role="menu">
+                <button role="button" aria-expanded="false" class="nav-panel-cta has-chevron-animated ">Restaurants</button>
+                <div class="nav-panel" aria-hidden="true" inert="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <p class="is-h4">Categories</p>
+                                <ul class="list-unstyled">
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c=104" tabindex="-1">Casual dining</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c=63" tabindex="-1">Food to go</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c=105" tabindex="-1">Cafes</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c=59" tabindex="-1">Breakfast</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c=61" tabindex="-1">Lunch</a></li>
+                                        <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c=60" tabindex="-1">Dinner</a></li>                                                                                                    <li class="d-none d-lg-block"><a class="hightlight has-text-secondary has-font-weight-normal" href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/" tabindex="-1">See all</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="is-h4">Restaurants</p>
+                                <div class="row no-gutters">
+                                    <ul class="list-unstyled col-sm">
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/comptoir-libanais/" tabindex="-1">Comptoir Libanais</a></li>
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/wagamama/" tabindex="-1">Wagamama</a></li>
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/yo-sushi/" tabindex="-1">YO! Sushi</a></li>
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/eds-easy-diner/" tabindex="-1">Ed's Easy Diner</a></li>
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/carluccios/" tabindex="-1">Carluccio's</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled col-sm">
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/pizza-express/" tabindex="-1">PizzaExpress</a></li>
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/giraffe/" tabindex="-1">Giraffe</a></li>
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/cafe-rouge/" tabindex="-1">Cafe Rouge</a></li>
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/patisserie-valerie/" tabindex="-1">Patisserie Valerie</a></li>
+                                            <li><a href="/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/mcdonalds/" tabindex="-1">McDonalds</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="">
+                <a href="/en/uk/designer-outlet-cheshire-oaks/search/" class="search-button">
+                    <div class="mag-font mag-font_search"></div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div></div>
+
+
+                </div>
+
+                <div class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;nav-container has-px-3 has-px-sm-4&quot;&gt;
+    &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/&quot; class&#x3D;&quot;brand has-py-2&quot;&gt;
+        &lt;div class&#x3D;&quot;brand-img&quot;&gt;
+            &lt;img src&#x3D;&quot;/Static/images/mag-logo.svg&quot; alt&#x3D;&quot;McArthurGlen Logo&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;brand-text&quot;&gt;
+            &lt;p&gt;CHESHIRE OAKS&lt;/p&gt;
+            &lt;p&gt;DESIGNER OUTLET&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;ul class&#x3D;&quot;nav-mobile-icons list-unstyled&quot;&gt;
+        &lt;li class&#x3D;&quot;active&quot;&gt;
+            &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/&quot;&gt;
+                &lt;div class&#x3D;&quot;mag-font mag-font_shopping_bag&quot;&gt;&lt;/div&gt;
+                &lt;span&gt;Stores&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class&#x3D;&quot;&quot;&gt;
+            &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/plan-your-visit/&quot;&gt;
+                &lt;div class&#x3D;&quot;mag-font mag-font_location_pin_outline&quot;&gt;&lt;/div&gt;
+                &lt;span&gt;Directions&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class&#x3D;&quot;&quot;&gt;
+            &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/&quot;&gt;
+                &lt;div class&#x3D;&quot;mag-font mag-font_food_drink&quot;&gt;&lt;/div&gt;
+                &lt;span&gt;Food&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class&#x3D;&quot;mobile-search-icon &quot;&gt;
+            &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/search/&quot;&gt;
+                &lt;div class&#x3D;&quot;mag-font mag-font_search&quot;&gt;&lt;/div&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;button class&#x3D;&quot;burger nav-cta&quot; aria-label&#x3D;&quot;open navigation menu&quot; role&#x3D;&quot;button&quot;&gt;
+        &lt;span class&#x3D;&quot;burger-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/button&gt;
+    &lt;nav class&#x3D;&quot;nav&quot;&gt;
+        &lt;ul class&#x3D;&quot;nav-items list-unstyled has-m-0&quot;&gt;
+            &lt;li class&#x3D;&quot;is-d-sm-none&quot;&gt;
+                &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/&quot;&gt;Cheshire Oaks&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;has-nav-panel&quot; aria-haspopup&#x3D;&quot;true&quot; role&#x3D;&quot;menu&quot;&gt;
+                &lt;button role&#x3D;&quot;button&quot; aria-expanded&#x3D;&quot;false&quot; class&#x3D;&quot;nav-panel-cta has-chevron-animated is-active&quot;&gt;Stores&lt;/button&gt;
+                &lt;div class&#x3D;&quot;nav-panel&quot; aria-hidden&#x3D;&quot;true&quot; inert&#x3D;&quot;&quot;&gt;
+                    &lt;div class&#x3D;&quot;container&quot;&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;div class&#x3D;&quot;col-lg-2&quot;&gt;
+                                &lt;p class&#x3D;&quot;is-h4&quot;&gt;Categories&lt;/p&gt;
+                                &lt;ul class&#x3D;&quot;list-unstyled&quot;&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c&#x3D;328&quot; tabindex&#x3D;&quot;-1&quot;&gt;Men&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c&#x3D;301&quot; tabindex&#x3D;&quot;-1&quot;&gt;Food&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c&#x3D;302&quot; tabindex&#x3D;&quot;-1&quot;&gt;Denim&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c&#x3D;326&quot; tabindex&#x3D;&quot;-1&quot;&gt;Women&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c&#x3D;329&quot; tabindex&#x3D;&quot;-1&quot;&gt;Children&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/?c&#x3D;330&quot; tabindex&#x3D;&quot;-1&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;d-none is-d-lg-block&quot;&gt;&lt;a class&#x3D;&quot;hightlight has-text-secondary has-font-weight-normal&quot; href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/&quot; tabindex&#x3D;&quot;-1&quot;&gt;See all stores&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                                    &lt;p class&#x3D;&quot;is-h4&quot;&gt;Stores&lt;/p&gt;
+                                    &lt;div class&#x3D;&quot;row no-gutters&quot;&gt;
+                                        &lt;ul class&#x3D;&quot;col-sm list-unstyled&quot;&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/polo-ralph-lauren/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Polo Ralph Lauren&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/boss/&quot; tabindex&#x3D;&quot;-1&quot;&gt;BOSS&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/kate-spade-new-york/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Kate Spade New York&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/burberry/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Burberry&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/michael-kors/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Michael Kors&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                        &lt;ul class&#x3D;&quot;col-sm list-unstyled&quot;&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/mulberry/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Mulberry&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/tommy-hilfiger/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Tommy Hilfiger&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/coach/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Coach&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/furla/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Furla&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/karl-lagerfeld/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Karl Lagerfeld&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;col-lg-2 is-d-none is-d-lg-block&quot;&gt;
+                                &lt;div class&#x3D;&quot;aspect-ratio-container 1x1 card&quot;&gt;
+                                    &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/french-connection/&quot; class&#x3D;&quot;aspect-ratio-content has-bg-primary is-d-flex is-justify-center is-align-center&quot; tabindex&#x3D;&quot;-1&quot;&gt;
+                                        &lt;img class&#x3D;&quot;img-fluid is-lazy&quot; src&#x3D;&quot;/globalassets/global--page-specific/global--stores--store-images/french-connection/french-connection-bw-logo.jpg&quot; data-src&#x3D;&quot;/globalassets/global--page-specific/global--stores--store-images/french-connection/french-connection-bw-logo.jpg&quot; alt&#x3D;&quot;French Connection&quot;&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;col-lg-2 is-d-none is-d-lg-block&quot;&gt;
+                                &lt;div class&#x3D;&quot;aspect-ratio-container 1x1 card&quot;&gt;
+                                    &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/stores/ted-baker/&quot; class&#x3D;&quot;aspect-ratio-content has-bg-primary is-d-flex is-justify-center is-align-center&quot; tabindex&#x3D;&quot;-1&quot;&gt;
+                                        &lt;img class&#x3D;&quot;img-fluid is-lazy&quot; src&#x3D;&quot;/globalassets/global--page-specific/global--stores--store-images/ted-baker/ted-baker-bw-logo.jpg&quot; data-src&#x3D;&quot;/globalassets/global--page-specific/global--stores--store-images/ted-baker/ted-baker-bw-logo.jpg&quot; alt&#x3D;&quot;Ted Baker&quot;&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;&quot;&gt;
+                &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/map/&quot;&gt;Map&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;&quot;&gt;
+                &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/plan-your-visit/&quot;&gt;Plan Your Visit&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;&quot;&gt;
+                &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/offers/&quot;&gt;Offers&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;&quot;&gt;
+                &lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/whats-on/&quot;&gt;What&#x27;s on&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;has-nav-panel&quot; aria-haspopup&#x3D;&quot;true&quot; role&#x3D;&quot;menu&quot;&gt;
+                &lt;button role&#x3D;&quot;button&quot; aria-expanded&#x3D;&quot;false&quot; class&#x3D;&quot;nav-panel-cta has-chevron-animated &quot;&gt;Restaurants&lt;/button&gt;
+                &lt;div class&#x3D;&quot;nav-panel&quot; aria-hidden&#x3D;&quot;true&quot; inert&#x3D;&quot;&quot;&gt;
+                    &lt;div class&#x3D;&quot;container&quot;&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;div class&#x3D;&quot;col-lg-2&quot;&gt;
+                                &lt;p class&#x3D;&quot;is-h4&quot;&gt;Categories&lt;/p&gt;
+                                &lt;ul class&#x3D;&quot;list-unstyled&quot;&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c&#x3D;104&quot; tabindex&#x3D;&quot;-1&quot;&gt;Casual dining&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c&#x3D;63&quot; tabindex&#x3D;&quot;-1&quot;&gt;Food to go&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c&#x3D;105&quot; tabindex&#x3D;&quot;-1&quot;&gt;Cafes&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c&#x3D;59&quot; tabindex&#x3D;&quot;-1&quot;&gt;Breakfast&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c&#x3D;61&quot; tabindex&#x3D;&quot;-1&quot;&gt;Lunch&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/?c&#x3D;60&quot; tabindex&#x3D;&quot;-1&quot;&gt;Dinner&lt;/a&gt;&lt;/li&gt;                                                                                                    &lt;li class&#x3D;&quot;d-none d-lg-block&quot;&gt;&lt;a class&#x3D;&quot;hightlight has-text-secondary has-font-weight-normal&quot; href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/&quot; tabindex&#x3D;&quot;-1&quot;&gt;See all&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                                &lt;p class&#x3D;&quot;is-h4&quot;&gt;Restaurants&lt;/p&gt;
+                                &lt;div class&#x3D;&quot;row no-gutters&quot;&gt;
+                                    &lt;ul class&#x3D;&quot;list-unstyled col-sm&quot;&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/comptoir-libanais/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Comptoir Libanais&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/wagamama/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Wagamama&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/yo-sushi/&quot; tabindex&#x3D;&quot;-1&quot;&gt;YO! Sushi&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/eds-easy-diner/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Ed&#x27;s Easy Diner&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/carluccios/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Carluccio&#x27;s&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                    &lt;ul class&#x3D;&quot;list-unstyled col-sm&quot;&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/pizza-express/&quot; tabindex&#x3D;&quot;-1&quot;&gt;PizzaExpress&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/giraffe/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Giraffe&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/cafe-rouge/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Cafe Rouge&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/patisserie-valerie/&quot; tabindex&#x3D;&quot;-1&quot;&gt;Patisserie Valerie&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href&#x3D;&quot;/en/outlets/uk/designer-outlet-cheshire-oaks/food-drink/mcdonalds/&quot; tabindex&#x3D;&quot;-1&quot;&gt;McDonalds&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;&quot;&gt;
+                &lt;a href&#x3D;&quot;/en/uk/designer-outlet-cheshire-oaks/search/&quot; class&#x3D;&quot;search-button&quot;&gt;
+                    &lt;div class&#x3D;&quot;mag-font mag-font_search&quot;&gt;&lt;/div&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+               
+          </header>
+  
+        </section>
+        <!-- /documentation. -->
+      </div>
+    </main>
+  </div>
+
+  <!-- scripts -->
+  <script src="kss-assets/js/vendors/jquery-3.3.1.min.js"></script>
+  <script src="kss-assets/js/vendors/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script> <script src="../js/index.js"></script>
+
+  <!-- end scripts -->
+
+</body>
+
+</html>
