@@ -773,47 +773,92 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-variables-colors">
+          <header class="kss-section" id="kssref-molecules-restaurantcard">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-variables-colors">
+                <a class="kss-section__permalink" href="#kssref-molecules-restaurantcard">
                   <h2 class="kss-h2">
-                    <span class="kss-section__ref">6.4</span> -
-                    <span class="kss-section__name">Colors</span>
+                    <span class="kss-section__ref">2.4</span> -
+                    <span class="kss-section__name">Restaurant card</span>
                   </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>variables/_colors.scss</span>, line
-                  <span>124</span>
+                  <span>molecules/_restaurant-card.scss</span>, line
+                  <span>77</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-variables-colors.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-molecules-restaurantcard.html" target="_blank">Open in new
                     window</a>
                 </div>
                  
-                <div class="kss-section__description"><p>Colors are in the map <code>$color-themes</code>. Each color themes have 5 variables:</p>
-<ul>
-<li>Base</li>
-<li>Dark</li>
-<li>Light</li>
-<li>Contrast</li>
-</ul>
-<p>Colors can be called in the sass project using the functions:</p>
-<p><code>color($color-name, $color-variant:null, $true-val:false)</code> which will output by default the CSS variable</p>
-<p>Usage of font-family():</p>
-<ul>
-<li><code>color(danger)</code> =&gt; <code>var(--color-danger-base)</code> If $use-css-var = true</li>
-<li><code>color(danger)</code> =&gt; <code>#c65556</code> If $use-css-var = false</li>
-<li><code>color(success, base, true)</code> =&gt; <code>#c65556</code></li>
-<li><code>color(success, light)</code> =&gt; <code>var(--color-success-light)</code> If $use-css-var = true</li>
-<li><code>color(success, light)</code> =&gt; <code>#76bd7a</code> If $use-css-var = false</li>
-<li><code>color(success, light, true)</code> =&gt; <code>#76bd7a</code></li>
-</ul>
+                <div class="kss-section__description"><p>Resize and hover over me!</p>
 </div>
                                </div>
 
- 
+              <div class="kss-section__example-container">
+                <div class="kss-section__examples">
+                  <p class="kss-modifiers__heading">Example:</p>
+
+
+
+                  <div class="kss-modifiers__example"><div class="container">
+    <div class="row">
+        <div class="col-xs-lg-6 col-sm-4 has-px-1">
+            <a class="restaurant-card-wrapper has-mb-3" href="#">
+                <div class="restaurant-card">
+                    <div class="restaurant-img">
+                        <div class="aspect-ratio-container is-golden">
+                            <div class="aspect-ratio-content">
+                                <img class="media-cover is-lazy" src="https://source.unsplash.com/random" alt="">
+                            </div>
+                            <div class="restaurant-card-logo" aria-hidden="true">
+                                LOGO
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-card-details has-pl-2 has-pt-2 has-pt-sm-3 is-d-sm-flex">
+                        <p class="has-font-weight-bold has-mb-0">Caffè Nero</p>
+                        <p class="has-pl-sm-3">01233 625 865</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div></div>
+
+
+                </div>
+
+                <div class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-4 has-px-1&quot;&gt;
+            &lt;a class&#x3D;&quot;restaurant-card-wrapper has-mb-3&quot; href&#x3D;&quot;#&quot;&gt;
+                &lt;div class&#x3D;&quot;restaurant-card&quot;&gt;
+                    &lt;div class&#x3D;&quot;restaurant-img&quot;&gt;
+                        &lt;div class&#x3D;&quot;aspect-ratio-container is-golden&quot;&gt;
+                            &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+                                &lt;img class&#x3D;&quot;media-cover is-lazy&quot; src&#x3D;&quot;https://source.unsplash.com/random&quot; alt&#x3D;&quot;&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;restaurant-card-logo&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+                                LOGO
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;restaurant-card-details has-pl-2 has-pt-2 has-pt-sm-3 is-d-sm-flex&quot;&gt;
+                        &lt;p class&#x3D;&quot;has-font-weight-bold has-mb-0&quot;&gt;Caffè Nero&lt;/p&gt;
+                        &lt;p class&#x3D;&quot;has-pl-sm-3&quot;&gt;01233 625 865&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+               
           </header>
   
         </section>

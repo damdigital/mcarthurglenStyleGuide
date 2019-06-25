@@ -311,6 +311,12 @@
               2.3.2 - Skip Navigation
             </a>
           </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-restaurantcard">
+              2.4 - Restaurant card
+            </a>
+          </li>
            
           </li>
           <li>
@@ -356,20 +362,20 @@
           </li>
           
           <li class="">
-            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-restaurantcard">
-              3.7 - Restaurant card
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-restaurantstoppicks">
+              3.7 - Top picks block for restaurants
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-storeslisting">
+              3.8 - Stores listing block
             </a>
           </li>
           
           <li class="">
             <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-storestoppicks">
-              3.8 - Top picks block for stores
-            </a>
-          </li>
-          
-          <li class="">
-            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-storestoppicks">
-              3.8 - Top picks block for stores
+              3.9 - Top picks block for stores
             </a>
           </li>
            
@@ -725,6 +731,12 @@
                 <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-navigation-skip">
                   <span class="kss-nav__ref">2.3.2 - </span>
                   <span class="kss-nav__name">Skip Navigation</span>
+                </a>
+              </li>
+              <li class="">
+                <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-restaurantcard">
+                  <span class="kss-nav__ref">2.4 - </span>
+                  <span class="kss-nav__name">Restaurant card</span>
                 </a>
               </li>
             </ul>
@@ -1482,6 +1494,92 @@ to the main content</p>
   &lt;a href&#x3D;&quot;#main-content&quot;&gt;Skip to content&lt;/a&gt;
   &lt;a href&#x3D;&quot;#&quot;&gt;Skip to navigation&lt;/a&gt;
   &lt;a href&#x3D;&quot;#&quot;&gt;Accessibility settings&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+                       </section>
+                      <section class="kss-section" id="kssref-molecules-restaurantcard">
+
+              <div class="kss-section__content">
+                <a class="kss-section__permalink" href="#kssref-molecules-restaurantcard">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">2.4</span> -
+                    <span class="kss-section__name">Restaurant card</span>
+                  </h2>
+                </a>
+                <p class="kss-section__source">Source:
+                  <span>molecules/_restaurant-card.scss</span>, line
+                  <span>77</span>
+                </p>
+                <div>
+                  <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-molecules-restaurantcard.html" target="_blank">Open in new
+                    window</a>
+                </div>
+                 
+                <div class="kss-section__description"><p>Resize and hover over me!</p>
+</div>
+                               </div>
+
+              <div class="kss-section__example-container">
+                <div class="kss-section__examples">
+                  <p class="kss-modifiers__heading">Example:</p>
+
+
+
+                  <div class="kss-modifiers__example"><div class="container">
+    <div class="row">
+        <div class="col-xs-lg-6 col-sm-4 has-px-1">
+            <a class="restaurant-card-wrapper has-mb-3" href="#">
+                <div class="restaurant-card">
+                    <div class="restaurant-img">
+                        <div class="aspect-ratio-container is-golden">
+                            <div class="aspect-ratio-content">
+                                <img class="media-cover is-lazy" src="https://source.unsplash.com/random" alt="">
+                            </div>
+                            <div class="restaurant-card-logo" aria-hidden="true">
+                                LOGO
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-card-details has-pl-2 has-pt-2 has-pt-sm-3 is-d-sm-flex">
+                        <p class="has-font-weight-bold has-mb-0">Caffè Nero</p>
+                        <p class="has-pl-sm-3">01233 625 865</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div></div>
+
+
+                </div>
+
+                <div class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-4 has-px-1&quot;&gt;
+            &lt;a class&#x3D;&quot;restaurant-card-wrapper has-mb-3&quot; href&#x3D;&quot;#&quot;&gt;
+                &lt;div class&#x3D;&quot;restaurant-card&quot;&gt;
+                    &lt;div class&#x3D;&quot;restaurant-img&quot;&gt;
+                        &lt;div class&#x3D;&quot;aspect-ratio-container is-golden&quot;&gt;
+                            &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+                                &lt;img class&#x3D;&quot;media-cover is-lazy&quot; src&#x3D;&quot;https://source.unsplash.com/random&quot; alt&#x3D;&quot;&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;restaurant-card-logo&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+                                LOGO
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;restaurant-card-details has-pl-2 has-pt-2 has-pt-sm-3 is-d-sm-flex&quot;&gt;
+                        &lt;p class&#x3D;&quot;has-font-weight-bold has-mb-0&quot;&gt;Caffè Nero&lt;/p&gt;
+                        &lt;p class&#x3D;&quot;has-pl-sm-3&quot;&gt;01233 625 865&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
               </div>

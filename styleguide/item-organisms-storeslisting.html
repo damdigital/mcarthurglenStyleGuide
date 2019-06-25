@@ -773,47 +773,421 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-variables-colors">
+          <header class="kss-section" id="kssref-organisms-storeslisting">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-variables-colors">
+                <a class="kss-section__permalink" href="#kssref-organisms-storeslisting">
                   <h2 class="kss-h2">
-                    <span class="kss-section__ref">6.4</span> -
-                    <span class="kss-section__name">Colors</span>
+                    <span class="kss-section__ref">3.8</span> -
+                    <span class="kss-section__name">Stores listing block</span>
                   </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>variables/_colors.scss</span>, line
-                  <span>124</span>
+                  <span>organisms/_stores-listing.scss</span>, line
+                  <span>10</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-variables-colors.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-storeslisting.html" target="_blank">Open in new
                     window</a>
                 </div>
-                 
-                <div class="kss-section__description"><p>Colors are in the map <code>$color-themes</code>. Each color themes have 5 variables:</p>
-<ul>
-<li>Base</li>
-<li>Dark</li>
-<li>Light</li>
-<li>Contrast</li>
-</ul>
-<p>Colors can be called in the sass project using the functions:</p>
-<p><code>color($color-name, $color-variant:null, $true-val:false)</code> which will output by default the CSS variable</p>
-<p>Usage of font-family():</p>
-<ul>
-<li><code>color(danger)</code> =&gt; <code>var(--color-danger-base)</code> If $use-css-var = true</li>
-<li><code>color(danger)</code> =&gt; <code>#c65556</code> If $use-css-var = false</li>
-<li><code>color(success, base, true)</code> =&gt; <code>#c65556</code></li>
-<li><code>color(success, light)</code> =&gt; <code>var(--color-success-light)</code> If $use-css-var = true</li>
-<li><code>color(success, light)</code> =&gt; <code>#76bd7a</code> If $use-css-var = false</li>
-<li><code>color(success, light, true)</code> =&gt; <code>#76bd7a</code></li>
-</ul>
-</div>
-                               </div>
+                                </div>
 
- 
+              <div class="kss-section__example-container">
+                <div class="kss-section__examples">
+                  <p class="kss-modifiers__heading">Example:</p>
+
+
+
+                  <div class="kss-modifiers__example"><section class="stores-listing-block has-py-10 has-mb-6">
+    <div class="container">
+        <h5 class="has-text-uppercase has-font-weight-light">A</h5>
+        <div class="is-d-xs-lg-flex is-flex-wrap">
+			<a class="store-card-wrapper is-d-block has-mb-3" href="#">
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+         <a class="store-card-wrapper is-d-block has-mb-3" href="#" >
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+         <a class="store-card-wrapper is-d-block has-mb-3" href="#" >
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+         <a class="store-card-wrapper is-d-block has-mb-3" href="#">
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+         <a class="store-card-wrapper is-d-block has-mb-3" href="#">
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+        </div>
+        <h5 class="has-text-uppercase has-font-weight-light">B</h5>
+        <div class="is-d-xs-lg-flex is-flex-wrap">
+			<a class="store-card-wrapper is-d-block has-mb-3" href="#">
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+         <a class="store-card-wrapper is-d-block has-mb-3" href="#" >
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+         <a class="store-card-wrapper is-d-block has-mb-3" href="#" >
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+         <a class="store-card-wrapper is-d-block has-mb-3" href="#">
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+         <a class="store-card-wrapper is-d-block has-mb-3" href="#">
+				<div class="store-card">
+					<div class="aspect-ratio-container is-1x1">
+						<div class="aspect-ratio-content">
+							<div class="card-logo is-d-flex is-justify-center is-align-center">
+								<img src="https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset=storecard" aria-hidden="true" alt="">
+							</div>
+							<div class="card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center">
+								<span class="picturefill-background-source" data-src="https://source.unsplash.com/featured/?sport"></span>
+								<div class="has-text-center">
+									<p>ADIDAS</p>
+									<p>0151 355 3704</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+        </div>
+    </div>
+</section></div>
+
+
+                </div>
+
+                <div class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;stores-listing-block has-py-10 has-mb-6&quot;&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+        &lt;h5 class&#x3D;&quot;has-text-uppercase has-font-weight-light&quot;&gt;A&lt;/h5&gt;
+        &lt;div class&#x3D;&quot;is-d-xs-lg-flex is-flex-wrap&quot;&gt;
+			&lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot;&gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+         &lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot; &gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+         &lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot; &gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+         &lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot;&gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+         &lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot;&gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h5 class&#x3D;&quot;has-text-uppercase has-font-weight-light&quot;&gt;B&lt;/h5&gt;
+        &lt;div class&#x3D;&quot;is-d-xs-lg-flex is-flex-wrap&quot;&gt;
+			&lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot;&gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+         &lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot; &gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+         &lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot; &gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+         &lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot;&gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+         &lt;a class&#x3D;&quot;store-card-wrapper is-d-block has-mb-3&quot; href&#x3D;&quot;#&quot;&gt;
+				&lt;div class&#x3D;&quot;store-card&quot;&gt;
+					&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+						&lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+							&lt;div class&#x3D;&quot;card-logo is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;img src&#x3D;&quot;https://www.mcarthurglen.com/globalassets/global--page-specific/global--stores--store-images/adidas/adidas-bw-logo.jpg?preset&#x3D;storecard&quot; aria-hidden&#x3D;&quot;true&quot; alt&#x3D;&quot;&quot;&gt;
+							&lt;/div&gt;
+							&lt;div class&#x3D;&quot;card-content picturefill-background bg-cover is-focus-center-top is-d-flex is-justify-center is-align-center&quot;&gt;
+								&lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/featured/?sport&quot;&gt;&lt;/span&gt;
+								&lt;div class&#x3D;&quot;has-text-center&quot;&gt;
+									&lt;p&gt;ADIDAS&lt;/p&gt;
+									&lt;p&gt;0151 355 3704&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                </div>
+              </div>
+
+               
           </header>
   
         </section>
