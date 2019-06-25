@@ -7215,6 +7215,9 @@ body {
     .store-card-wrapper:hover .card-logo {
       opacity: 0; } }
 
+.filters-section {
+  position: relative; }
+
 .filters-container {
   position: absolute;
   left: 50%;
