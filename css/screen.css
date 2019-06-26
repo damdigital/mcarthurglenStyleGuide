@@ -7251,11 +7251,10 @@ body {
     bottom: 0;
     left: 0;
     background-color: var(--color-gray-0);
-    width: 65%;
-    padding: var(--spacer-2) var(--spacer-5) var(--spacer-2) var(--spacer-2); }
-    @media only screen and (min-width: 900px) {
-      .restaurant-card-wrapper .restaurant-card .restaurant-card-logo {
-        padding: var(--spacer-4) var(--spacer-7) var(--spacer-4) var(--spacer-4); } }
+    width: 60%; }
+    .restaurant-card-wrapper .restaurant-card .restaurant-card-logo img {
+      height: 70px;
+      width: auto; }
   .restaurant-card-wrapper .restaurant-card .restaurant-card-details p.contact {
     font-size: calc(var(--font-size-paragraph) - 2px); }
     @media only screen and (min-width: 900px) {
@@ -8030,7 +8029,8 @@ hr {
 .save-offer-wrapper {
   position: absolute;
   top: 10px;
-  right: 10px; }
+  right: 10px;
+  z-index: 1; }
   .save-offer-wrapper .save-offer-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8125,6 +8125,8 @@ hr {
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08), -3px 3px 10px rgba(0, 0, 0, 0.08), 3px 3px 10px rgba(0, 0, 0, 0.08); }
     .offer-card-wrapper:hover a {
       text-decoration: none; }
+  .offer-card-wrapper .has-ribbon {
+    left: -20px; }
   .offer-card-wrapper .corner-ribbon {
     width: 200px;
     background: var(--color-gray-100);
