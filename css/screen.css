@@ -2038,6 +2038,7 @@ dialog[open] {
     height: 100%;
     z-index: 20; }
 
+/*TODO KSS*/
 .brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2763,6 +2764,264 @@ body {
 
 .has-bg-gray-100 {
   color: var(--color-gray-0); }
+
+.has-by,
+.has-bt,
+.has-b {
+  border-top: 1px solid var(--color-gray-30); }
+
+.has-by,
+.has-bb,
+.has-b {
+  border-bottom: 1px solid var(--color-gray-30); }
+
+.has-bx,
+.has-bl,
+.has-b {
+  border-left: 1px solid var(--color-gray-30); }
+
+.has-bx,
+.has-br,
+.has-b {
+  border-right: 1px solid var(--color-gray-30); }
+
+@media only screen and (min-width: 0) {
+  .has-by-na,
+  .has-bt-na,
+  .has-b-na {
+    border-top: 1px solid var(--color-gray-30); }
+  .has-by-na,
+  .has-bb-na,
+  .has-b-na {
+    border-bottom: 1px solid var(--color-gray-30); }
+  .has-bx-na,
+  .has-bl-na,
+  .has-b-na {
+    border-left: 1px solid var(--color-gray-30); }
+  .has-bx-na,
+  .has-br-na,
+  .has-b-na {
+    border-right: 1px solid var(--color-gray-30); }
+  .has-by-na-none,
+  .has-bt-na-none,
+  .has-b-na-none {
+    border-top: none; }
+  .has-by-na-none,
+  .has-bb-na-none,
+  .has-b-na-none {
+    border-bottom: none; }
+  .has-bx-na-none,
+  .has-bl-na-none,
+  .has-b-na-none {
+    border-left: none; }
+  .has-bx-na-none,
+  .has-br-na-none,
+  .has-b-na-none {
+    border-right: none; } }
+
+@media only screen and (min-width: 320px) {
+  .has-by-xs,
+  .has-bt-xs,
+  .has-b-xs {
+    border-top: 1px solid var(--color-gray-30); }
+  .has-by-xs,
+  .has-bb-xs,
+  .has-b-xs {
+    border-bottom: 1px solid var(--color-gray-30); }
+  .has-bx-xs,
+  .has-bl-xs,
+  .has-b-xs {
+    border-left: 1px solid var(--color-gray-30); }
+  .has-bx-xs,
+  .has-br-xs,
+  .has-b-xs {
+    border-right: 1px solid var(--color-gray-30); }
+  .has-by-xs-none,
+  .has-bt-xs-none,
+  .has-b-xs-none {
+    border-top: none; }
+  .has-by-xs-none,
+  .has-bb-xs-none,
+  .has-b-xs-none {
+    border-bottom: none; }
+  .has-bx-xs-none,
+  .has-bl-xs-none,
+  .has-b-xs-none {
+    border-left: none; }
+  .has-bx-xs-none,
+  .has-br-xs-none,
+  .has-b-xs-none {
+    border-right: none; } }
+
+@media only screen and (min-width: 375px) {
+  .has-by-xs-lg,
+  .has-bt-xs-lg,
+  .has-b-xs-lg {
+    border-top: 1px solid var(--color-gray-30); }
+  .has-by-xs-lg,
+  .has-bb-xs-lg,
+  .has-b-xs-lg {
+    border-bottom: 1px solid var(--color-gray-30); }
+  .has-bx-xs-lg,
+  .has-bl-xs-lg,
+  .has-b-xs-lg {
+    border-left: 1px solid var(--color-gray-30); }
+  .has-bx-xs-lg,
+  .has-br-xs-lg,
+  .has-b-xs-lg {
+    border-right: 1px solid var(--color-gray-30); }
+  .has-by-xs-lg-none,
+  .has-bt-xs-lg-none,
+  .has-b-xs-lg-none {
+    border-top: none; }
+  .has-by-xs-lg-none,
+  .has-bb-xs-lg-none,
+  .has-b-xs-lg-none {
+    border-bottom: none; }
+  .has-bx-xs-lg-none,
+  .has-bl-xs-lg-none,
+  .has-b-xs-lg-none {
+    border-left: none; }
+  .has-bx-xs-lg-none,
+  .has-br-xs-lg-none,
+  .has-b-xs-lg-none {
+    border-right: none; } }
+
+@media only screen and (min-width: 600px) {
+  .has-by-sm,
+  .has-bt-sm,
+  .has-b-sm {
+    border-top: 1px solid var(--color-gray-30); }
+  .has-by-sm,
+  .has-bb-sm,
+  .has-b-sm {
+    border-bottom: 1px solid var(--color-gray-30); }
+  .has-bx-sm,
+  .has-bl-sm,
+  .has-b-sm {
+    border-left: 1px solid var(--color-gray-30); }
+  .has-bx-sm,
+  .has-br-sm,
+  .has-b-sm {
+    border-right: 1px solid var(--color-gray-30); }
+  .has-by-sm-none,
+  .has-bt-sm-none,
+  .has-b-sm-none {
+    border-top: none; }
+  .has-by-sm-none,
+  .has-bb-sm-none,
+  .has-b-sm-none {
+    border-bottom: none; }
+  .has-bx-sm-none,
+  .has-bl-sm-none,
+  .has-b-sm-none {
+    border-left: none; }
+  .has-bx-sm-none,
+  .has-br-sm-none,
+  .has-b-sm-none {
+    border-right: none; } }
+
+@media only screen and (min-width: 900px) {
+  .has-by-md,
+  .has-bt-md,
+  .has-b-md {
+    border-top: 1px solid var(--color-gray-30); }
+  .has-by-md,
+  .has-bb-md,
+  .has-b-md {
+    border-bottom: 1px solid var(--color-gray-30); }
+  .has-bx-md,
+  .has-bl-md,
+  .has-b-md {
+    border-left: 1px solid var(--color-gray-30); }
+  .has-bx-md,
+  .has-br-md,
+  .has-b-md {
+    border-right: 1px solid var(--color-gray-30); }
+  .has-by-md-none,
+  .has-bt-md-none,
+  .has-b-md-none {
+    border-top: none; }
+  .has-by-md-none,
+  .has-bb-md-none,
+  .has-b-md-none {
+    border-bottom: none; }
+  .has-bx-md-none,
+  .has-bl-md-none,
+  .has-b-md-none {
+    border-left: none; }
+  .has-bx-md-none,
+  .has-br-md-none,
+  .has-b-md-none {
+    border-right: none; } }
+
+@media only screen and (min-width: 1200px) {
+  .has-by-lg,
+  .has-bt-lg,
+  .has-b-lg {
+    border-top: 1px solid var(--color-gray-30); }
+  .has-by-lg,
+  .has-bb-lg,
+  .has-b-lg {
+    border-bottom: 1px solid var(--color-gray-30); }
+  .has-bx-lg,
+  .has-bl-lg,
+  .has-b-lg {
+    border-left: 1px solid var(--color-gray-30); }
+  .has-bx-lg,
+  .has-br-lg,
+  .has-b-lg {
+    border-right: 1px solid var(--color-gray-30); }
+  .has-by-lg-none,
+  .has-bt-lg-none,
+  .has-b-lg-none {
+    border-top: none; }
+  .has-by-lg-none,
+  .has-bb-lg-none,
+  .has-b-lg-none {
+    border-bottom: none; }
+  .has-bx-lg-none,
+  .has-bl-lg-none,
+  .has-b-lg-none {
+    border-left: none; }
+  .has-bx-lg-none,
+  .has-br-lg-none,
+  .has-b-lg-none {
+    border-right: none; } }
+
+@media only screen and (min-width: 1800px) {
+  .has-by-xl,
+  .has-bt-xl,
+  .has-b-xl {
+    border-top: 1px solid var(--color-gray-30); }
+  .has-by-xl,
+  .has-bb-xl,
+  .has-b-xl {
+    border-bottom: 1px solid var(--color-gray-30); }
+  .has-bx-xl,
+  .has-bl-xl,
+  .has-b-xl {
+    border-left: 1px solid var(--color-gray-30); }
+  .has-bx-xl,
+  .has-br-xl,
+  .has-b-xl {
+    border-right: 1px solid var(--color-gray-30); }
+  .has-by-xl-none,
+  .has-bt-xl-none,
+  .has-b-xl-none {
+    border-top: none; }
+  .has-by-xl-none,
+  .has-bb-xl-none,
+  .has-b-xl-none {
+    border-bottom: none; }
+  .has-bx-xl-none,
+  .has-bl-xl-none,
+  .has-b-xl-none {
+    border-left: none; }
+  .has-bx-xl-none,
+  .has-br-xl-none,
+  .has-b-xl-none {
+    border-right: none; } }
 
 .has-box-shadow {
   -webkit-box-shadow: -8px 16px 15px rgba(0, 0, 0, 0.13);
@@ -7636,6 +7895,14 @@ p.today {
   .sticky-sign-up.remove-sticky-sign-up {
     display: none; }
 
+@media only screen and (min-width: 375px) {
+  .restaurants-listing-block .row {
+    margin: 0 calc(var(--spacer-1) * -1); } }
+
+@media only screen and (min-width: 375px) {
+  .restaurants-top-picks .row {
+    margin: 0 calc(var(--spacer-1) * -1); } }
+
 .has-border-pattern {
   position: relative;
   padding-top: 20px;
@@ -7673,6 +7940,7 @@ p.today {
     top: -1px;
     z-index: 3; }
 
+/*TODO KSS*/
 hr {
   width: 100%;
   margin-top: 0;

@@ -767,25 +767,41 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-atoms-typography-list-list-unstyle">
+          <header class="kss-section" id="kssref-atoms-modifiers-border">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-atoms-typography-list-list-unstyle">
-                  <h4 class="kss-h4">
-                    <span class="kss-section__ref">1.14.3.2</span> -
-                    <span class="kss-section__name">list unstyle</span>
-                  </h4>
+                <a class="kss-section__permalink" href="#kssref-atoms-modifiers-border">
+                  <h3 class="kss-h3">
+                    <span class="kss-section__ref">1.12.2</span> -
+                    <span class="kss-section__name">Border utilities</span>
+                  </h3>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>atoms/typography/_lists.scss</span>, line
-                  <span>92</span>
+                  <span>atoms/modifiers/_border.scss</span>, line
+                  <span>87</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-atoms-typography-list-list-unstyle.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-atoms-modifiers-border.html" target="_blank">Open in new
                     window</a>
                 </div>
-                                </div>
+                 
+                <div class="kss-section__description"><p>These classes allow to set a border</p>
+<p>The classes are named using the format has-b{sides} for xs and has-b{sides}-{breakpoint}-{none} for the other breakpoints.</p>
+<p>Parameter:</p>
+<ul>
+<li><code>sides</code> - Optional value. If no set then the 4 sides will be targeted, <code>x</code> target left and right, <code>y</code> top and bottom, <code>r</code> right, <code>l</code> left, <code>t</code> top, <code>b</code> bottom.</li>
+<li><code>none</code> - Optional value. Remove border from a set breakpoint</li>
+</ul>
+<p>Usage:</p>
+<ul>
+<li><code>has-bt-3</code> =&gt; has border top;</li>
+<li><code>has-b-sm</code> =&gt; has border on all sides from sm breakpoint</li>
+<li><code>has-by-lg</code> =&gt; has border top and bottom from lg breakpoint</li>
+<li><code>has-by-lg-none</code> =&gt; remove border top and bottom from lg breakpoint</li>
+</ul>
+</div>
+                               </div>
 
               <div class="kss-section__example-container">
                 <div class="kss-section__examples">
@@ -793,35 +809,21 @@
 
 
 
-                  <div class="kss-modifiers__example"><ul class="list-unstyle">
-  <li>item 1</li>
-  <li>item 2
-    <ul>
-      <li>Sub item 1</li>
-      <li>Sub item 2</li>
-      <li>Sub item 3</li>
-    </ul>
-  </li>
-  <li>item 3</li>
-  <li>item 4</li>
-</ul></div>
+                  <div class="kss-modifiers__example"><div class="has-bg-gray-0 has-p-3 has-m-3 has-by has-bx-sm has-bt-md-none">
+   <p>
+     Age, inquies, ista parva sunt. An vero, inquit, quisquam potest probare, quod perceptfum, quod. Non potes, nisi retexueris illa. De hominibus dici non necesse est. Nam quid possumus facere melius? Erit enim mecum, si tecum erit.
+   </p>
+</div></div>
 
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;ul class&#x3D;&quot;list-unstyle&quot;&gt;
-  &lt;li&gt;item 1&lt;/li&gt;
-  &lt;li&gt;item 2
-    &lt;ul&gt;
-      &lt;li&gt;Sub item 1&lt;/li&gt;
-      &lt;li&gt;Sub item 2&lt;/li&gt;
-      &lt;li&gt;Sub item 3&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;item 3&lt;/li&gt;
-  &lt;li&gt;item 4&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;has-bg-gray-0 has-p-3 has-m-3 has-by has-bx-sm has-bt-md-none&quot;&gt;
+   &lt;p&gt;
+     Age, inquies, ista parva sunt. An vero, inquit, quisquam potest probare, quod perceptfum, quod. Non potes, nisi retexueris illa. De hominibus dici non necesse est. Nam quid possumus facere melius? Erit enim mecum, si tecum erit.
+   &lt;/p&gt;
+&lt;/div&gt;</code></pre>
                 </div>
               </div>
 
