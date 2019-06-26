@@ -7235,6 +7235,8 @@ body {
 .expected-visits-module .expected-visits-module-ctas .btn {
   width: 100%;
   margin: 0; }
+  .expected-visits-module .expected-visits-module-ctas .btn::after {
+    margin-left: var(--spacer-2); }
 
 .expected-visits-module .expected-visits-module-ctas .dropdown-panel ul {
   margin: 0; }
@@ -7595,7 +7597,7 @@ p.today {
   .sticky-sign-up.remove-sticky-sign-up {
     display: none; }
 
-.restaurant-listing-subtitle {
+.restaurants-listing-block .restaurant-listing-subtitle {
   margin-left: -11px; }
 
 .has-border-pattern {
