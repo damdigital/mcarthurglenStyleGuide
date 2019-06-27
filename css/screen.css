@@ -7575,6 +7575,15 @@ body {
 .alphabet-divider {
   width: 100%; }
 
+[data-a11y-dialog-native] > :first-child {
+  display: none; }
+
+dialog[open] {
+  display: block; }
+
+.dialog-container[aria-hidden='true'] {
+  display: none; }
+
 .expected-visits-module .expected-visits-module-ctas .btn {
   width: 100%;
   margin: 0; }
@@ -7941,12 +7950,16 @@ p.today {
     display: none; }
 
 @media only screen and (min-width: 375px) {
-  .restaurants-listing-block .row {
+  .restaurants-top-picks .row {
     margin: 0 calc(var(--spacer-1) * -1); } }
 
 @media only screen and (min-width: 375px) {
-  .restaurants-top-picks .row {
+  .restaurants-listing-block .row {
     margin: 0 calc(var(--spacer-1) * -1); } }
+
+.product-feature-block img {
+  width: 100%;
+  height: auto; }
 
 .has-border-pattern {
   position: relative;

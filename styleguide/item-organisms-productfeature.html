@@ -779,51 +779,76 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-variables-fontsizes">
+          <header class="kss-section" id="kssref-organisms-productfeature">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-variables-fontsizes">
+                <a class="kss-section__permalink" href="#kssref-organisms-productfeature">
                   <h2 class="kss-h2">
-                    <span class="kss-section__ref">6.7</span> -
-                    <span class="kss-section__name">Font Sizes</span>
+                    <span class="kss-section__ref">3.8</span> -
+                    <span class="kss-section__name">Product feature block</span>
                   </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>variables/_font-sizes.scss</span>, line
-                  <span>45</span>
+                  <span>organisms/_product-feature-block.scss</span>, line
+                  <span>18</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-variables-fontsizes.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-productfeature.html" target="_blank">Open in new
                     window</a>
                 </div>
                  
-                <div class="kss-section__description"><p>Font Sizes are in the map <code>$font-sizes</code></p>
-<hr>
-<ul>
-<li><code>root</code>: 16px,</li>
-<li><code>paragraph</code>: 1rem,</li>
-<li><code>1</code>: 2.8125rem,</li>
-<li><code>2</code>: 2.5rem,</li>
-<li><code>3</code>: 2rem,</li>
-<li><code>4</code>: 1.5rem,</li>
-<li><code>5</code>: 1.25rem,</li>
-<li><code>6</code>: 1rem,</li>
-<li><code>button</code>: 1rem</li>
-</ul>
-<hr>
-<p>Font sizes can be called in the sass project using the functions:</p>
-<p><code>font-sizes($font-size, $true-val:false)</code> which will output by default the CSS variable</p>
-<p>Usage of font-size():</p>
-<ul>
-<li><code>font-family(2)</code> =&gt; <code>var(--font-size-2)</code> If $use-css-var = true</li>
-<li><code>font-family(2)</code> =&gt; <code>2.5rem</code> If $use-css-var = false</li>
-<li><code>font-family(2, true)</code> =&gt; <code>2.5rem</code></li>
-</ul>
+                <div class="kss-section__description"><p>This is a vertical carousel on desktop and standard carousel on mobile</p>
 </div>
                                </div>
 
- 
+              <div class="kss-section__example-container">
+                <div class="kss-section__examples">
+                  <p class="kss-modifiers__heading">Example:</p>
+
+
+
+                  <div class="kss-modifiers__example"><section class="product-feature-block has-section-spacer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="siema is-single-slide-carousel">
+                    <div class="siema-slides-wrapper has-b">
+                        <img src="https://source.unsplash.com/600x600/?shoes" />
+                        <img src="https://source.unsplash.com/600x600/?shoes" />
+                        <img src="https://source.unsplash.com/600x600/?shoes" />
+                        <img src="https://source.unsplash.com/600x600/?shoes" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section></div>
+
+
+                </div>
+
+                <div class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;product-feature-block has-section-spacer&quot;&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
+                &lt;div class&#x3D;&quot;siema is-single-slide-carousel&quot;&gt;
+                    &lt;div class&#x3D;&quot;siema-slides-wrapper has-b&quot;&gt;
+                        &lt;img src&#x3D;&quot;https://source.unsplash.com/600x600/?shoes&quot; /&gt;
+                        &lt;img src&#x3D;&quot;https://source.unsplash.com/600x600/?shoes&quot; /&gt;
+                        &lt;img src&#x3D;&quot;https://source.unsplash.com/600x600/?shoes&quot; /&gt;
+                        &lt;img src&#x3D;&quot;https://source.unsplash.com/600x600/?shoes&quot; /&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                </div>
+              </div>
+
+               
           </header>
   
         </section>
