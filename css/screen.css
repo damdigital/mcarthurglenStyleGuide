@@ -7969,6 +7969,8 @@ p.today {
   text-align: center; }
   .product-feature-block .siema-arrows button {
     padding: var(--spacer-2); }
+    .product-feature-block .siema-arrows button span {
+      font-size: 20px; }
 
 .has-border-pattern {
   position: relative;
