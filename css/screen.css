@@ -7958,8 +7958,15 @@ p.today {
     margin: 0 calc(var(--spacer-1) * -1); } }
 
 .product-feature-block img {
-  width: 100%;
-  height: auto; }
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.product-feature-block .siema-pagination {
+  display: none; }
+
+.product-feature-block .siema-arrows {
+  text-align: right; }
 
 .has-border-pattern {
   position: relative;
