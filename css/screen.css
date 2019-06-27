@@ -7966,7 +7966,9 @@ p.today {
   display: none; }
 
 .product-feature-block .siema-arrows {
-  text-align: right; }
+  text-align: center; }
+  .product-feature-block .siema-arrows button {
+    padding: var(--spacer-2); }
 
 .has-border-pattern {
   position: relative;
