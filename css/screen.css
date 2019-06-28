@@ -2443,6 +2443,10 @@ details[open] .mag-font_down_chevron {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
+.header-sub-title {
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
 .screen-reader-only {
   position: absolute;
   width: 1px;
@@ -7583,10 +7587,6 @@ dialog {
   display: none;
   border: none;
   position: relative; }
-  dialog::-webkit-backdrop {
-    background-color: transparent; }
-  dialog::backdrop {
-    background-color: transparent; }
   dialog[open] {
     display: block;
     -webkit-transform: scale(1);
@@ -7614,6 +7614,24 @@ dialog {
         top: var(--spacer-3);
         right: var(--spacer-3); } }
 
+.dialog[aria-hidden="true"] {
+  display: none; }
+
+.dialog-overlay {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+dialog::-webkit-backdrop {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7); }
+
 .dialog-container[aria-hidden='true'] {
   visibility: hidden;
   -webkit-transform: scale(0.1);
@@ -7622,6 +7640,46 @@ dialog {
   transition: -webkit-transform 200ms;
   transition: transform 200ms;
   transition: transform 200ms, -webkit-transform 200ms; }
+
+.dialog:not([aria-hidden='true']) > .dialog-overlay {
+  -webkit-animation: fade-in 200ms 1 both;
+          animation: fade-in 200ms 1 both; }
+
+.dialog:not([aria-hidden='true']) > .dialog-content {
+  -webkit-animation: appear 400ms 150ms 1 both;
+          animation: appear 400ms 150ms 1 both; }
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes appear {
+  from {
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+    opacity: 0; }
+  to {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1; } }
+
+@keyframes appear {
+  from {
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+    opacity: 0; }
+  to {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1; } }
 
 .expected-visits-module .expected-visits-module-ctas .btn {
   width: 100%;
@@ -7831,10 +7889,10 @@ dialog {
       min-height: 380px; } }
 
 .header-with-title-block .header-image {
-  min-height: 300px; }
+  min-height: 245px; }
   @media only screen and (min-width: 900px) {
     .header-with-title-block .header-image {
-      min-height: 380px; } }
+      min-height: 355px; } }
 
 .site-footer {
   background: var(--color-primary-base);
