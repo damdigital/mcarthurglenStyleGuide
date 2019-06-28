@@ -8107,6 +8107,9 @@ p.today {
   .restaurants-listing-block .row {
     margin: 0 calc(var(--spacer-1) * -1); } }
 
+.product-feature-block .siema {
+  position: relative; }
+
 .product-feature-block img {
   max-width: 100%;
   height: auto;
@@ -8116,7 +8119,9 @@ p.today {
   display: none; }
 
 .product-feature-block .siema-arrows {
-  text-align: center; }
+  position: absolute;
+  top: 0;
+  right: 0; }
   .product-feature-block .siema-arrows button {
     padding: var(--spacer-2); }
     .product-feature-block .siema-arrows button span {
