@@ -2013,18 +2013,30 @@ dialog[open] {
     left: 0;
     right: 0;
     bottom: 0; }
-  .aspect-ratio-container.is-1x1:before {
+  .aspect-ratio-container.is-1x1:not(.is-portrait):before {
     padding-top: 100%; }
-  .aspect-ratio-container.is-16x9:before {
+  .aspect-ratio-container.is-1x1.is-portrait:before {
+    padding-top: 100%; }
+  .aspect-ratio-container.is-16x9:not(.is-portrait):before {
     padding-top: 56.25%; }
-  .aspect-ratio-container.is-4x3:before {
+  .aspect-ratio-container.is-16x9.is-portrait:before {
+    padding-top: 177.77778%; }
+  .aspect-ratio-container.is-4x3:not(.is-portrait):before {
     padding-top: 75%; }
-  .aspect-ratio-container.is-3x2:before {
+  .aspect-ratio-container.is-4x3.is-portrait:before {
+    padding-top: 133.33333%; }
+  .aspect-ratio-container.is-3x2:not(.is-portrait):before {
     padding-top: 66.66667%; }
-  .aspect-ratio-container.is-golden:before {
+  .aspect-ratio-container.is-3x2.is-portrait:before {
+    padding-top: 150%; }
+  .aspect-ratio-container.is-golden:not(.is-portrait):before {
     padding-top: 61.8047%; }
-  .aspect-ratio-container.is-silver:before {
+  .aspect-ratio-container.is-golden.is-portrait:before {
+    padding-top: 161.8%; }
+  .aspect-ratio-container.is-silver:not(.is-portrait):before {
     padding-top: 41.42502%; }
+  .aspect-ratio-container.is-silver.is-portrait:before {
+    padding-top: 241.4%; }
 
 #backdrop {
   display: none; }
