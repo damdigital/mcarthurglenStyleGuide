@@ -55,7 +55,7 @@
 :root {
   --font-size-root: 16px;
   --font-size-paragraph: 1rem;
-  --font-size-1: 2.8125rem;
+  --font-size-1: 3.375rem;
   --font-size-2: 2.5rem;
   --font-size-3: 2rem;
   --font-size-4: 1.5rem;
@@ -2686,7 +2686,8 @@ h1,
 .is-h1 {
   line-height: 1.25;
   margin-bottom: var(--spacer-4);
-  font-family: var(--font-family-title); }
+  font-family: var(--font-family-title);
+  letter-spacing: 18px; }
 
 h2,
 .is-h2 {
@@ -7576,13 +7577,51 @@ body {
   width: 100%; }
 
 [data-a11y-dialog-native] > :first-child {
-  display: none; }
+  visibility: hidden; }
 
-dialog[open] {
-  display: block; }
+dialog {
+  display: none;
+  border: none;
+  position: relative; }
+  dialog::-webkit-backdrop {
+    background-color: transparent; }
+  dialog::backdrop {
+    background-color: transparent; }
+  dialog[open] {
+    display: block;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 50;
+    margin: 0;
+    max-width: 95vw;
+    max-height: 95vh;
+    overflow-y: auto;
+    background-color: var(--color-gray-0); }
+    @media only screen and (min-width: 600px) {
+      dialog[open] {
+        max-width: 900px; } }
+  dialog .close-dialog-cta {
+    position: absolute;
+    top: var(--spacer-2);
+    right: var(--spacer-2); }
+    @media only screen and (min-width: 600px) {
+      dialog .close-dialog-cta {
+        top: var(--spacer-3);
+        right: var(--spacer-3); } }
 
 .dialog-container[aria-hidden='true'] {
-  display: none; }
+  visibility: hidden;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms; }
 
 .expected-visits-module .expected-visits-module-ctas .btn {
   width: 100%;
@@ -7789,6 +7828,12 @@ dialog[open] {
   min-height: 300px; }
   @media only screen and (min-width: 900px) {
     .header-with-img-block .header-image {
+      min-height: 380px; } }
+
+.header-with-title-block .header-image {
+  min-height: 300px; }
+  @media only screen and (min-width: 900px) {
+    .header-with-title-block .header-image {
       min-height: 380px; } }
 
 .site-footer {
