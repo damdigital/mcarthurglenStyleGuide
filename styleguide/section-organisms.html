@@ -347,8 +347,8 @@
             </a>
              
           <li class="">
-            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-a11ymodal">
-              3.1 - a11y modal
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-dialog">
+              3.1 - Dialog (a11y modal)
             </a>
           </li>
           
@@ -720,9 +720,9 @@
              
             <ul class="kss-subnav">
               <li class="">
-                <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-a11ymodal">
+                <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-dialog">
                   <span class="kss-nav__ref">3.1 - </span>
-                  <span class="kss-nav__name">a11y modal</span>
+                  <span class="kss-nav__name">Dialog (a11y modal)</span>
                 </a>
               </li>
               <li class="">
@@ -903,30 +903,81 @@
 
  
           </header>
-              <section class="kss-section" id="kssref-organisms-a11ymodal">
+              <section class="kss-section" id="kssref-organisms-dialog">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-organisms-a11ymodal">
+                <a class="kss-section__permalink" href="#kssref-organisms-dialog">
                   <h2 class="kss-h2">
                     <span class="kss-section__ref">3.1</span> -
-                    <span class="kss-section__name">a11y modal</span>
+                    <span class="kss-section__name">Dialog (a11y modal)</span>
                   </h2>
                 </a>
                 <p class="kss-section__source">Source:
                   <span>organisms/_dialog.scss</span>, line
-                  <span>95</span>
+                  <span>96</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-a11ymodal.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-dialog.html" target="_blank">Open in new
                     window</a>
                 </div>
                  
                 <div class="kss-section__description"><p>This project use the native <code>&lt;dialog&gt;</code> attribute, <a href="https://github.com/edenspiekermann/a11y-dialog#expected-dom-structure">A11y Dialog</a> is use as well to fix a11y issue and support other browsers</p>
+<p>The dialog need to be outside the <code>.page-wrap</code> el, to open a dialog you will need a cta with <code>.dialog-cta</code> and <code>data-target-id</code> that target the id of the dialog.</p>
 </div>
                                </div>
 
-         </section>
+              <div class="kss-section__example-container">
+                <div class="kss-section__examples">
+                  <p class="kss-modifiers__heading">Example:</p>
+
+
+
+                  <div class="kss-modifiers__example"><div class="page-wrap">
+  <!-- header -->
+  <!-- main -->
+  <button class="has-font-weight-bold dialog-cta"
+    data-target-id="myModal">Open Dialog</button>
+  <!-- footer -->
+</div>
+<!-- Modal need to be outside `.page-wrap` -->
+<div class="dialog" id="myModal">
+  <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+  <dialog aria-labelledby="myModal-title">
+    <button type="button" data-a11y-dialog-hide aria-label="Close this dialog window">
+      <i class="mag-font mag-font_cross" aria-hidden="true"></i>
+    </button>
+    <h2 id="myModal-title" class="has-mb-5">Modal Example</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam velit veritatis ut error, tenetur ab ex similique molestiae esse sint illum sapiente nobis voluptatum a nam, eveniet voluptatibus quia?</p>
+  </dialog>
+</div></div>
+
+
+                </div>
+
+                <div class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;page-wrap&quot;&gt;
+  &lt;!-- header --&gt;
+  &lt;!-- main --&gt;
+  &lt;button class&#x3D;&quot;has-font-weight-bold dialog-cta&quot;
+    data-target-id&#x3D;&quot;myModal&quot;&gt;Open Dialog&lt;/button&gt;
+  &lt;!-- footer --&gt;
+&lt;/div&gt;
+&lt;!-- Modal need to be outside &#x60;.page-wrap&#x60; --&gt;
+&lt;div class&#x3D;&quot;dialog&quot; id&#x3D;&quot;myModal&quot;&gt;
+  &lt;div class&#x3D;&quot;dialog-overlay&quot; tabindex&#x3D;&quot;-1&quot; data-a11y-dialog-hide&gt;&lt;/div&gt;
+  &lt;dialog aria-labelledby&#x3D;&quot;myModal-title&quot;&gt;
+    &lt;button type&#x3D;&quot;button&quot; data-a11y-dialog-hide aria-label&#x3D;&quot;Close this dialog window&quot;&gt;
+      &lt;i class&#x3D;&quot;mag-font mag-font_cross&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+    &lt;h2 id&#x3D;&quot;myModal-title&quot; class&#x3D;&quot;has-mb-5&quot;&gt;Modal Example&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam velit veritatis ut error, tenetur ab ex similique molestiae esse sint illum sapiente nobis voluptatum a nam, eveniet voluptatibus quia?&lt;/p&gt;
+  &lt;/dialog&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+                       </section>
                       <section class="kss-section" id="kssref-organisms-expected-visits-module">
 
               <div class="kss-section__content">
@@ -1973,9 +2024,9 @@
               data-media="(min-width: 1200px)">
         </span>
         <div class="container header-content has-mb-7">
-            <h1 class="has-text-uppercase has-text-gray-0 has-mb-0">Our stores</h1>
+            <h1 class="has-text-uppercase has-text-gray-0 has-mb-2 has-mb-md-0">Our stores</h1>
             <hr class="is-in-header" />
-            <p class="header-sub-title has-text-center has-text-gray-0 has-mt-3">over 90 stores to choose from...</p>
+            <p class="header-sub-title has-text-center has-text-gray-0 has-mt-2 has-mt-md-3">over 90 stores to choose from...</p>
         </div>
     </div>
 </header></div>
@@ -2000,9 +2051,9 @@
               data-media&#x3D;&quot;(min-width: 1200px)&quot;&gt;
         &lt;/span&gt;
         &lt;div class&#x3D;&quot;container header-content has-mb-7&quot;&gt;
-            &lt;h1 class&#x3D;&quot;has-text-uppercase has-text-gray-0 has-mb-0&quot;&gt;Our stores&lt;/h1&gt;
+            &lt;h1 class&#x3D;&quot;has-text-uppercase has-text-gray-0 has-mb-2 has-mb-md-0&quot;&gt;Our stores&lt;/h1&gt;
             &lt;hr class&#x3D;&quot;is-in-header&quot; /&gt;
-            &lt;p class&#x3D;&quot;header-sub-title has-text-center has-text-gray-0 has-mt-3&quot;&gt;over 90 stores to choose from...&lt;/p&gt;
+            &lt;p class&#x3D;&quot;header-sub-title has-text-center has-text-gray-0 has-mt-2 has-mt-md-3&quot;&gt;over 90 stores to choose from...&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/header&gt;</code></pre>

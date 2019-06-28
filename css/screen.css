@@ -2419,9 +2419,6 @@ hr {
   hr.is-in-header {
     border-top-color: var(--color-gray-0);
     width: 90%; }
-    @media only screen and (min-width: 600px) {
-      hr.is-in-header {
-        width: 100%; } }
     @media only screen and (min-width: 900px) {
       hr.is-in-header {
         width: 85%; } }
@@ -2454,7 +2451,11 @@ details[open] .mag-font_down_chevron {
 
 .header-sub-title {
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  font-size: 0.8125rem; }
+  @media only screen and (min-width: 900px) {
+    .header-sub-title {
+      font-size: var(--font-size-paragraph); } }
 
 .screen-reader-only {
   position: absolute;
@@ -2700,8 +2701,15 @@ h1,
   line-height: 1.25;
   margin-bottom: var(--spacer-4);
   font-family: var(--font-family-title);
-  letter-spacing: 18px;
-  padding-left: 18px; }
+  font-size: 1.813rem;
+  letter-spacing: 0.5rem;
+  padding-left: 0.5rem; }
+  @media only screen and (min-width: 900px) {
+    h1,
+    .is-h1 {
+      font-size: var(--font-size-1);
+      letter-spacing: 1.125rem;
+      padding-left: 1.125rem; } }
 
 h2,
 .is-h2 {
