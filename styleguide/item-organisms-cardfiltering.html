@@ -815,30 +815,25 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-layout-grid-modifiers-row">
+          <header class="kss-section" id="kssref-organisms-cardfiltering">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-layout-grid-modifiers-row">
-                  <h4 class="kss-h4">
-                    <span class="kss-section__ref">4.2.2.4</span> -
-                    <span class="kss-section__name">Row</span>
-                  </h4>
+                <a class="kss-section__permalink" href="#kssref-organisms-cardfiltering">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">3.1</span> -
+                    <span class="kss-section__name">Card filtering</span>
+                  </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>layouts/_grid.scss</span>, line
-                  <span>217</span>
+                  <span>organisms/__documentation.scss</span>, line
+                  <span>76</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-layout-grid-modifiers-row.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-cardfiltering.html" target="_blank">Open in new
                     window</a>
                 </div>
-                 
-                <div class="kss-section__description"><p>Rows can be expended using the class <code>has-row-{breakpoint}-{size}</code>. Sizes go from 0 to 12. .has-row-all can be used as well but in this case, the grid needs to have
-<code>grid-template-rows</code> set, so the can grow depending on the number of rows.</p>
-<p>There is no fallback for these classes.</p>
-</div>
-                               </div>
+                                </div>
 
               <div class="kss-section__example-container">
                 <div class="kss-section__examples">
@@ -846,36 +841,103 @@
 
 
 
-                  <div class="kss-modifiers__example"><div class="grid has-cols-3 has-cols-sm-5 has-cols-md-4 has-grid-gap-2" style="grid-template-rows: repeat(5, 1fr)"> <!-- Set grid-template-rows for .has-row-all-->
-  <div class="has-row-all">
-    <div class="kss-box">1</div>
+                  <div class="kss-modifiers__example"><div class="card-filtering-container">
+  <div class="container">
+    <div class="row">
+        <ul class="col-6 filter-group list-unstyled" data-filter-group="filter">
+          <li class="filter-input">
+            <label class="custom-input">
+              <input type="checkbox" name="" value=".filter1">
+              <span class="custom-input-indicator"></span>filter1
+            </label>
+          </li>
+          <li class="filter-input">
+            <label class="custom-input">
+              <input type="checkbox" name="" value=".filter1">
+              <span class="custom-input-indicator"></span>filter2
+            </label>
+          </li>
+          <li class="filter-input">
+            <label class="custom-input">
+              <input type="checkbox" name="" value=".filter1">
+              <span class="custom-input-indicator"></span>filter3
+            </label>
+          </li>
+        </ul>
+        <ul class="col-6 filter-group list-unstyled" data-filter-group="filter">
+          <li class="filter-input">
+            <label class="custom-input">
+              <input type="checkbox" name="" value=".filterA">
+              <span class="custom-input-indicator"></span>filterA
+            </label>
+          </li>
+          <li class="filter-input">
+            <label class="custom-input">
+              <input type="checkbox" name="" value=".filterB">
+              <span class="custom-input-indicator"></span>filterB
+            </label>
+          </li>
+          <li class="filter-input">
+            <label class="custom-input">
+              <input type="checkbox" name="" value=".filterC">
+              <span class="custom-input-indicator"></span>filterC
+            </label>
+          </li>
+        </ul>
+    </div>
   </div>
-  <div>
-      <div class="kss-box">2</div>
-  </div>
-  <div>
-      <div class="kss-box">3</div>
-  </div>
-  <div>
-      <div class="kss-box">4</div>
-  </div>
-  <div class="has-row-2">
-      <div class="kss-box">5</div>
-  </div>
-  <div>
-      <div class="kss-box">6</div>
-  </div>
-  <div>
-      <div class="kss-box">7</div>
-  </div>
-  <div>
-      <div class="kss-box">8</div>
-  </div>
-  <div>
-      <div class="kss-box">9</div>
-  </div>
-  <div>
-      <div class="kss-box">10</div>
+  <div class="row card-filtering-grid">
+    <div class="col-xs-lg-6 col-sm-3 element-item filter1">
+      <p>filter1</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter2">
+      <p>filter2</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter3">
+      <p>filter3</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filterA">
+      <p>filterA</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filterB">
+      <p>filterB</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filterC">
+      <p>filterC</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter1 filterA">
+      <p>filter1 filterA</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter2 filterA">
+      <p>filter2 filterA</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter3 filterA">
+      <p>filter3 filterA</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter1 filterB">
+      <p>filter1 filterB</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter2 filterB">
+      <p>filter2 filterB</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter3 filterB">
+      <p>filter3 filterB</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter1 filterC">
+      <p>filter1 filterC</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter2 filterC">
+      <p>filter2 filterC</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter3 filterC">
+      <p>filter3 filterC</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter1 filter3 filterA filterC">
+      <p>filter1 filter3 filterA filterC</p>
+    </div>
+    <div class="col-xs-lg-6 col-sm-3 element-item filter2 filter3 filterB filterC">
+      <p>filter2 filter3 filterB filterC</p>
+    </div>
   </div>
 </div></div>
 
@@ -883,36 +945,103 @@
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;grid has-cols-3 has-cols-sm-5 has-cols-md-4 has-grid-gap-2&quot; style&#x3D;&quot;grid-template-rows: repeat(5, 1fr)&quot;&gt; &lt;!-- Set grid-template-rows for .has-row-all--&gt;
-  &lt;div class&#x3D;&quot;has-row-all&quot;&gt;
-    &lt;div class&#x3D;&quot;kss-box&quot;&gt;1&lt;/div&gt;
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;card-filtering-container&quot;&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;ul class&#x3D;&quot;col-6 filter-group list-unstyled&quot; data-filter-group&#x3D;&quot;filter&quot;&gt;
+          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter1&quot;&gt;
+              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filter1
+            &lt;/label&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter1&quot;&gt;
+              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filter2
+            &lt;/label&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter1&quot;&gt;
+              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filter3
+            &lt;/label&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class&#x3D;&quot;col-6 filter-group list-unstyled&quot; data-filter-group&#x3D;&quot;filter&quot;&gt;
+          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filterA&quot;&gt;
+              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filterA
+            &lt;/label&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filterB&quot;&gt;
+              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filterB
+            &lt;/label&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filterC&quot;&gt;
+              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filterC
+            &lt;/label&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;2&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;3&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;4&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;has-row-2&quot;&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;5&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;6&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;7&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;8&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;9&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;10&lt;/div&gt;
+  &lt;div class&#x3D;&quot;row card-filtering-grid&quot;&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1&quot;&gt;
+      &lt;p&gt;filter1&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2&quot;&gt;
+      &lt;p&gt;filter2&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter3&quot;&gt;
+      &lt;p&gt;filter3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filterA&quot;&gt;
+      &lt;p&gt;filterA&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filterB&quot;&gt;
+      &lt;p&gt;filterB&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filterC&quot;&gt;
+      &lt;p&gt;filterC&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1 filterA&quot;&gt;
+      &lt;p&gt;filter1 filterA&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2 filterA&quot;&gt;
+      &lt;p&gt;filter2 filterA&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter3 filterA&quot;&gt;
+      &lt;p&gt;filter3 filterA&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1 filterB&quot;&gt;
+      &lt;p&gt;filter1 filterB&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2 filterB&quot;&gt;
+      &lt;p&gt;filter2 filterB&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter3 filterB&quot;&gt;
+      &lt;p&gt;filter3 filterB&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1 filterC&quot;&gt;
+      &lt;p&gt;filter1 filterC&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2 filterC&quot;&gt;
+      &lt;p&gt;filter2 filterC&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter3 filterC&quot;&gt;
+      &lt;p&gt;filter3 filterC&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1 filter3 filterA filterC&quot;&gt;
+      &lt;p&gt;filter1 filter3 filterA filterC&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2 filter3 filterB filterC&quot;&gt;
+      &lt;p&gt;filter2 filter3 filterB filterC&lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
