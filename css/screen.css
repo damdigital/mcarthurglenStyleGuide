@@ -1380,6 +1380,8 @@ embed:focus,
   background-position: center center; }
   .bg-cover.is-focus-center-top {
     background-position: center top; }
+  .bg-cover.is-focus-center-center {
+    background-position: center center; }
 
 .overlay {
   position: relative; }
@@ -1712,23 +1714,38 @@ h6,
 
 h2,
 .is-h2 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: var(--font-family-paragraph);
+  letter-spacing: initial;
+  padding-left: initial; }
 
 h3,
 .is-h3 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: var(--font-family-paragraph);
+  letter-spacing: initial;
+  padding-left: initial; }
 
 h4,
 .is-h4 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: var(--font-family-paragraph);
+  letter-spacing: initial;
+  padding-left: initial; }
 
 h5,
 .is-h5 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: var(--font-family-paragraph);
+  letter-spacing: initial;
+  padding-left: initial; }
 
 h6,
 .is-h6 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: var(--font-family-paragraph);
+  letter-spacing: initial;
+  padding-left: initial; }
 
 h1,
 .is-h1 {
@@ -2222,7 +2239,8 @@ body {
   .has-py-md-0,
   .has-pt-md-0 {
     padding-top: var(--spacer-0); }
-  .has-py-md-0 {
+  .has-py-md-0,
+  .has-pb-md-0 {
     padding-bottom: var(--spacer-0); }
   
   .has-mb-md-0 {
@@ -2266,7 +2284,11 @@ body {
 @media only screen and (min-width: 900px) {
   
   .has-pb-md-6 {
-    padding-bottom: var(--spacer-6); } }
+    padding-bottom: var(--spacer-6); }
+  .has-px-md-6 {
+    padding-left: var(--spacer-6); }
+  .has-px-md-6 {
+    padding-right: var(--spacer-6); } }
 
 @media only screen and (min-width: 1200px) {
   .has-px-lg-5 {
@@ -3262,6 +3284,18 @@ dialog::backdrop {
   @media only screen and (min-width: 900px) {
     .header-with-img-block .header-image {
       min-height: 380px; } }
+
+.header-with-img-block.is-whats-on-header .header-image {
+  min-height: 260px; }
+  @media only screen and (min-width: 900px) {
+    .header-with-img-block.is-whats-on-header .header-image {
+      min-height: 380px; } }
+
+@media only screen and (min-width: 900px) {
+  .header-with-img-block.is-whats-on-header .whats-on-header-prev-col {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; } }
 
 .header-with-title-block .header-image {
   min-height: 245px;

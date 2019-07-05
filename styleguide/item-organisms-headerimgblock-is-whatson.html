@@ -395,7 +395,7 @@
           </li>
           
           <li class="is-grandchild">
-            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-headerimgblock-iswhatson">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-headerimgblock-is-whatson">
               3.7.1 - What&#x27;s on Header with image block
             </a>
           </li>
@@ -833,44 +833,112 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-vendors-sass-bootstrapgrid">
+          <header class="kss-section" id="kssref-organisms-headerimgblock-is-whatson">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-vendors-sass-bootstrapgrid">
+                <a class="kss-section__permalink" href="#kssref-organisms-headerimgblock-is-whatson">
                   <h3 class="kss-h3">
-                    <span class="kss-section__ref">9.4.1</span> -
-                    <span class="kss-section__name">bootstrap grid 4.1.0 (Not used)</span>
+                    <span class="kss-section__ref">3.7.1</span> -
+                    <span class="kss-section__name">What&#x27;s on Header with image block</span>
                   </h3>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>vendors/__documentation.scss</span>, line
-                  <span>64</span>
+                  <span>organisms/_header-with-img-block.scss</span>, line
+                  <span>80</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-vendors-sass-bootstrapgrid.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-headerimgblock-is-whatson.html" target="_blank">Open in new
                     window</a>
                 </div>
                  
-                <div class="kss-section__description"><p>If you want to use this grid, remove the default grid in layouts.</p>
-<p>This project use a modify version of the grid from bootstrap v4.1.0 https://getbootstrap.com/docs/4.1/layout/grid/</p>
-<p>The available classes are:</p>
-<ul>
-<li><code>.row</code></li>
-<li><code>.no-gutters</code></li>
-<li><code>.col</code></li>
-<li><code>.col-{optional breakpoint}-{num of columns}</code> <em>breakpoints</em> can be founds in sass variables num of columns are from 1 to <em>$grid-columns</em> (12) and auto</li>
-<li><em>Example:</em> col-md-3, col-1, col-xl-auto etc...</li>
-<li>Order classes</li>
-<li><code>.order-first</code></li>
-<li><code>.order-last</code></li>
-<li><code>.order-{num of columns}</code></li>
-<li><code>.offset-{num of columns}</code></li>
-</ul>
-<iframe class="kss-iframe" src="https://getbootstrap.com/docs/4.1/layout/grid/"></iframe></div>
+                <div class="kss-section__description"><p>Resize me</p>
+</div>
                                </div>
 
- 
+              <div class="kss-section__example-container">
+                <div class="kss-section__examples">
+                  <p class="kss-modifiers__heading">Example:</p>
+
+
+
+                  <div class="kss-modifiers__example"><header class="header-with-img-block is-whats-on-header has-mb-4">
+  <div class="header-image picturefill-background bg-cover is-focus-center-center"
+    style="background-image: url('https://source.unsplash.com/random');">
+    <span class="picturefill-background-source" data-src="https://source.unsplash.com/random"></span>
+    <span class="picturefill-background-source" data-src="https://source.unsplash.com/random"
+      data-media="(min-width: 600px)">
+    </span>
+    <span class="picturefill-background-source" data-src="https://source.unsplash.com/random"
+      data-media="(min-width: 900px)">
+    </span>
+    <span class="picturefill-background-source" data-src="https://source.unsplash.com/random"
+      data-media="(min-width: 1200px)">
+    </span>
+  </div>
+  <div class="container">
+    <div class="row is-align-end has-text-gray-100">
+      <div class="col-md-8">
+        <div class="has-bg-gray-0 has-text-center has-mt-neg-6 has-py-3 has-px-4 has-px-md-6 has-pb-md-0">
+          <h1 class="is-h4 has-font-weight-light">Centre Expansion News</h1>
+          <hr class="has-my-3">
+          <p class="has-font-weight-normal has-m-0">Brand new 725 space car park now open.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 whats-on-header-prev-col">
+        <a class="has-font-weight-normal"
+          href="/en/outlets/uk/designer-outlet-ashford/whats-on/summer-occasionwear/">&lt; Previous</a>
+      </div>
+      <div class="col-6 col-md-2 has-text-right">
+        <a class="has-font-weight-normal" href="/en/outlets/uk/designer-outlet-ashford/whats-on/playground/">Next
+          &gt;</a>
+      </div>
+    </div>
+  </div>
+</header></div>
+
+
+                </div>
+
+                <div class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;header class&#x3D;&quot;header-with-img-block is-whats-on-header has-mb-4&quot;&gt;
+  &lt;div class&#x3D;&quot;header-image picturefill-background bg-cover is-focus-center-center&quot;
+    style&#x3D;&quot;background-image: url(&#x27;https://source.unsplash.com/random&#x27;);&quot;&gt;
+    &lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/random&quot;&gt;&lt;/span&gt;
+    &lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/random&quot;
+      data-media&#x3D;&quot;(min-width: 600px)&quot;&gt;
+    &lt;/span&gt;
+    &lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/random&quot;
+      data-media&#x3D;&quot;(min-width: 900px)&quot;&gt;
+    &lt;/span&gt;
+    &lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/random&quot;
+      data-media&#x3D;&quot;(min-width: 1200px)&quot;&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row is-align-end has-text-gray-100&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-8&quot;&gt;
+        &lt;div class&#x3D;&quot;has-bg-gray-0 has-text-center has-mt-neg-6 has-py-3 has-px-4 has-px-md-6 has-pb-md-0&quot;&gt;
+          &lt;h1 class&#x3D;&quot;is-h4 has-font-weight-light&quot;&gt;Centre Expansion News&lt;/h1&gt;
+          &lt;hr class&#x3D;&quot;has-my-3&quot;&gt;
+          &lt;p class&#x3D;&quot;has-font-weight-normal has-m-0&quot;&gt;Brand new 725 space car park now open.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-6 col-md-2 whats-on-header-prev-col&quot;&gt;
+        &lt;a class&#x3D;&quot;has-font-weight-normal&quot;
+          href&#x3D;&quot;/en/outlets/uk/designer-outlet-ashford/whats-on/summer-occasionwear/&quot;&gt;&amp;lt; Previous&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-6 col-md-2 has-text-right&quot;&gt;
+        &lt;a class&#x3D;&quot;has-font-weight-normal&quot; href&#x3D;&quot;/en/outlets/uk/designer-outlet-ashford/whats-on/playground/&quot;&gt;Next
+          &amp;gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+                </div>
+              </div>
+
+               
           </header>
   
         </section>
