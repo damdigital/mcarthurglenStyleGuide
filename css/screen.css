@@ -1284,6 +1284,26 @@ button {
     background-color: var(--color-secondary-contrast);
     outline: none; }
 
+.small-round-icon-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-primary-base);
+  color: var(--color-primary-contrast);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out; }
+  .small-round-icon-btn:hover, .small-round-icon-btn:focus {
+    background-color: var(--color-primary-light); }
+
 a {
   color: var(--color-text-base);
   -webkit-transition: color 0.6s ease-in-out;
@@ -1691,32 +1711,32 @@ h6,
 
 h1,
 .is-h1 {
-  font-weight: normal;
+  font-weight: lighter;
   text-align: center; }
 
 h2,
 .is-h2 {
-  font-weight: normal;
+  font-weight: lighter;
   text-align: center; }
 
 h3,
 .is-h3 {
-  font-weight: normal;
+  font-weight: lighter;
   text-align: center; }
 
 h4,
 .is-h4 {
-  font-weight: normal;
+  font-weight: lighter;
   text-align: center; }
 
 h5,
 .is-h5 {
-  font-weight: normal;
+  font-weight: lighter;
   text-align: center; }
 
 h6,
 .is-h6 {
-  font-weight: normal;
+  font-weight: lighter;
   text-align: center; }
 
 h2,
@@ -2223,10 +2243,7 @@ body {
     padding-top: var(--spacer-6); }
   
   .has-pb-sm-6 {
-    padding-bottom: var(--spacer-6); }
-  
-  .has-mt-sm-6 {
-    margin-top: var(--spacer-6); } }
+    padding-bottom: var(--spacer-6); } }
 
 @media only screen and (min-width: 600px) {
   
@@ -2270,9 +2287,11 @@ body {
     padding-left: var(--spacer-4); }
   .has-px-md-4 {
     padding-right: var(--spacer-4); }
-  
+  .has-mx-md-4,
   .has-ml-md-4 {
-    margin-left: var(--spacer-4); } }
+    margin-left: var(--spacer-4); }
+  .has-mx-md-4 {
+    margin-right: var(--spacer-4); } }
 
 @media only screen and (min-width: 900px) {
   
@@ -2739,6 +2758,22 @@ body {
       .site-footer-nav li a:hover, .site-footer-nav li a:focus {
         color: var(--color-gray-40);
         text-decoration: none; }
+
+.share-ctas-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .share-ctas-wrapper li {
+    color: var(--color-primary-base);
+    margin-right: var(--spacer-1); }
+    .share-ctas-wrapper li:nth-last-child(-n + 1) {
+      margin-right: 0; }
 
 .nav-mobile-icons {
   display: -webkit-box;

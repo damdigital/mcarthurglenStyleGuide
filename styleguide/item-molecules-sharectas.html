@@ -869,36 +869,27 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-layout-grid">
+          <header class="kss-section" id="kssref-molecules-sharectas">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-layout-grid">
+                <a class="kss-section__permalink" href="#kssref-molecules-sharectas">
                   <h2 class="kss-h2">
-                    <span class="kss-section__ref">4.2</span> -
-                    <span class="kss-section__name">Grid</span>
+                    <span class="kss-section__ref">2.5</span> -
+                    <span class="kss-section__name">Share ctas</span>
                   </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>layouts/_grid.scss</span>, line
-                  <span>91</span>
+                  <span>molecules/_share-ctas-wrapper.scss</span>, line
+                  <span>16</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-layout-grid.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-molecules-sharectas.html" target="_blank">Open in new
                     window</a>
                 </div>
                  
-                <div class="kss-section__description"><p>(Alternative you can use bootstrap grid, see vendors)</p>
-<p>Atomic Bulldog uses CSS grid layout for its grid. It only applies this grid to supported browsers using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%40supports">CSS <code>@supports</code></a> rule.</p>
-<p>See <code>Grid fallback</code> if you need to use the fallback grid.</p>
-<p class="ciu_embed" data-feature="css-grid" data-periods="future_1,current,past_1,past_2" data-accessible-colours="false">
-  <a href="http://caniuse.com/#feat=css-grid">Can I Use css-grid?</a> Data on support for the css-grid feature across the major browsers from caniuse.com.
-</p>
-<p class="ciu_embed" data-feature="css-supports-api" data-periods="future_1,current,past_1,past_2" data-accessible-colours="false">
-  <a href="http://caniuse.com/#feat=css-supports-api">Can I Use css-supports-api?</a> Data on support for the css-supports-api feature across the major browsers from caniuse.com.
-</p>
-<p>The  grid is by default 12 columns base, This grid is two dimensional, meaning grid items can grow in the horizontal axis (has-col-{breakpoint}-{size}) and on the vertical axis (has-row-{breakpoint}-{size}).</p>
-<p>{breakpoint} is set from the <code>$breakpoints</code> map (see variables), {size} is set as well in variables. It goes from 0 to 12 ($grid-columns) by default or 0 up to 12 base on the number of columns set using <code>.has-cols-{bp}-{size}</code></p>
+                <div class="kss-section__description"><p>This molecules is populated using js, if the browser does NOT support <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share">Navigator.share</a> we will use the <a href="https://github.com/okmttdhr/sharer.npm.js">sharer js plugin</a>.</p>
+<p>These buttons will share the current page. You can overwrite it by passing a url using <code>data-url</code> attribute.</p>
 </div>
                                </div>
 
@@ -908,51 +899,15 @@
 
 
 
-                  <div class="kss-modifiers__example"><div class="grid has-grid-gap-2 has-cols-3 has-cols-md-5 has-cols-lg-7">
-  <div class="has-col-md-3 has-col-lg-1 has-row-md-2 has-row-lg-2">
-    <div class="kss-box">1</div>
-  </div>
-  <div class="has-col-3 has-col-md-2 has-col-lg-1">
-      <div class="kss-box">2</div>
-  </div>
-  <div>
-      <div class="kss-box">3</div>
-  </div>
-  <div class="has-col-md-2 has-col-lg-3">
-      <div class="kss-box">4</div>
-  </div>
-  <div class="has-col-md-2 has-col-lg-6">
-      <div class="kss-box">5</div>
-  </div>
-  <div>
-      <div class="kss-box">6</div>
-  </div>
-</div></div>
+                  <div class="kss-modifiers__example"> <ul class="share-ctas-wrapper is-d-none list-unstyled">
+ </ul></div>
 
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;grid has-grid-gap-2 has-cols-3 has-cols-md-5 has-cols-lg-7&quot;&gt;
-  &lt;div class&#x3D;&quot;has-col-md-3 has-col-lg-1 has-row-md-2 has-row-lg-2&quot;&gt;
-    &lt;div class&#x3D;&quot;kss-box&quot;&gt;1&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;has-col-3 has-col-md-2 has-col-lg-1&quot;&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;2&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;3&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;has-col-md-2 has-col-lg-3&quot;&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;4&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;has-col-md-2 has-col-lg-6&quot;&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;5&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;6&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+                  <pre><code class="language-markup"> &lt;ul class&#x3D;&quot;share-ctas-wrapper is-d-none list-unstyled&quot;&gt;
+ &lt;/ul&gt;</code></pre>
                 </div>
               </div>
 
