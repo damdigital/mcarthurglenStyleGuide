@@ -1084,6 +1084,9 @@ dialog[open] {
     .container:not(.is-fluid).is-narrow {
       width: 100%;
       max-width: var(--container-size-md); }
+    .container:not(.is-fluid).is-narrow-md {
+      width: 100%;
+      max-width: var(--container-size-md); }
     .container:not(.is-fluid).is-narrow-lg {
       width: 100%;
       max-width: var(--container-size-lg); }
@@ -1200,7 +1203,11 @@ button {
   cursor: pointer;
   background-color: transparent; }
   .btn:hover, .btn:focus {
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: var(--color-gray-100);
+    border-color: var(--color-gray-100);
+    color: var(--color-gray-0);
+    outline: none; }
   .btn.is-wide {
     padding: var(--spacer-3) var(--spacer-11); }
   .btn[disabled] {
