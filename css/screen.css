@@ -3315,60 +3315,65 @@ dialog::backdrop {
         margin-right: var(--spacer-6); }
         .icon-ctas-module > li:nth-last-child(-n + 1) {
           margin-right: 0; } }
-    @media only screen and (min-width: 900px) {
-      .icon-ctas-module > li .icon-cta {
-        position: relative; }
-        .icon-ctas-module > li .icon-cta:before {
-          display: block;
-          content: "";
-          width: 100%;
-          padding-top: 100%; } }
-    .icon-ctas-module > li .icon-cta > a {
-      background-color: var(--color-primary-base);
-      outline: 1px solid var(--color-primary-contrast);
-      color: var(--color-primary-contrast);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding: var(--spacer-3);
-      -webkit-transition: background-color 0.3s ease-in-out;
-      transition: background-color 0.3s ease-in-out; }
+    .icon-ctas-module > li .icon-cta {
+      height: 100%; }
       @media only screen and (min-width: 900px) {
-        .icon-ctas-module > li .icon-cta > a {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; } }
-      .icon-ctas-module > li .icon-cta > a:hover, .icon-ctas-module > li .icon-cta > a:focus {
-        background-color: var(--color-primary-light); }
-      .icon-ctas-module > li .icon-cta > a p {
-        margin: 0; }
-        .icon-ctas-module > li .icon-cta > a p .mag-font {
-          font-size: var(--font-size-4);
-          margin-right: var(--spacer-2); }
-          @media only screen and (min-width: 900px) {
-            .icon-ctas-module > li .icon-cta > a p .mag-font {
-              font-size: var(--font-size-2);
-              margin-right: 0;
-              padding-bottom: var(--spacer-3);
-              display: block; } }
+        .icon-ctas-module > li .icon-cta {
+          position: relative;
+          height: auto; }
+          .icon-ctas-module > li .icon-cta:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 100%; } }
+      .icon-ctas-module > li .icon-cta > a {
+        height: 100%;
+        background-color: var(--color-primary-base);
+        outline: 1px solid var(--color-primary-contrast);
+        color: var(--color-primary-contrast);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: var(--spacer-3);
+        -webkit-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out; }
+        @media only screen and (min-width: 900px) {
+          .icon-ctas-module > li .icon-cta > a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            height: auto; } }
+        .icon-ctas-module > li .icon-cta > a:hover, .icon-ctas-module > li .icon-cta > a:focus {
+          background-color: var(--color-primary-light); }
+        .icon-ctas-module > li .icon-cta > a p {
+          margin: 0; }
+          .icon-ctas-module > li .icon-cta > a p .mag-font {
+            font-size: var(--font-size-4);
+            margin-right: var(--spacer-2); }
+            @media only screen and (min-width: 900px) {
+              .icon-ctas-module > li .icon-cta > a p .mag-font {
+                font-size: var(--font-size-2);
+                margin-right: 0;
+                padding-bottom: var(--spacer-3);
+                display: block; } }
 
 .site-footer {
   background: var(--color-primary-base);
