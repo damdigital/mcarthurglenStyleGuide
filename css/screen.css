@@ -2399,6 +2399,12 @@ body {
         -ms-flex-pack: center !important;
             justify-content: center !important; } }
 
+@media only screen and (min-width: 900px) {
+  .is-justify-md-end {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important; } }
+
 .has-text-primary,
 .has-text-primary * {
   color: var(--color-primary-base); }
