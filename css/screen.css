@@ -2896,6 +2896,8 @@ body {
         margin-right: 0; }
       .siema .siema-pagination button.is-active {
         color: var(--color-primary-base); }
+  .siema.has-no-pagination .siema-pagination {
+    display: none; }
   .siema.has-dots {
     margin-bottom: var(--spacer-6); }
     .siema.has-dots .siema-pagination button {
@@ -2911,6 +2913,15 @@ body {
       border: 1px solid var(--color-gray-0); }
       .siema.has-dots .siema-pagination button.is-active {
         background-color: var(--color-gray-0); }
+  .siema.has-arrow-top {
+    position: relative; }
+    .siema.has-arrow-top .siema-arrows {
+      position: absolute;
+      top: 0;
+      right: var(--spacer-3);
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+      padding-bottom: var(--spacer-2); }
 
 [data-a11y-dialog-native] > .dialog-overlay {
   visibility: hidden; }

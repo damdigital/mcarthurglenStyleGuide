@@ -851,28 +851,25 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-organisms-productfeature">
+          <header class="kss-section" id="kssref-organisms-editorialimagecarousel">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-organisms-productfeature">
+                <a class="kss-section__permalink" href="#kssref-organisms-editorialimagecarousel">
                   <h2 class="kss-h2">
-                    <span class="kss-section__ref">3.16</span> -
-                    <span class="kss-section__name">Product feature block</span>
+                    <span class="kss-section__ref">3.4</span> -
+                    <span class="kss-section__name">Editorial image carousel (What&#x27;s on landing)</span>
                   </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>organisms/_product-feature-block.scss</span>, line
-                  <span>37</span>
+                  <span>organisms/__documentation.scss</span>, line
+                  <span>188</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-productfeature.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-editorialimagecarousel.html" target="_blank">Open in new
                     window</a>
                 </div>
-                 
-                <div class="kss-section__description"><p>This is a carousel</p>
-</div>
-                               </div>
+                                </div>
 
               <div class="kss-section__example-container">
                 <div class="kss-section__examples">
@@ -880,106 +877,236 @@
 
 
 
-                  <div class="kss-modifiers__example"><section class="product-feature-block has-section-spacer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="siema is-single-slide-carousel has-pt-6">
-                    <div class="siema-slides-wrapper">
-                        <div class="slide">
-                            <div class="aspect-ratio-container is-1x1 has-b has-mb-3">
-                                <div class="aspect-ratio-content is-d-flex is-justify-center is-align-center">
-                                    <img src="https://source.unsplash.com/1000x600/?shoes" />
-                                </div>
-                            </div>
-                            <div class="product-details has-text-center has-text-gray-100">
-                                <p class="has-font-weight-bold">Nike trainers</p>
-                                <p class="has-mb-0">RRP £65.00</p>
-                                <p>Outlet £45.00</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="aspect-ratio-container is-1x1 has-b has-mb-3">
-                                <div class="aspect-ratio-content is-d-flex is-justify-center is-align-center">
-                                    <img src="https://source.unsplash.com/1000x600/?shoes" />
-                                </div>
-                            </div>
-                            <div class="product-details has-text-center has-text-gray-100">
-                                <p class="has-font-weight-bold">Adidas trainers</p>
-                                <p class="has-mb-0">RRP £65.00</p>
-                                <p>Outlet £45.00</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="aspect-ratio-container is-1x1 has-b has-mb-3">
-                                <div class="aspect-ratio-content is-d-flex is-justify-center is-align-center">
-                                    <img src="https://source.unsplash.com/1000x600/?shoes" />
-                                </div>
-                            </div>
-                            <div class="product-details has-text-center has-text-gray-100">
-                                <p class="has-font-weight-bold">Reebok trainers</p>
-                                <p class="has-mb-0">RRP £65.00</p>
-                                <p>Outlet £45.00</p>
-                            </div>
-                        </div>
-                    </div>
+                  <div class="kss-modifiers__example"><section class="has-mt-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 is-d-none is-d-md-block">
+        <div class="aspect-ratio-container is-1x1">
+          <div class="aspect-ratio-content">
+            <img class="media-cover" srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
+                             https://source.unsplash.com/random?preset=contain-sm 570w,
+                             https://source.unsplash.com/random?preset=contain-md 860w,
+                             https://source.unsplash.com/random?preset=contain-lg 1150w,
+                             https://source.unsplash.com/random?preset=contain-xl 1400w"
+              src="https://source.unsplash.com/random?preset=contain-xl" alt="Alternative text">
+          </div>
+        </div>
+        <div class="has-text-right has-mt-2">
+          <p><small>Credit: Mary james / shutterstock</small></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="siema is-two-slide-carousel has-no-pagination has-arrow-top">
+          <div class="siema-slides-wrapper">
+            <!--TODO: BE FIrst slide should be the same as image one above-->
+            <div class="slide has-mx-2 has-mx-sm-4 is-d-md-none">
+              <div class="aspect-ratio-container is-1x1">
+                <div class="aspect-ratio-content">
+                  <img class="media-cover is-lazy" data-srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
+                                         https://source.unsplash.com/random?preset=contain-sm 570w,
+                                         https://source.unsplash.com/random?preset=contain-md 860w,
+                                         https://source.unsplash.com/random?preset=contain-lg 1150w,
+                                         https://source.unsplash.com/random?preset=contain-xl 1400w"
+                    data-src="https://source.unsplash.com/random?preset=contain-xl" alt="Alternative text">
                 </div>
+              </div>
+              <div class="has-text-right has-mt-2">
+                <p><small>Credit: Mary james / shutterstock</small></p>
+              </div>
+            </div>
+            <div class="slide has-mx-2 has-mx-sm-4">
+              <div class="aspect-ratio-container is-1x1">
+                <div class="aspect-ratio-content">
+                  <img class="media-cover is-lazy" data-srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
+                                                        https://source.unsplash.com/random?preset=contain-sm 570w,
+                                                        https://source.unsplash.com/random?preset=contain-md 860w,
+                                                        https://source.unsplash.com/random?preset=contain-lg 1150w,
+                                                        https://source.unsplash.com/random?preset=contain-xl 1400w"
+                    data-src="https://source.unsplash.com/random?preset=contain-xl" alt="Alternative text">
+                </div>
+              </div>
+              <div class="has-text-right has-mt-2">
+                <p><small>Credit: Mary james / shutterstock</small></p>
+              </div>
+            </div>
+            <div class="slide has-mx-2 has-mx-sm-4">
+              <div class="aspect-ratio-container is-1x1">
+                <div class="aspect-ratio-content">
+                  <img class="media-cover is-lazy" data-srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
+                                                        https://source.unsplash.com/random?preset=contain-sm 570w,
+                                                        https://source.unsplash.com/random?preset=contain-md 860w,
+                                                        https://source.unsplash.com/random?preset=contain-lg 1150w,
+                                                        https://source.unsplash.com/random?preset=contain-xl 1400w"
+                    data-src="https://source.unsplash.com/random?preset=contain-xl" alt="Alternative text">
+                </div>
+              </div>
+              <div class="has-text-right has-mt-2">
+                <p><small>Credit: Mary james / shutterstock</small></p>
+              </div>
+            </div>
+            <div class="slide has-mx-2 has-mx-sm-4">
+              <div class="aspect-ratio-container is-1x1">
+                <div class="aspect-ratio-content">
+                  <img class="media-cover is-lazy" data-srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
+                                                        https://source.unsplash.com/random?preset=contain-sm 570w,
+                                                        https://source.unsplash.com/random?preset=contain-md 860w,
+                                                        https://source.unsplash.com/random?preset=contain-lg 1150w,
+                                                        https://source.unsplash.com/random?preset=contain-xl 1400w"
+                    data-src="https://source.unsplash.com/random?preset=contain-xl" alt="Alternative text">
+                </div>
+              </div>
+              <div class="has-text-right has-mt-2">
+                <p><small>Credit: Mary james / shutterstock</small></p>
+              </div>
+            </div>
+            <div class="slide has-mx-2 has-mx-sm-4">
+              <div class="aspect-ratio-container is-1x1">
+                <div class="aspect-ratio-content">
+                  <img class="media-cover is-lazy" data-srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
+                                                        https://source.unsplash.com/random?preset=contain-sm 570w,
+                                                        https://source.unsplash.com/random?preset=contain-md 860w,
+                                                        https://source.unsplash.com/random?preset=contain-lg 1150w,
+                                                        https://source.unsplash.com/random?preset=contain-xl 1400w"
+                    data-src="https://source.unsplash.com/random?preset=contain-xl" alt="Alternative text">
+                </div>
+              </div>
+              <div class="has-text-right has-mt-2">
+                <p><small>Credit: Mary james / shutterstock</small></p>
+              </div>
             </div>
         </div>
+      </div>
+      <div class="has-mx-2 has-mx-sm-4">
+        <p>
+          Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc
+          mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        </p>
+        <p>
+          Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc
+          mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        </p>
+      </div>
     </div>
+  </div>
+  </div>
 </section></div>
 
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;product-feature-block has-section-spacer&quot;&gt;
-    &lt;div class&#x3D;&quot;container&quot;&gt;
-        &lt;div class&#x3D;&quot;row&quot;&gt;
-            &lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
-                &lt;div class&#x3D;&quot;siema is-single-slide-carousel has-pt-6&quot;&gt;
-                    &lt;div class&#x3D;&quot;siema-slides-wrapper&quot;&gt;
-                        &lt;div class&#x3D;&quot;slide&quot;&gt;
-                            &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1 has-b has-mb-3&quot;&gt;
-                                &lt;div class&#x3D;&quot;aspect-ratio-content is-d-flex is-justify-center is-align-center&quot;&gt;
-                                    &lt;img src&#x3D;&quot;https://source.unsplash.com/1000x600/?shoes&quot; /&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                            &lt;div class&#x3D;&quot;product-details has-text-center has-text-gray-100&quot;&gt;
-                                &lt;p class&#x3D;&quot;has-font-weight-bold&quot;&gt;Nike trainers&lt;/p&gt;
-                                &lt;p class&#x3D;&quot;has-mb-0&quot;&gt;RRP £65.00&lt;/p&gt;
-                                &lt;p&gt;Outlet £45.00&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;slide&quot;&gt;
-                            &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1 has-b has-mb-3&quot;&gt;
-                                &lt;div class&#x3D;&quot;aspect-ratio-content is-d-flex is-justify-center is-align-center&quot;&gt;
-                                    &lt;img src&#x3D;&quot;https://source.unsplash.com/1000x600/?shoes&quot; /&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                            &lt;div class&#x3D;&quot;product-details has-text-center has-text-gray-100&quot;&gt;
-                                &lt;p class&#x3D;&quot;has-font-weight-bold&quot;&gt;Adidas trainers&lt;/p&gt;
-                                &lt;p class&#x3D;&quot;has-mb-0&quot;&gt;RRP £65.00&lt;/p&gt;
-                                &lt;p&gt;Outlet £45.00&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div class&#x3D;&quot;slide&quot;&gt;
-                            &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1 has-b has-mb-3&quot;&gt;
-                                &lt;div class&#x3D;&quot;aspect-ratio-content is-d-flex is-justify-center is-align-center&quot;&gt;
-                                    &lt;img src&#x3D;&quot;https://source.unsplash.com/1000x600/?shoes&quot; /&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                            &lt;div class&#x3D;&quot;product-details has-text-center has-text-gray-100&quot;&gt;
-                                &lt;p class&#x3D;&quot;has-font-weight-bold&quot;&gt;Reebok trainers&lt;/p&gt;
-                                &lt;p class&#x3D;&quot;has-mb-0&quot;&gt;RRP £65.00&lt;/p&gt;
-                                &lt;p&gt;Outlet £45.00&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;has-mt-6&quot;&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-6 is-d-none is-d-md-block&quot;&gt;
+        &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+          &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+            &lt;img class&#x3D;&quot;media-cover&quot; srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
+              src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot; alt&#x3D;&quot;Alternative text&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;has-text-right has-mt-2&quot;&gt;
+          &lt;p&gt;&lt;small&gt;Credit: Mary james / shutterstock&lt;/small&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;div class&#x3D;&quot;siema is-two-slide-carousel has-no-pagination has-arrow-top&quot;&gt;
+          &lt;div class&#x3D;&quot;siema-slides-wrapper&quot;&gt;
+            &lt;!--TODO: BE FIrst slide should be the same as image one above--&gt;
+            &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4 is-d-md-none&quot;&gt;
+              &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+                  &lt;img class&#x3D;&quot;media-cover is-lazy&quot; data-srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
+                                         https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
+                                         https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
+                                         https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
+                                         https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
+                    data-src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot; alt&#x3D;&quot;Alternative text&quot;&gt;
                 &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;has-text-right has-mt-2&quot;&gt;
+                &lt;p&gt;&lt;small&gt;Credit: Mary james / shutterstock&lt;/small&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+              &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+                  &lt;img class&#x3D;&quot;media-cover is-lazy&quot; data-srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
+                    data-src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot; alt&#x3D;&quot;Alternative text&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;has-text-right has-mt-2&quot;&gt;
+                &lt;p&gt;&lt;small&gt;Credit: Mary james / shutterstock&lt;/small&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+              &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+                  &lt;img class&#x3D;&quot;media-cover is-lazy&quot; data-srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
+                    data-src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot; alt&#x3D;&quot;Alternative text&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;has-text-right has-mt-2&quot;&gt;
+                &lt;p&gt;&lt;small&gt;Credit: Mary james / shutterstock&lt;/small&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+              &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+                  &lt;img class&#x3D;&quot;media-cover is-lazy&quot; data-srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
+                    data-src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot; alt&#x3D;&quot;Alternative text&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;has-text-right has-mt-2&quot;&gt;
+                &lt;p&gt;&lt;small&gt;Credit: Mary james / shutterstock&lt;/small&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+              &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+                  &lt;img class&#x3D;&quot;media-cover is-lazy&quot; data-srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
+                                                        https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
+                    data-src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot; alt&#x3D;&quot;Alternative text&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;has-text-right has-mt-2&quot;&gt;
+                &lt;p&gt;&lt;small&gt;Credit: Mary james / shutterstock&lt;/small&gt;&lt;/p&gt;
+              &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;has-mx-2 has-mx-sm-4&quot;&gt;
+        &lt;p&gt;
+          Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc
+          mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        &lt;/p&gt;
+        &lt;p&gt;
+          Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc
+          mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        &lt;/p&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/section&gt;</code></pre>
                 </div>
               </div>
