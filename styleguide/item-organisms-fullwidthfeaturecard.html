@@ -905,28 +905,25 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-layout-grid-modifiers-col">
+          <header class="kss-section" id="kssref-organisms-fullwidthfeaturecard">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-layout-grid-modifiers-col">
-                  <h4 class="kss-h4">
-                    <span class="kss-section__ref">4.2.2.1</span> -
-                    <span class="kss-section__name">Col</span>
-                  </h4>
+                <a class="kss-section__permalink" href="#kssref-organisms-fullwidthfeaturecard">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">3.9</span> -
+                    <span class="kss-section__name">Full width feature card (What&#x27;s on)</span>
+                  </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>layouts/_grid.scss</span>, line
-                  <span>264</span>
+                  <span>organisms/__documentation.scss</span>, line
+                  <span>480</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-layout-grid-modifiers-col.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-fullwidthfeaturecard.html" target="_blank">Open in new
                     window</a>
                 </div>
-                 
-                <div class="kss-section__description"><p>Columns can be expended using the class <code>has-col-{breakpoint}-{size}</code>. Sizes go from 0 to 12. .has-col-all can be used as well, grid item will then take the full width.</p>
-</div>
-                               </div>
+                                </div>
 
               <div class="kss-section__example-container">
                 <div class="kss-section__examples">
@@ -934,75 +931,69 @@
 
 
 
-                  <div class="kss-modifiers__example"><div class="grid has-cols-5 has-grid-gap-2">
-  <div class="has-col-all">
-      <div class="kss-box">1</div>
+                  <div class="kss-modifiers__example"><section class="container has-my-6">
+  <div class="row is-align-end">
+    <div class="col-md-8">
+      <div class="aspect-ratio-container is-4x3">
+        <div class="aspect-ratio-content">
+          <img class="media-cover" srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
+                             https://source.unsplash.com/random?preset=contain-sm 570w,
+                             https://source.unsplash.com/random?preset=contain-md 860w,
+                             https://source.unsplash.com/random?preset=contain-lg 1150w,
+                             https://source.unsplash.com/random?preset=contain-xl 1400w"
+            src="https://source.unsplash.com/random?preset=contain-xl" alt="Alternative text">
+        </div>
+      </div>
+    </div>
+    <div class="col-11 col-md-4 has-mt-neg-6 has-mt-md-0 has-ml-md-neg-7">
+      <div class="has-bg-gray-0 has-p-3 has-p-md-6 has-pb-lg-7">
+        <h2 class="is-h4 has-text-left">Wear the rainbow</h2>
+        <p class="has-font-weight-bold">a summer by nike</p>
+        <p>
+          Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc
+          mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        </p>
+        <div class="has-text-right">
+          <a class="has-font-weight-bold" href="#">Discover more</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div>
-      <div class="kss-box">2</div>
-  </div>
-  <div>
-      <div class="kss-box">3</div>
-  </div>
-  <div>
-      <div class="kss-box">4</div>
-  </div>
-  <div class=" has-col-2">
-      <div class="kss-box">5</div>
-  </div>
-  <div>
-      <div class="kss-box">6</div>
-  </div>
-  <div>
-      <div class="kss-box">7</div>
-  </div>
-  <div>
-      <div class="kss-box">8</div>
-  </div>
-  <div>
-      <div class="kss-box">9</div>
-  </div>
-  <div>
-      <div class="kss-box">10</div>
-  </div>
-</div></div>
+</section></div>
 
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;grid has-cols-5 has-grid-gap-2&quot;&gt;
-  &lt;div class&#x3D;&quot;has-col-all&quot;&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;1&lt;/div&gt;
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;container has-my-6&quot;&gt;
+  &lt;div class&#x3D;&quot;row is-align-end&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-8&quot;&gt;
+      &lt;div class&#x3D;&quot;aspect-ratio-container is-4x3&quot;&gt;
+        &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+          &lt;img class&#x3D;&quot;media-cover&quot; srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
+            src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot; alt&#x3D;&quot;Alternative text&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-11 col-md-4 has-mt-neg-6 has-mt-md-0 has-ml-md-neg-7&quot;&gt;
+      &lt;div class&#x3D;&quot;has-bg-gray-0 has-p-3 has-p-md-6 has-pb-lg-7&quot;&gt;
+        &lt;h2 class&#x3D;&quot;is-h4 has-text-left&quot;&gt;Wear the rainbow&lt;/h2&gt;
+        &lt;p class&#x3D;&quot;has-font-weight-bold&quot;&gt;a summer by nike&lt;/p&gt;
+        &lt;p&gt;
+          Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc
+          mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        &lt;/p&gt;
+        &lt;div class&#x3D;&quot;has-text-right&quot;&gt;
+          &lt;a class&#x3D;&quot;has-font-weight-bold&quot; href&#x3D;&quot;#&quot;&gt;Discover more&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;2&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;3&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;4&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot; has-col-2&quot;&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;5&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;6&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;7&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;8&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;9&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-      &lt;div class&#x3D;&quot;kss-box&quot;&gt;10&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/section&gt;</code></pre>
                 </div>
               </div>
 
