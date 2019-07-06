@@ -2316,6 +2316,11 @@ body {
   .has-px-md-6 {
     padding-right: var(--spacer-6); } }
 
+@media only screen and (min-width: 900px) {
+  
+  .has-mt-md-neg-7 {
+    margin-top: calc(-1 * var(--spacer-7)); } }
+
 @media only screen and (min-width: 1200px) {
   .has-px-lg-5 {
     padding-left: var(--spacer-5); }
@@ -2439,6 +2444,28 @@ body {
 
 .btn-group .btn {
   width: 100%; }
+
+.btn-group-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto; }
+  @media only screen and (min-width: 900px) {
+    .btn-group-inline {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      overflow: unset; } }
+  .btn-group-inline.is-category-list > li {
+    margin-right: var(--spacer-2);
+    padding-right: var(--spacer-2);
+    border-right: 1px solid var(--color-gray-30); }
+    .btn-group-inline.is-category-list > li:nth-last-child(-n + 1) {
+      margin-right: 0;
+      padding-right: 0;
+      border-right: none; }
 
 .form-group {
   margin-bottom: var(--spacer-5); }
