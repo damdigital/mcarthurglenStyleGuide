@@ -1182,6 +1182,30 @@ dialog[open] {
       .brand .brand-text p:nth-last-child(-n + 1) {
         font-weight: bold; }
 
+.btn-play {
+  border: 0;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 0;
+  height: 15px;
+  border-color: transparent transparent transparent var(--color-gray-0);
+  -webkit-transition: 100ms all ease;
+  transition: 100ms all ease;
+  cursor: pointer;
+  padding: 0;
+  border-style: solid;
+  border-width: 7.5px 0 7.5px 15px; }
+  .btn-play:focus {
+    border-color: var(--color-gray-0);
+    border-width: 7.5px 0 7.5px 15px; }
+  .btn-play.is-playing {
+    border-style: double;
+    border-width: 0px 0 0px 15px; }
+    .btn-play.is-playing:focus {
+      border-color: var(--color-gray-0);
+      border-width: 0px 0 0px 15px; }
+
 button {
   border: none;
   background: transparent;
@@ -3030,22 +3054,53 @@ figure {
   width: 100%; }
 .carouselbannerblock {
   padding: 0; }
-.carousel-header-block .slide {
-  position: relative;
-  min-height: 70vh;
-  padding-bottom: var(--spacer-6); }
-  .carousel-header-block .slide:after {
-    content: "";
-    width: 100%;
-    height: 100%;
+.siema.carousel-header-block {
+  position: relative; }
+  .siema.carousel-header-block.siema.has-dots {
+    margin-bottom: 0; }
+  .siema.carousel-header-block .siema-pagination, .siema.carousel-header-block .siema-arrows, .siema.carousel-header-block .btn-play {
     position: absolute;
-    top: 0;
-    left: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); }
-  .carousel-header-block .slide .content {
+    bottom: var(--spacer-3);
+    right: 0; }
+    @media only screen and (min-width: 900px) {
+      .siema.carousel-header-block .siema-pagination, .siema.carousel-header-block .siema-arrows, .siema.carousel-header-block .btn-play {
+        bottom: calc(var(--spacer-3) + 75px); } }
+  .siema.carousel-header-block .btn-play {
+    right: calc(1rem + 68px);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px); }
+  .siema.carousel-header-block .siema-pagination {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: auto;
+    left: unset;
+    right: calc(2rem + 83px);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .siema.carousel-header-block .siema-arrows {
+    right: 1rem; }
+    .siema.carousel-header-block .siema-arrows button {
+      color: var(--color-gray-0); }
+  .siema.carousel-header-block .slide {
     position: relative;
-    z-index: 1; }
+    min-height: 70vh;
+    padding-bottom: var(--spacer-6); }
+    @media only screen and (min-width: 900px) {
+      .siema.carousel-header-block .slide {
+        padding-bottom: calc(var(--spacer-6) + 75px); } }
+    .siema.carousel-header-block .slide:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
+      background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); }
+    .siema.carousel-header-block .slide .content {
+      position: relative;
+      z-index: 1; }
 
 .siema {
   position: relative; }
