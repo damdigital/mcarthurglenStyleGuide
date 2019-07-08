@@ -1197,13 +1197,14 @@ dialog[open] {
   border-style: solid;
   border-width: 7.5px 0 7.5px 15px; }
   .btn-play:focus {
-    border-color: var(--color-gray-0);
+    border-color: transparent transparent transparent var(--color-gray-0) !important;
+    border-style: solid;
     border-width: 7.5px 0 7.5px 15px; }
   .btn-play.is-playing {
     border-style: double;
     border-width: 0px 0 0px 15px; }
     .btn-play.is-playing:focus {
-      border-color: var(--color-gray-0);
+      border-color: transparent transparent transparent var(--color-gray-0);
       border-width: 0px 0 0px 15px; }
 
 button {
@@ -1448,8 +1449,6 @@ a {
   background-position: center center; }
   .bg-cover.is-focus-center-top {
     background-position: center top; }
-  .bg-cover.is-focus-center-center {
-    background-position: center center; }
 
 .overlay {
   position: relative; }
@@ -2288,7 +2287,11 @@ body {
     padding-top: var(--spacer-6); }
   
   .has-pb-sm-6 {
-    padding-bottom: var(--spacer-6); } }
+    padding-bottom: var(--spacer-6); }
+  .has-mx-sm-6 {
+    margin-left: var(--spacer-6); }
+  .has-mx-sm-6 {
+    margin-right: var(--spacer-6); } }
 
 @media only screen and (min-width: 600px) {
   
@@ -3172,6 +3175,32 @@ figure {
   .siema.is-three-slide-carousel-offset .siema-arrows {
     top: -6%; }
     .siema.is-three-slide-carousel-offset .siema-arrows button {
+      color: var(--color-gray-0); }
+  .siema.is-four-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .aspect-ratio-content {
+    background-color: var(--color-gray-0); }
+    .siema.is-four-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .aspect-ratio-content img {
+      -webkit-transition: opacity .25s ease-in-out;
+      transition: opacity .25s ease-in-out;
+      opacity: 0.6; }
+    .siema.is-four-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .aspect-ratio-content .header-logo-text {
+      -webkit-transition: opacity .25s ease-in-out;
+      transition: opacity .25s ease-in-out;
+      opacity: 0; }
+  .siema.is-four-slide-carousel-offset .siema-slides-wrapper .slide.has-active-slide .aspect-ratio-container .aspect-ratio-content img {
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+    opacity: 1; }
+  .siema.is-four-slide-carousel-offset .siema-slides-wrapper .slide.has-active-slide .aspect-ratio-container .aspect-ratio-content .header-logo-text {
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+    opacity: 1; }
+  .siema.is-four-slide-carousel-offset .siema-slides-wrapper .slide.has-active-slide .aspect-ratio-container .width-restrict {
+    max-width: 60%; }
+  .siema.is-four-slide-carousel-offset .siema-slides-wrapper .slide .store-card {
+    pointer-events: none; }
+  .siema.is-four-slide-carousel-offset .siema-arrows {
+    top: -6%; }
+    .siema.is-four-slide-carousel-offset .siema-arrows button {
       color: var(--color-gray-0); }
 
 [data-a11y-dialog-native] > .dialog-overlay {
