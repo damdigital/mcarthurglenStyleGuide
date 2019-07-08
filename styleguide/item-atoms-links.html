@@ -917,91 +917,42 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-atoms-modifiers-flex-justify">
+          <header class="kss-section" id="kssref-atoms-links">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-atoms-modifiers-flex-justify">
-                  <h4 class="kss-h4">
-                    <span class="kss-section__ref">1.14.5.2</span> -
-                    <span class="kss-section__name">Justify content</span>
-                  </h4>
+                <a class="kss-section__permalink" href="#kssref-atoms-links">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">1.13</span> -
+                    <span class="kss-section__name">Links</span>
+                  </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>atoms/modifiers/_flex.scss</span>, line
-                  <span>101</span>
+                  <span>atoms/_links.scss</span>, line
+                  <span>27</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-atoms-modifiers-flex-justify.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-atoms-links.html" target="_blank">Open in new
                     window</a>
                 </div>
                  
-                <div class="kss-section__description"><p>Flex utilities helps to justify flex content.</p>
-<p><code>.is-justify-{breakpoint}-{alignment value}</code>, breakpoint is optional.</p>
-<p><strong>alignment value:</strong></p>
-<ul>
-<li>end</li>
-<li>start</li>
-<li>center</li>
-<li>between</li>
-<li>around</li>
-</ul>
-</div>
+                <div class="kss-section__description"><p>Links default styling, option to use <code>.has-no-hover</code></p>
+<div class="has-bg-gray-0 has-p-3">
+  <a href="#">
+    <h2 class="is-h4 has-text-left">Wear the rainbow</h2>
+    <p class="has-font-weight-bold">a summer by nike</p>
+    <p class="is-d-none is-d-md-block has-no-hover">
+      Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi
+      elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+    </p>
+    <div class="has-text-right">
+      <p class="has-font-weight-bold">Discover more</p>
+    </div>
+  </a>
+</div></div>
                                </div>
 
-              <div class="kss-section__example-container">
-                <div class="kss-section__examples">
-                  <p class="kss-modifiers__heading">Examples:</p>
-
-                  <code class="kss-modifiers__name">Default styling</code> 
-
-                  <div class="kss-modifiers__example"><div class="is-d-flex [modifier]">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.[modifier]</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.[modifier]</div>
-</div></div>
-
-                  <code class="kss-modifiers__name">.is-justify-end</code>
-                  <p class="kss-modifiers__description">is-justify-end</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-end">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-end</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-end</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-start</code>
-                  <p class="kss-modifiers__description">is-justify-start</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-start">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-start</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-start</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-center</code>
-                  <p class="kss-modifiers__description">is-justify-center</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-center">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-center</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-center</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-between</code>
-                  <p class="kss-modifiers__description">is-justify-between</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-between">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-between</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-between</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-around</code>
-                  <p class="kss-modifiers__description">is-justify-around</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-around">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-around</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-around</div>
-</div></div>
-
-                </div>
-
-                <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;is-d-flex [modifier]&quot;&gt;
-  &lt;div class&#x3D;&quot;kss-box&quot; style&#x3D;&quot;flex: 0 0 60px&quot;&gt;Parent .is-d-flex.[modifier]&lt;/div&gt;
-  &lt;div class&#x3D;&quot;kss-box&quot; style&#x3D;&quot;flex: 0 0 60px&quot;&gt;Parent .is-d-flex.[modifier]&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-              </div>
-
-               
+ 
           </header>
   
         </section>
