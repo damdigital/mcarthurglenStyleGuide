@@ -104,6 +104,7 @@ html {
 article,
 dialog,
 figcaption,
+figure,
 footer,
 header,
 main,
@@ -210,6 +211,9 @@ a:not([href]):not([tabindex]):focus {
 code {
   font-family: monospace, monospace;
   font-size: 1em; }
+
+figure {
+  margin: 0 0 1rem; }
 
 img {
   vertical-align: middle;
@@ -2579,6 +2583,58 @@ body {
         .dropdown.is-country-picker .dropdown-panel > ul > li a p {
           margin: 0;
           padding: 0; }
+
+figure {
+  margin: 0; }
+  figure figcaption.has-absolute-figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 60%; }
+  figure figcaption.has-hover-figcaption .hover-figcaption-content {
+    overflow: hidden;
+    max-height: 0px;
+    -webkit-transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out; }
+  figure figcaption.has-hover-figcaption:hover .hover-figcaption-content {
+    max-height: 100px; }
+  figure figcaption.has-hover-figcaption:hover .hover-figcaption-btn::after {
+    -webkit-transform: translateY(-50%) rotate(0);
+            transform: translateY(-50%) rotate(0); }
+  figure figcaption.has-hover-figcaption .hover-figcaption-btn {
+    width: 100%;
+    position: relative;
+    padding-right: var(--spacer-5); }
+    figure figcaption.has-hover-figcaption .hover-figcaption-btn::after {
+      content: "\E93C";
+      font-family: var(--font-family-icon);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translateY(-50%) rotate(45deg);
+              transform: translateY(-50%) rotate(45deg);
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      transition: -webkit-transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+      border: 1px solid var(--color-gray-100);
+      border-radius: 50%;
+      width: 1.25rem;
+      height: 1.25rem;
+      font-size: 0.75rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    figure figcaption.has-hover-figcaption .hover-figcaption-btn:focus::after {
+      -webkit-transform: translateY(-50%) rotate(0);
+              transform: translateY(-50%) rotate(0); }
+    figure figcaption.has-hover-figcaption .hover-figcaption-btn:focus ~ .hover-figcaption-content {
+      max-height: 100px; }
 
 .nav {
   display: none; }

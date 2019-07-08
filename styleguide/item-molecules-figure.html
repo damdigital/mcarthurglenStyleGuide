@@ -935,25 +935,28 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-atoms-typography-titles">
+          <header class="kss-section" id="kssref-molecules-figure">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-atoms-typography-titles">
-                  <h3 class="kss-h3">
-                    <span class="kss-section__ref">1.16.5</span> -
-                    <span class="kss-section__name">Titles</span>
-                  </h3>
+                <a class="kss-section__permalink" href="#kssref-molecules-figure">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">2.4</span> -
+                    <span class="kss-section__name">Figure</span>
+                  </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>atoms/typography/_titles.scss</span>, line
-                  <span>72</span>
+                  <span>molecules/_figure.scss</span>, line
+                  <span>70</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-atoms-typography-titles.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-molecules-figure.html" target="_blank">Open in new
                     window</a>
                 </div>
-                                </div>
+                 
+                <div class="kss-section__description"><p>Figure with hover figcaption</p>
+</div>
+                               </div>
 
               <div class="kss-section__example-container">
                 <div class="kss-section__examples">
@@ -961,35 +964,55 @@
 
 
 
-                  <div class="kss-modifiers__example"><h1>lorem ipsum heading 1</h1>
-<h2>lorem ipsum heading 2</h2>
-<h3>lorem ipsum heading 3</h3>
-<h4>lorem ipsum heading 4</h4>
-<h5>lorem ipsum heading 5</h5>
-<h6>lorem ipsum heading 6</h6>
-<p class="is-h1">lorem ipsum heading 1</p>
-<p class="is-h2">lorem ipsum heading 2</p>
-<p class="is-h3">lorem ipsum heading 3</p>
-<p class="is-h4">lorem ipsum heading 4</p>
-<p class="is-h5">lorem ipsum heading 5</p>
-<p class="is-h6">lorem ipsum heading 6</p></div>
+                  <div class="kss-modifiers__example"><div class="aspect-ratio-container is-1x1">
+  <figure class="aspect-ratio-content">
+    <img class="media-cover is-lazy" data-srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
+                             https://source.unsplash.com/random?preset=contain-sm 570w,
+                             https://source.unsplash.com/random?preset=contain-md 860w,
+                             https://source.unsplash.com/random?preset=contain-lg 1150w,
+                             https://source.unsplash.com/random?preset=contain-xl 1400w"
+      src="https://source.unsplash.com/random?preset=contain-xl" alt="Alternative text">
+    <figcaption class="has-p-3 has-text-left has-bg-gray-0 has-p-2 has-absolute-figcaption has-hover-figcaption">
+      <button class="has-p-0 hover-figcaption-btn">
+        <h3 class="is-h5 has-m-0">Lindy Trainer</h3>
+      </button>
+      <div class="hover-figcaption-content">
+        <p>
+          <small>
+            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod.
+          </small>
+        </p>
+      </div>
+    </figcaption>
+  </figure>
+</div></div>
 
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;h1&gt;lorem ipsum heading 1&lt;/h1&gt;
-&lt;h2&gt;lorem ipsum heading 2&lt;/h2&gt;
-&lt;h3&gt;lorem ipsum heading 3&lt;/h3&gt;
-&lt;h4&gt;lorem ipsum heading 4&lt;/h4&gt;
-&lt;h5&gt;lorem ipsum heading 5&lt;/h5&gt;
-&lt;h6&gt;lorem ipsum heading 6&lt;/h6&gt;
-&lt;p class&#x3D;&quot;is-h1&quot;&gt;lorem ipsum heading 1&lt;/p&gt;
-&lt;p class&#x3D;&quot;is-h2&quot;&gt;lorem ipsum heading 2&lt;/p&gt;
-&lt;p class&#x3D;&quot;is-h3&quot;&gt;lorem ipsum heading 3&lt;/p&gt;
-&lt;p class&#x3D;&quot;is-h4&quot;&gt;lorem ipsum heading 4&lt;/p&gt;
-&lt;p class&#x3D;&quot;is-h5&quot;&gt;lorem ipsum heading 5&lt;/p&gt;
-&lt;p class&#x3D;&quot;is-h6&quot;&gt;lorem ipsum heading 6&lt;/p&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+  &lt;figure class&#x3D;&quot;aspect-ratio-content&quot;&gt;
+    &lt;img class&#x3D;&quot;media-cover is-lazy&quot; data-srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
+                             https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
+      src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot; alt&#x3D;&quot;Alternative text&quot;&gt;
+    &lt;figcaption class&#x3D;&quot;has-p-3 has-text-left has-bg-gray-0 has-p-2 has-absolute-figcaption has-hover-figcaption&quot;&gt;
+      &lt;button class&#x3D;&quot;has-p-0 hover-figcaption-btn&quot;&gt;
+        &lt;h3 class&#x3D;&quot;is-h5 has-m-0&quot;&gt;Lindy Trainer&lt;/h3&gt;
+      &lt;/button&gt;
+      &lt;div class&#x3D;&quot;hover-figcaption-content&quot;&gt;
+        &lt;p&gt;
+          &lt;small&gt;
+            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod.
+          &lt;/small&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;</code></pre>
                 </div>
               </div>
 
