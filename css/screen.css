@@ -1604,6 +1604,14 @@ details[open] .mag-font_down_chevron {
     .header-sub-title {
       font-size: var(--font-size-paragraph); } }
 
+.back-button {
+  font-size: calc(var(--font-size-paragraph) - 2px); }
+  .back-button i {
+    font-size: 0.75rem;
+    position: relative;
+    top: -2px;
+    margin-right: var(--spacer-1); }
+
 .screen-reader-only {
   position: absolute;
   width: 1px;
@@ -2095,6 +2103,7 @@ body {
   padding-top: var(--spacer-2); }
 
 .has-py-2,
+.has-pb-2,
 .has-p-2 {
   padding-bottom: var(--spacer-2); }
 
