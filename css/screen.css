@@ -3120,7 +3120,7 @@ figure {
     @media only screen and (min-width: 900px) {
       .siema.carousel-header-block .btn-play {
         display: block;
-        right: 7.25rem;
+        right: 7.5rem;
         bottom: calc(var(--spacer-3) + 77px); } }
   .siema.carousel-header-block.has-dots {
     margin-bottom: 0; }
