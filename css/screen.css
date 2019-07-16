@@ -1778,7 +1778,8 @@ h5,
   font-size: var(--font-size-5); }
 
 h6,
-.is-h6 {
+.is-h6,
+.has-font-size-6 {
   font-size: var(--font-size-6); }
 
 h1,
@@ -2092,7 +2093,8 @@ body {
 .has-my-1 {
   margin-top: var(--spacer-1); }
 
-.has-my-1 {
+.has-my-1,
+.has-mb-1 {
   margin-bottom: var(--spacer-1); }
 
 .has-mx-1,
@@ -2439,6 +2441,20 @@ body {
   
   .has-ml-md-neg-7 {
     margin-left: calc(-1 * var(--spacer-7)); } }
+
+@media only screen and (min-width: 1200px) {
+  
+  .has-p-lg-3 {
+    padding-top: var(--spacer-3); }
+  
+  .has-p-lg-3 {
+    padding-bottom: var(--spacer-3); }
+  
+  .has-p-lg-3 {
+    padding-left: var(--spacer-3); }
+  
+  .has-p-lg-3 {
+    padding-right: var(--spacer-3); } }
 
 @media only screen and (min-width: 1200px) {
   .has-px-lg-5 {
@@ -2901,19 +2917,19 @@ figure {
     .header-details {
       margin: 0; } }
 
-.site-footer-social {
+.social-icons {
   width: 100%;
   list-style: none;
   padding: 0;
   margin: 0; }
   @media only screen and (min-width: 900px) {
-    .site-footer-social {
+    .social-icons {
       margin-bottom: var(--spacer-5); } }
-  .site-footer-social li {
+  .social-icons li {
     margin-right: var(--spacer-3); }
-    .site-footer-social li:last-child {
+    .social-icons li:last-child {
       margin-right: 0; }
-    .site-footer-social li a {
+    .social-icons li a {
       color: var(--color-gray-100);
       height: 48px;
       width: 48px;
@@ -2932,21 +2948,21 @@ figure {
       -webkit-transition: background-color 0.6s ease-in-out;
       transition: background-color 0.6s ease-in-out; }
       @media only screen and (min-width: 600px) {
-        .site-footer-social li a {
+        .social-icons li a {
           height: 28px;
           width: 28px; } }
-      .site-footer-social li a:hover, .site-footer-social li a:focus {
+      .social-icons li a:hover, .social-icons li a:focus {
         text-decoration: none;
         background-color: var(--color-gray-40); }
-        .site-footer-social li a:hover .mag-font, .site-footer-social li a:focus .mag-font {
+        .social-icons li a:hover .mag-font, .social-icons li a:focus .mag-font {
           color: var(--color-gray-0); }
-    .site-footer-social li .mag-font {
+    .social-icons li .mag-font {
       font-size: 1.25rem;
       color: var(--color-gray-100);
       -webkit-transition: color 0.6s ease-in-out;
       transition: color 0.6s ease-in-out; }
       @media only screen and (min-width: 600px) {
-        .site-footer-social li .mag-font {
+        .social-icons li .mag-font {
           font-size: var(--font-size-paragraph); } }
 
 .site-footer-nav {
@@ -3158,10 +3174,11 @@ figure {
         font-size: 1.25rem; }
   .siema.carousel-header-block .slide {
     position: relative;
-    min-height: 70vh;
+    min-height: 68vh;
     padding-bottom: var(--spacer-6); }
     @media only screen and (min-width: 900px) {
       .siema.carousel-header-block .slide {
+        min-height: 70vh;
         padding-bottom: calc(var(--spacer-6) + 75px); } }
     .siema.carousel-header-block .slide:after {
       content: "";
@@ -3225,21 +3242,30 @@ figure {
       -webkit-transform: translateY(-100%);
               transform: translateY(-100%);
       padding-bottom: var(--spacer-2); }
-  .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .aspect-ratio-content {
-    background-color: var(--color-gray-0); }
-    .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .aspect-ratio-content img {
+  .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container {
+    z-index: 0; }
+    .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .aspect-ratio-content {
+      background-color: var(--color-gray-0);
+      z-index: 0; }
+      .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .aspect-ratio-content img {
+        -webkit-transition: opacity .25s ease-in-out;
+        transition: opacity .25s ease-in-out;
+        opacity: 0.6; }
+    .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .carousel-logo-text {
+      z-index: 1;
       -webkit-transition: opacity .25s ease-in-out;
       transition: opacity .25s ease-in-out;
-      opacity: 0.6; }
-    .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .aspect-ratio-content .header-logo-text {
-      -webkit-transition: opacity .25s ease-in-out;
-      transition: opacity .25s ease-in-out;
-      opacity: 0; }
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      width: 85%; }
+      .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .carousel-logo-text .is-cta {
+        font-size: 0.95rem; }
   .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide.has-active-slide .aspect-ratio-container .aspect-ratio-content img {
     -webkit-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out;
     opacity: 1; }
-  .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide.has-active-slide .aspect-ratio-container .aspect-ratio-content .header-logo-text {
+  .siema.is-three-slide-carousel-offset .siema-slides-wrapper .slide.has-active-slide .aspect-ratio-container .aspect-ratio-content .carousel-logo-text {
     -webkit-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out;
     opacity: 1; }
@@ -4255,6 +4281,20 @@ p.today {
 
 .product-carousel .siema.has-arrow-top .siema-arrows {
   right: 0; }
+
+.product-carousel .slide-description p {
+  line-height: 1.1; }
+
+.product-carousel .social-icons {
+  margin: var(--spacer-3) 0 var(--spacer-2); }
+  .product-carousel .social-icons li a {
+    background-color: var(--color-primary-base);
+    height: 2rem;
+    width: 2rem; }
+    .product-carousel .social-icons li a:hover, .product-carousel .social-icons li a:focus {
+      background-color: var(--color-gray-40); }
+    .product-carousel .social-icons li a .mag-font {
+      color: var(--color-gray-0); }
 
 .page-container {
   position: relative; }
