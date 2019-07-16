@@ -1093,6 +1093,11 @@ dialog[open] {
     .container:not(.is-fluid).is-narrow {
       width: 100%;
       max-width: var(--container-size-md); }
+      .container:not(.is-fluid).is-narrow.is-carousel-container {
+        max-width: var(--container-size-sm); }
+        @media only screen and (min-width: 900px) {
+          .container:not(.is-fluid).is-narrow.is-carousel-container {
+            max-width: var(--container-size-md); } }
     .container:not(.is-fluid).is-narrow-md {
       width: 100%;
       max-width: var(--container-size-md); }
@@ -1412,10 +1417,8 @@ object:focus,
 embed:focus,
 [contenteditable]:focus,
 [tabindex]:not([tabindex^="-"]):focus {
-  outline-color: var(--color-primary-base);
-  border-color: var(--color-primary-base);
-  -webkit-box-shadow: 0 0 5px var(--color-primary-base);
-          box-shadow: 0 0 5px var(--color-primary-base); }
+  outline: 1px dotted;
+  border-color: var(--color-primary-base); }
 
 .img-fluid {
   height: auto;
@@ -1678,10 +1681,8 @@ input[type="checkbox"] {
       .custom-input input[type="checkbox"]:checked ~ .custom-input-indicator:after, .custom-input input[type="radio"]:checked ~ .custom-input-indicator:after {
         display: block; }
   .custom-input:focus .custom-input-indicator {
-    outline-color: var(--color-primary-base);
-    border-color: var(--color-primary-base);
-    -webkit-box-shadow: 0 0 5px var(--color-primary-base);
-            box-shadow: 0 0 5px var(--color-primary-base); }
+    outline: 1px dotted;
+    border-color: var(--color-primary-base); }
   .custom-input:hover .custom-input-indicator {
     background-color: var(--color-gray-20);
     border: 1px solid var(--color-gray-50); }
@@ -1917,6 +1918,7 @@ body {
   color: var(--color-gray-100); }
 
 
+.has-bt,
 .has-b {
   border-top: 1px solid var(--color-gray-30); }
 
@@ -3251,7 +3253,7 @@ figure {
   .siema.is-four-slide-carousel-offset .siema-slides-wrapper {
     padding-bottom: 1px; }
     @media only screen and (min-width: 900px) {
-      .siema.is-four-slide-carousel-offset .siema-slides-wrapper {
+      .siema.is-four-slide-carousel-offset .siema-slides-wrapper.carousel-item-has-border-r {
         border-right: 1px solid var(--color-gray-30); } }
     .siema.is-four-slide-carousel-offset .siema-slides-wrapper .slide .aspect-ratio-container .aspect-ratio-content {
       background-color: var(--color-gray-0); }
@@ -4246,6 +4248,14 @@ p.today {
 
 .transportation-block-wrapper .transportoptionblock:nth-child(odd) .journey-block {
   background-color: #f4f6f6; }
+.product-carousel .siema .siema-arrows {
+  padding-bottom: 0.9375rem; }
+  .product-carousel .siema .siema-arrows button {
+    color: var(--color-gray-0); }
+
+.product-carousel .siema.has-arrow-top .siema-arrows {
+  right: 0; }
+
 .page-container {
   position: relative; }
 
