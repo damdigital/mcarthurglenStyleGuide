@@ -1493,7 +1493,10 @@ hr {
   margin-top: 0;
   margin-bottom: 0;
   height: 0;
+  border: none;
   border-top: 1px solid var(--color-gray-30); }
+  hr.is-gray-0 {
+    border-top-color: var(--color-gray-0); }
   hr.is-gray-100 {
     border-top-color: var(--color-gray-100); }
   hr.is-sm {
@@ -1936,6 +1939,7 @@ body {
   border-left: 1px solid var(--color-gray-30); }
 
 
+.has-br,
 .has-b {
   border-right: 1px solid var(--color-gray-30); }
 
@@ -1944,8 +1948,19 @@ body {
   .has-br-md {
     border-right: 1px solid var(--color-gray-30); }
   
-  .has-bb-md-none {
-    border-bottom: none; } }
+  .has-b-md-none {
+    border-top: none; }
+  
+  .has-bb-md-none,
+  .has-b-md-none {
+    border-bottom: none; }
+  
+  .has-b-md-none {
+    border-left: none; }
+  
+  .has-br-md-none,
+  .has-b-md-none {
+    border-right: none; } }
 
 .has-box-shadow {
   -webkit-box-shadow: -8px 16px 15px rgba(0, 0, 0, 0.13);
@@ -2178,7 +2193,8 @@ body {
 .has-mr-3 {
   margin-right: var(--spacer-3); }
 
-.has-py-4 {
+.has-py-4,
+.has-pt-4 {
   padding-top: var(--spacer-4); }
 
 .has-py-4,
