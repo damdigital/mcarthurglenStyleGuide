@@ -1436,9 +1436,12 @@ a {
   color: var(--color-text-base);
   -webkit-transition: color 0.6s ease-in-out;
   transition: color 0.6s ease-in-out; }
+  a.has-text-gray-0:hover, a.has-text-gray-0:focus {
+    text-decoration: none;
+    color: var(--color-gray-40); }
   a:hover, a:focus {
     text-decoration: none;
-    color: var(--color-secondary-dark);
+    color: var(--color-gray-30);
     /**:not(.has-no-hover) {
             text-decoration: none;
             color: color(secondary, dark);
@@ -2090,7 +2093,8 @@ body {
 .has-pr-1 {
   padding-right: var(--spacer-1); }
 
-.has-my-1 {
+.has-my-1,
+.has-mt-1 {
   margin-top: var(--spacer-1); }
 
 .has-my-1,
@@ -2314,7 +2318,10 @@ body {
   .has-px-sm-3 {
     padding-left: var(--spacer-3); }
   .has-px-sm-3 {
-    padding-right: var(--spacer-3); } }
+    padding-right: var(--spacer-3); }
+  
+  .has-mb-sm-3 {
+    margin-bottom: var(--spacer-3); } }
 
 @media only screen and (min-width: 600px) {
   
@@ -2586,6 +2593,12 @@ body {
 .has-text-gray-100 * {
   color: var(--color-gray-100); }
 
+.no-gutter-right-mobile {
+  padding-right: 0 !important; }
+  @media only screen and (min-width: 600px) {
+    .no-gutter-right-mobile {
+      padding-right: 15px !important; } }
+
 .btn-group .btn {
   width: 100%; }
 
@@ -2696,6 +2709,11 @@ figure {
     width: 100%;
     position: relative;
     padding-right: var(--spacer-5); }
+    figure figcaption.has-hover-figcaption .hover-figcaption-btn .is-h6 {
+      font-size: 0.8rem; }
+      @media only screen and (min-width: 600px) {
+        figure figcaption.has-hover-figcaption .hover-figcaption-btn .is-h6 {
+          font-size: 1rem; } }
     figure figcaption.has-hover-figcaption .hover-figcaption-btn::after {
       content: "\E93C";
       font-family: var(--font-family-icon);
@@ -3174,7 +3192,7 @@ figure {
         font-size: 1.25rem; }
   .siema.carousel-header-block .slide {
     position: relative;
-    min-height: 68vh;
+    min-height: 62vh;
     padding-bottom: var(--spacer-6); }
     @media only screen and (min-width: 900px) {
       .siema.carousel-header-block .slide {
@@ -4298,8 +4316,8 @@ p.today {
 .offers-listing-block .offer-listing-card {
   margin-bottom: 1rem; }
   .offers-listing-block .offer-listing-card .product-details .is-cta {
-    -webkit-transition: color .6s ease-in-out;
-    transition: color .6s ease-in-out; }
+    -webkit-transition: color 0.6s ease-in-out;
+    transition: color 0.6s ease-in-out; }
     .offers-listing-block .offer-listing-card .product-details .is-cta:hover, .offers-listing-block .offer-listing-card .product-details .is-cta:focus, .offers-listing-block .offer-listing-card .product-details .is-cta:active {
       color: var(--color-gray-40); }
   .offers-listing-block .offer-listing-card .offer-listing-overlay {
