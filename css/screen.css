@@ -4295,7 +4295,40 @@ p.today {
       background-color: var(--color-gray-40); }
     .product-carousel .social-icons li a .mag-font {
       color: var(--color-gray-0); }
-
+.offers-listing-block .offer-listing-card {
+  margin-bottom: 1rem; }
+  .offers-listing-block .offer-listing-card .product-details .is-cta {
+    -webkit-transition: color .6s ease-in-out;
+    transition: color .6s ease-in-out; }
+    .offers-listing-block .offer-listing-card .product-details .is-cta:hover, .offers-listing-block .offer-listing-card .product-details .is-cta:focus, .offers-listing-block .offer-listing-card .product-details .is-cta:active {
+      color: var(--color-gray-40); }
+  .offers-listing-block .offer-listing-card .offer-listing-overlay {
+    position: relative;
+    overflow: hidden; }
+    .offers-listing-block .offer-listing-card .offer-listing-overlay .aspect-ratio-content .media-cover {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: -webkit-transform .3s ease-in-out;
+      transition: -webkit-transform .3s ease-in-out;
+      transition: transform .3s ease-in-out;
+      transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
+    .offers-listing-block .offer-listing-card .offer-listing-overlay .aspect-ratio-content:hover .media-cover, .offers-listing-block .offer-listing-card .offer-listing-overlay .aspect-ratio-content:focus .media-cover, .offers-listing-block .offer-listing-card .offer-listing-overlay .aspect-ratio-content:active .media-cover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
+    .offers-listing-block .offer-listing-card .offer-listing-overlay .aspect-ratio-content:hover::after, .offers-listing-block .offer-listing-card .offer-listing-overlay .aspect-ratio-content:focus::after, .offers-listing-block .offer-listing-card .offer-listing-overlay .aspect-ratio-content:active::after {
+      background-color: rgba(255, 255, 255, 0.3); }
+    .offers-listing-block .offer-listing-card .offer-listing-overlay .aspect-ratio-content::after {
+      content: "";
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      -webkit-transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out; }
 .page-container {
   position: relative; }
 
