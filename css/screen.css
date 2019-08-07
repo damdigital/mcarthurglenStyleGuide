@@ -142,7 +142,7 @@ html {
     padding-right: 0;
     padding-left: 0; }
 
-.row > .col-1, .row > .col-3, .row > .col-4, .row > .col-5, .row > .col-6, .row > .col-8, .row > .col-9, .row > .col-10, .row > .col-11, .row > .col-12, .row > .col, .row > .col-xs-10, .row > .col-xs-12, .row > .col-xs-lg-6, .row > .col-sm-1, .row > .col-sm-3, .row > .col-sm-4, .row > .col-sm-5, .row > .col-sm-6, .row > .col-sm-7, .row > .col-sm-8, .row > .col-sm-9, .row > .col-sm-10, .row > .col-sm-11, .row > .col-sm-12, .row > .col-sm, .row > .col-md-2, .row > .col-md-3, .row > .col-md-4, .row > .col-md-5, .row > .col-md-6, .row > .col-md-7, .row > .col-md-8, .row > .col-md-10, .row > .col-md-12, .row > .col-md, .row > .col-lg-2, .row > .col-lg-3, .row > .col-lg-4, .row > .col-lg-5, .row > .col-lg-6, .row > .col-lg-7, .row > .col-lg-9, .row > .col-lg-10, .row > .col-lg-12, .row > .col-xl-6 {
+.row > .col-1, .row > .col-3, .row > .col-4, .row > .col-5, .row > .col-6, .row > .col-8, .row > .col-9, .row > .col-10, .row > .col-11, .row > .col-12, .row > .col, .row > .col-xs-10, .row > .col-xs-12, .row > .col-xs-lg-6, .row > .col-sm-1, .row > .col-sm-3, .row > .col-sm-4, .row > .col-sm-5, .row > .col-sm-6, .row > .col-sm-7, .row > .col-sm-8, .row > .col-sm-9, .row > .col-sm-10, .row > .col-sm-11, .row > .col-sm-12, .row > .col-sm, .row > .col-md-2, .row > .col-md-3, .row > .col-md-4, .row > .col-md-5, .row > .col-md-6, .row > .col-md-7, .row > .col-md-8, .row > .col-md-10, .row > .col-md-11, .row > .col-md-12, .row > .col-md, .row > .col-lg-2, .row > .col-lg-3, .row > .col-lg-4, .row > .col-lg-5, .row > .col-lg-6, .row > .col-lg-7, .row > .col-lg-9, .row > .col-lg-10, .row > .col-lg-12, .row > .col-xl-6 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -353,6 +353,11 @@ html {
         -ms-flex: 0 0 83.33333%;
             flex: 0 0 83.33333%;
     max-width: 83.33333%; }
+  .row > .col-md-11 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.66667%;
+            flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
   .row > .col-md-12 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -2194,11 +2199,11 @@ body {
 .has-p-2 {
   padding-right: var(--spacer-2); }
 
-
+.has-my-2,
 .has-mt-2 {
   margin-top: var(--spacer-2); }
 
-
+.has-my-2,
 .has-mb-2 {
   margin-bottom: var(--spacer-2); }
 
@@ -2434,7 +2439,10 @@ body {
     padding-top: var(--spacer-6); }
   
   .has-pb-sm-6 {
-    padding-bottom: var(--spacer-6); } }
+    padding-bottom: var(--spacer-6); }
+  
+  .has-mb-sm-6 {
+    margin-bottom: var(--spacer-6); } }
 
 @media only screen and (min-width: 600px) {
   
@@ -2650,6 +2658,9 @@ body {
 .has-text-uppercase,
 .has-text-uppercase * {
   text-transform: uppercase; }
+
+.has-text-transform-none {
+  text-transform: none; }
 
 .has-text-underline {
   text-decoration: underline; }
@@ -4951,6 +4962,32 @@ p.today {
     .store-guide-block .mappedin-wrapper {
       height: calc(70vh); } }
 
+.text-header-block .header-with-img-block .header-image {
+  min-height: 200px; }
+  @media only screen and (min-width: 600px) {
+    .text-header-block .header-with-img-block .header-image {
+      min-height: 300px; } }
+
+.text-header-block .is-text-header-block-title {
+  font-size: 1.125rem;
+  letter-spacing: 0.125rem; }
+  @media only screen and (min-width: 600px) {
+    .text-header-block .is-text-header-block-title {
+      font-size: 1.25rem;
+      letter-spacing: 0.1875rem; } }
+.newsletter-signup-form {
+  margin: var(--spacer-10) 0; }
+  .newsletter-signup-form .section-header h2 {
+    font-size: var(--font-size-4);
+    font-weight: normal;
+    text-align: left; }
+  .newsletter-signup-form .form-section-header,
+  .newsletter-signup-form .form-section-under-header {
+    display: none; }
+  .newsletter-signup-form .form-group {
+    max-width: 50%; }
+    .newsletter-signup-form .form-group label {
+      font-weight: bold; }
 .page-container {
   position: relative; }
 
