@@ -1319,209 +1319,669 @@
 
 
 
-                  <div class="kss-modifiers__example"><div class="card-filtering-container">
-  <div class="container">
-    <div class="row">
-        <ul class="col-6 filter-group list-unstyled" data-filter-group="filter">
-          <li class="filter-input">
-            <label class="custom-input">
-              <input type="checkbox" name="" value=".filter1">
-              <span class="custom-input-indicator"></span>filter1
-            </label>
-          </li>
-          <li class="filter-input">
-            <label class="custom-input">
-              <input type="checkbox" name="" value=".filter1">
-              <span class="custom-input-indicator"></span>filter2
-            </label>
-          </li>
-          <li class="filter-input">
-            <label class="custom-input">
-              <input type="checkbox" name="" value=".filter1">
-              <span class="custom-input-indicator"></span>filter3
-            </label>
-          </li>
-        </ul>
-        <ul class="col-6 filter-group list-unstyled" data-filter-group="filter">
-          <li class="filter-input">
-            <label class="custom-input">
-              <input type="checkbox" name="" value=".filterA">
-              <span class="custom-input-indicator"></span>filterA
-            </label>
-          </li>
-          <li class="filter-input">
-            <label class="custom-input">
-              <input type="checkbox" name="" value=".filterB">
-              <span class="custom-input-indicator"></span>filterB
-            </label>
-          </li>
-          <li class="filter-input">
-            <label class="custom-input">
-              <input type="checkbox" name="" value=".filterC">
-              <span class="custom-input-indicator"></span>filterC
-            </label>
-          </li>
-        </ul>
+                  <div class="kss-modifiers__example"><section class="filters-section" style="margin-top:0;">
+    <div class="filters-wrapper">
+        <div class="filters-container container is-narrow">
+            <div class="filters has-pb-sm-0 has-py-md-3 has-px-4">
+                <div class="row is-d-md-none btn-group filters-mobile has-pt-5">
+                    <div class="col-6">
+                        <button
+                            class="btn is-primary is-outlined is-contrast dialog-cta has-p-2 has-text-left is-d-flex"
+                            data-target-id="filter-mobile-slider"
+                        >
+                            <i class="mag-font mag-font_refine" aria-hidden="true"></i>
+                            Filter
+                            <div class="filter-count-wrapper is-d-none">
+                                <span class="filter-count-text"></span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button
+                            class="btn is-primary is-outlined is-contrast dialog-cta has-p-2 has-text-left"
+                            data-target-id="search-mobile-slider"
+                        >
+                            <i class="mag-font mag-font_search2" aria-hidden="true"></i> Search for..
+                        </button>
+                    </div>
+                </div>
+                <div class="row is-align-end is-justify-center is-d-none is-d-md-flex">
+                    <div class="col-12 col-sm-4 has-mb-sm-2">
+                        <div class="dropdown">
+                            <button
+                                class="dropdown-cta has-chevron has-my-1 is-d-block"
+                                type="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                View by category
+                            </button>
+                            <div class="dropdown-panel is-full has-p-3 filter-group" aria-hidden="true" inert="">
+                                <div class="dropdown-panel-content">
+                                    <ul class="list-unstyled" data-filter-group="categories">
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-328" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Men
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-326" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Women
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-329" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Children
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-330" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Home
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-331" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Dogs Welcome
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row no-gutters dropdown-panel-ctas has-mt-2">
+                                    <div class="col-6">
+                                        <button
+                                            class="btn is-primary is-outlined filter-group-clear has-py-2"
+                                            type="reset"
+                                            tabindex="-1"
+                                        >
+                                            Clear all
+                                        </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn is-primary dropdown-close-cta has-py-2" tabindex="-1">
+                                            Apply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-d-none is-d-sm-block col-sm-4 has-mb-2">
+                        <div class="dropdown">
+                            <button
+                                class="dropdown-cta has-chevron has-my-1 is-d-block"
+                                type="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                View by products
+                            </button>
+                            <div
+                                class="dropdown-panel is-full is-right has-p-3 filter-group"
+                                inert=""
+                                aria-hidden="true"
+                            >
+                                <div class="dropdown-panel-content">
+                                    <ul class="list-unstyled" data-filter-group="product">
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-70" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Homeware
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-168" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Eyewear
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-184" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Services
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-242" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Toys
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-92" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Clothing
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-157" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Jewellery &amp; Watches
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-93" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Lingerie
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-94" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Swimwear &amp; beachwear
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-95" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Footwear
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-96" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Beauty
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-97" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Technology
+                                            </label>
+                                        </li>
+                                        <li class="filter-input">
+                                            <label class="custom-input">
+                                                <input type="checkbox" name="" value=".filter-52" tabindex="-1" />
+                                                <span class="custom-input-indicator"></span>Accessories
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row no-gutters dropdown-panel-ctas has-mt-2">
+                                    <div class="col-6">
+                                        <button
+                                            class="btn is-primary is-outlined filter-group-clear has-py-2"
+                                            type="reset"
+                                            tabindex="-1"
+                                        >
+                                            Clear all
+                                        </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn is-primary dropdown-close-cta has-py-2" tabindex="-1">
+                                            Apply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 has-mb-2">
+                        <form>
+                            <div class="form-group">
+                                <input
+                                    id="store-search"
+                                    type="text"
+                                    class="form-control filter-text-search"
+                                    name="q"
+                                    placeholder="Search for.."
+                                    aria-label="Search for.."
+                                />
+                                <button type="submit" aria-label="Search stores">
+                                    <i class="mag-font_search2" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="row card-filtering-grid">
-    <div class="col-xs-lg-6 col-sm-3 element-item filter1">
-      <p>filter1</p>
+    <div class="has-bg-primary has-pt-6 has-pb-3 has-py-md-0">
+        <div class="smooth-anchor-scroll filter-alphabetical is-d-none is-d-sm-flex is-justify-center has-pt-3">
+            <ul class="list-inline" id="data-alpha">
+                <li class="disabled" data-was-disabled="True" data-alpha="-1">
+                    <a href="#-1" class="anchor-link alpha-all">All</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="A">
+                    <a href="#a" class="anchor-link ">A</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="B">
+                    <a href="#b" class="anchor-link ">B</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="C">
+                    <a href="#c" class="anchor-link ">C</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="D">
+                    <a href="#d" class="anchor-link ">D</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="E">
+                    <a href="#e" class="anchor-link ">E</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="F">
+                    <a href="#f" class="anchor-link ">F</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="G">
+                    <a href="#g" class="anchor-link ">G</a>
+                </li>
+                <li class="disabled" data-was-disabled="True" data-alpha="H">
+                    <a href="#h" class="anchor-link ">H</a>
+                </li>
+                <li class="disabled" data-was-disabled="True" data-alpha="I">
+                    <a href="#i" class="anchor-link ">I</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="J">
+                    <a href="#j" class="anchor-link ">J</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="K">
+                    <a href="#k" class="anchor-link ">K</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="L">
+                    <a href="#l" class="anchor-link ">L</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="M">
+                    <a href="#m" class="anchor-link ">M</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="N">
+                    <a href="#n" class="anchor-link ">N</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="O">
+                    <a href="#o" class="anchor-link ">O</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="P">
+                    <a href="#p" class="anchor-link ">P</a>
+                </li>
+                <li class="disabled" data-was-disabled="True" data-alpha="Q">
+                    <a href="#q" class="anchor-link ">Q</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="R">
+                    <a href="#r" class="anchor-link ">R</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="S">
+                    <a href="#s" class="anchor-link ">S</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="T">
+                    <a href="#t" class="anchor-link ">T</a>
+                </li>
+                <li class="disabled" data-was-disabled="True" data-alpha="U">
+                    <a href="#u" class="anchor-link ">U</a>
+                </li>
+                <li class="disabled" data-was-disabled="True" data-alpha="V">
+                    <a href="#v" class="anchor-link ">V</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="W">
+                    <a href="#w" class="anchor-link ">W</a>
+                </li>
+                <li class="disabled" data-was-disabled="True" data-alpha="X">
+                    <a href="#x" class="anchor-link ">X</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="Y">
+                    <a href="#y" class="anchor-link ">Y</a>
+                </li>
+                <li class="" data-was-disabled="False" data-alpha="Z">
+                    <a href="#z" class="anchor-link ">Z</a>
+                </li>
+                <li class="disabled" data-was-disabled="True" data-alpha="0">
+                    <a href="#0" class="anchor-link ">0-9</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter2">
-      <p>filter2</p>
+    <div class="card-filtering-info-bar container is-narrow is-d-none">
+        <div class="has-py-3 is-d-flex is-justify-between is-align-center">
+            <p class="has-bg-50 has-m-0"><span class="card-filtering-results-count">69</span> search results</p>
+            <p class="has-bg-50 has-ml-2"></p>
+            <button class="card-filtering-clear-all has-font-weight-bold">
+                Clear filters (<span class="filter-count-text">1</span>)
+            </button>
+        </div>
     </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter3">
-      <p>filter3</p>
+    <div class="container is-narrow card-filtering-noresults has-text-center has-my-6 is-d-none">
+        <h2>Nothing matches your search</h2>
+        <p>
+            This copy is in the CMS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum est
+            tincidunt ultrices lacinia. Vivamus sapien orci, dignissim mattis lorem et, feugiat ultrices ligula.
+        </p>
     </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filterA">
-      <p>filterA</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filterB">
-      <p>filterB</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filterC">
-      <p>filterC</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter1 filterA">
-      <p>filter1 filterA</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter2 filterA">
-      <p>filter2 filterA</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter3 filterA">
-      <p>filter3 filterA</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter1 filterB">
-      <p>filter1 filterB</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter2 filterB">
-      <p>filter2 filterB</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter3 filterB">
-      <p>filter3 filterB</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter1 filterC">
-      <p>filter1 filterC</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter2 filterC">
-      <p>filter2 filterC</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter3 filterC">
-      <p>filter3 filterC</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter1 filter3 filterA filterC">
-      <p>filter1 filter3 filterA filterC</p>
-    </div>
-    <div class="col-xs-lg-6 col-sm-3 element-item filter2 filter3 filterB filterC">
-      <p>filter2 filter3 filterB filterC</p>
-    </div>
-  </div>
-</div></div>
+</section></div>
 
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;card-filtering-container&quot;&gt;
-  &lt;div class&#x3D;&quot;container&quot;&gt;
-    &lt;div class&#x3D;&quot;row&quot;&gt;
-        &lt;ul class&#x3D;&quot;col-6 filter-group list-unstyled&quot; data-filter-group&#x3D;&quot;filter&quot;&gt;
-          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
-            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
-              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter1&quot;&gt;
-              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filter1
-            &lt;/label&gt;
-          &lt;/li&gt;
-          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
-            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
-              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter1&quot;&gt;
-              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filter2
-            &lt;/label&gt;
-          &lt;/li&gt;
-          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
-            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
-              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter1&quot;&gt;
-              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filter3
-            &lt;/label&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;ul class&#x3D;&quot;col-6 filter-group list-unstyled&quot; data-filter-group&#x3D;&quot;filter&quot;&gt;
-          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
-            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
-              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filterA&quot;&gt;
-              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filterA
-            &lt;/label&gt;
-          &lt;/li&gt;
-          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
-            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
-              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filterB&quot;&gt;
-              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filterB
-            &lt;/label&gt;
-          &lt;/li&gt;
-          &lt;li class&#x3D;&quot;filter-input&quot;&gt;
-            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
-              &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filterC&quot;&gt;
-              &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;filterC
-            &lt;/label&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;filters-section&quot; style&#x3D;&quot;margin-top:0;&quot;&gt;
+    &lt;div class&#x3D;&quot;filters-wrapper&quot;&gt;
+        &lt;div class&#x3D;&quot;filters-container container is-narrow&quot;&gt;
+            &lt;div class&#x3D;&quot;filters has-pb-sm-0 has-py-md-3 has-px-4&quot;&gt;
+                &lt;div class&#x3D;&quot;row is-d-md-none btn-group filters-mobile has-pt-5&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-6&quot;&gt;
+                        &lt;button
+                            class&#x3D;&quot;btn is-primary is-outlined is-contrast dialog-cta has-p-2 has-text-left is-d-flex&quot;
+                            data-target-id&#x3D;&quot;filter-mobile-slider&quot;
+                        &gt;
+                            &lt;i class&#x3D;&quot;mag-font mag-font_refine&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                            Filter
+                            &lt;div class&#x3D;&quot;filter-count-wrapper is-d-none&quot;&gt;
+                                &lt;span class&#x3D;&quot;filter-count-text&quot;&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-6&quot;&gt;
+                        &lt;button
+                            class&#x3D;&quot;btn is-primary is-outlined is-contrast dialog-cta has-p-2 has-text-left&quot;
+                            data-target-id&#x3D;&quot;search-mobile-slider&quot;
+                        &gt;
+                            &lt;i class&#x3D;&quot;mag-font mag-font_search2&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Search for..
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row is-align-end is-justify-center is-d-none is-d-md-flex&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-12 col-sm-4 has-mb-sm-2&quot;&gt;
+                        &lt;div class&#x3D;&quot;dropdown&quot;&gt;
+                            &lt;button
+                                class&#x3D;&quot;dropdown-cta has-chevron has-my-1 is-d-block&quot;
+                                type&#x3D;&quot;button&quot;
+                                aria-haspopup&#x3D;&quot;true&quot;
+                                aria-expanded&#x3D;&quot;false&quot;
+                            &gt;
+                                View by category
+                            &lt;/button&gt;
+                            &lt;div class&#x3D;&quot;dropdown-panel is-full has-p-3 filter-group&quot; aria-hidden&#x3D;&quot;true&quot; inert&#x3D;&quot;&quot;&gt;
+                                &lt;div class&#x3D;&quot;dropdown-panel-content&quot;&gt;
+                                    &lt;ul class&#x3D;&quot;list-unstyled&quot; data-filter-group&#x3D;&quot;categories&quot;&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-328&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Men
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-326&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Women
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-329&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Children
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-330&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Home
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-331&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Dogs Welcome
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;row no-gutters dropdown-panel-ctas has-mt-2&quot;&gt;
+                                    &lt;div class&#x3D;&quot;col-6&quot;&gt;
+                                        &lt;button
+                                            class&#x3D;&quot;btn is-primary is-outlined filter-group-clear has-py-2&quot;
+                                            type&#x3D;&quot;reset&quot;
+                                            tabindex&#x3D;&quot;-1&quot;
+                                        &gt;
+                                            Clear all
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class&#x3D;&quot;col-6&quot;&gt;
+                                        &lt;button class&#x3D;&quot;btn is-primary dropdown-close-cta has-py-2&quot; tabindex&#x3D;&quot;-1&quot;&gt;
+                                            Apply
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;is-d-none is-d-sm-block col-sm-4 has-mb-2&quot;&gt;
+                        &lt;div class&#x3D;&quot;dropdown&quot;&gt;
+                            &lt;button
+                                class&#x3D;&quot;dropdown-cta has-chevron has-my-1 is-d-block&quot;
+                                type&#x3D;&quot;button&quot;
+                                aria-haspopup&#x3D;&quot;true&quot;
+                                aria-expanded&#x3D;&quot;false&quot;
+                            &gt;
+                                View by products
+                            &lt;/button&gt;
+                            &lt;div
+                                class&#x3D;&quot;dropdown-panel is-full is-right has-p-3 filter-group&quot;
+                                inert&#x3D;&quot;&quot;
+                                aria-hidden&#x3D;&quot;true&quot;
+                            &gt;
+                                &lt;div class&#x3D;&quot;dropdown-panel-content&quot;&gt;
+                                    &lt;ul class&#x3D;&quot;list-unstyled&quot; data-filter-group&#x3D;&quot;product&quot;&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-70&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Homeware
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-168&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Eyewear
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-184&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Services
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-242&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Toys
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-92&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Clothing
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-157&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Jewellery &amp;amp; Watches
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-93&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Lingerie
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-94&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Swimwear &amp;amp; beachwear
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-95&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Footwear
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-96&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Beauty
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-97&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Technology
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                        &lt;li class&#x3D;&quot;filter-input&quot;&gt;
+                                            &lt;label class&#x3D;&quot;custom-input&quot;&gt;
+                                                &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;&quot; value&#x3D;&quot;.filter-52&quot; tabindex&#x3D;&quot;-1&quot; /&gt;
+                                                &lt;span class&#x3D;&quot;custom-input-indicator&quot;&gt;&lt;/span&gt;Accessories
+                                            &lt;/label&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;row no-gutters dropdown-panel-ctas has-mt-2&quot;&gt;
+                                    &lt;div class&#x3D;&quot;col-6&quot;&gt;
+                                        &lt;button
+                                            class&#x3D;&quot;btn is-primary is-outlined filter-group-clear has-py-2&quot;
+                                            type&#x3D;&quot;reset&quot;
+                                            tabindex&#x3D;&quot;-1&quot;
+                                        &gt;
+                                            Clear all
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class&#x3D;&quot;col-6&quot;&gt;
+                                        &lt;button class&#x3D;&quot;btn is-primary dropdown-close-cta has-py-2&quot; tabindex&#x3D;&quot;-1&quot;&gt;
+                                            Apply
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-12 col-sm-4 has-mb-2&quot;&gt;
+                        &lt;form&gt;
+                            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                                &lt;input
+                                    id&#x3D;&quot;store-search&quot;
+                                    type&#x3D;&quot;text&quot;
+                                    class&#x3D;&quot;form-control filter-text-search&quot;
+                                    name&#x3D;&quot;q&quot;
+                                    placeholder&#x3D;&quot;Search for..&quot;
+                                    aria-label&#x3D;&quot;Search for..&quot;
+                                /&gt;
+                                &lt;button type&#x3D;&quot;submit&quot; aria-label&#x3D;&quot;Search stores&quot;&gt;
+                                    &lt;i class&#x3D;&quot;mag-font_search2&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;row card-filtering-grid&quot;&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1&quot;&gt;
-      &lt;p&gt;filter1&lt;/p&gt;
+    &lt;div class&#x3D;&quot;has-bg-primary has-pt-6 has-pb-3 has-py-md-0&quot;&gt;
+        &lt;div class&#x3D;&quot;smooth-anchor-scroll filter-alphabetical is-d-none is-d-sm-flex is-justify-center has-pt-3&quot;&gt;
+            &lt;ul class&#x3D;&quot;list-inline&quot; id&#x3D;&quot;data-alpha&quot;&gt;
+                &lt;li class&#x3D;&quot;disabled&quot; data-was-disabled&#x3D;&quot;True&quot; data-alpha&#x3D;&quot;-1&quot;&gt;
+                    &lt;a href&#x3D;&quot;#-1&quot; class&#x3D;&quot;anchor-link alpha-all&quot;&gt;All&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;A&quot;&gt;
+                    &lt;a href&#x3D;&quot;#a&quot; class&#x3D;&quot;anchor-link &quot;&gt;A&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;B&quot;&gt;
+                    &lt;a href&#x3D;&quot;#b&quot; class&#x3D;&quot;anchor-link &quot;&gt;B&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;C&quot;&gt;
+                    &lt;a href&#x3D;&quot;#c&quot; class&#x3D;&quot;anchor-link &quot;&gt;C&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;D&quot;&gt;
+                    &lt;a href&#x3D;&quot;#d&quot; class&#x3D;&quot;anchor-link &quot;&gt;D&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;E&quot;&gt;
+                    &lt;a href&#x3D;&quot;#e&quot; class&#x3D;&quot;anchor-link &quot;&gt;E&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;F&quot;&gt;
+                    &lt;a href&#x3D;&quot;#f&quot; class&#x3D;&quot;anchor-link &quot;&gt;F&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;G&quot;&gt;
+                    &lt;a href&#x3D;&quot;#g&quot; class&#x3D;&quot;anchor-link &quot;&gt;G&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;disabled&quot; data-was-disabled&#x3D;&quot;True&quot; data-alpha&#x3D;&quot;H&quot;&gt;
+                    &lt;a href&#x3D;&quot;#h&quot; class&#x3D;&quot;anchor-link &quot;&gt;H&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;disabled&quot; data-was-disabled&#x3D;&quot;True&quot; data-alpha&#x3D;&quot;I&quot;&gt;
+                    &lt;a href&#x3D;&quot;#i&quot; class&#x3D;&quot;anchor-link &quot;&gt;I&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;J&quot;&gt;
+                    &lt;a href&#x3D;&quot;#j&quot; class&#x3D;&quot;anchor-link &quot;&gt;J&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;K&quot;&gt;
+                    &lt;a href&#x3D;&quot;#k&quot; class&#x3D;&quot;anchor-link &quot;&gt;K&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;L&quot;&gt;
+                    &lt;a href&#x3D;&quot;#l&quot; class&#x3D;&quot;anchor-link &quot;&gt;L&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;M&quot;&gt;
+                    &lt;a href&#x3D;&quot;#m&quot; class&#x3D;&quot;anchor-link &quot;&gt;M&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;N&quot;&gt;
+                    &lt;a href&#x3D;&quot;#n&quot; class&#x3D;&quot;anchor-link &quot;&gt;N&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;O&quot;&gt;
+                    &lt;a href&#x3D;&quot;#o&quot; class&#x3D;&quot;anchor-link &quot;&gt;O&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;P&quot;&gt;
+                    &lt;a href&#x3D;&quot;#p&quot; class&#x3D;&quot;anchor-link &quot;&gt;P&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;disabled&quot; data-was-disabled&#x3D;&quot;True&quot; data-alpha&#x3D;&quot;Q&quot;&gt;
+                    &lt;a href&#x3D;&quot;#q&quot; class&#x3D;&quot;anchor-link &quot;&gt;Q&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;R&quot;&gt;
+                    &lt;a href&#x3D;&quot;#r&quot; class&#x3D;&quot;anchor-link &quot;&gt;R&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;S&quot;&gt;
+                    &lt;a href&#x3D;&quot;#s&quot; class&#x3D;&quot;anchor-link &quot;&gt;S&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;T&quot;&gt;
+                    &lt;a href&#x3D;&quot;#t&quot; class&#x3D;&quot;anchor-link &quot;&gt;T&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;disabled&quot; data-was-disabled&#x3D;&quot;True&quot; data-alpha&#x3D;&quot;U&quot;&gt;
+                    &lt;a href&#x3D;&quot;#u&quot; class&#x3D;&quot;anchor-link &quot;&gt;U&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;disabled&quot; data-was-disabled&#x3D;&quot;True&quot; data-alpha&#x3D;&quot;V&quot;&gt;
+                    &lt;a href&#x3D;&quot;#v&quot; class&#x3D;&quot;anchor-link &quot;&gt;V&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;W&quot;&gt;
+                    &lt;a href&#x3D;&quot;#w&quot; class&#x3D;&quot;anchor-link &quot;&gt;W&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;disabled&quot; data-was-disabled&#x3D;&quot;True&quot; data-alpha&#x3D;&quot;X&quot;&gt;
+                    &lt;a href&#x3D;&quot;#x&quot; class&#x3D;&quot;anchor-link &quot;&gt;X&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;Y&quot;&gt;
+                    &lt;a href&#x3D;&quot;#y&quot; class&#x3D;&quot;anchor-link &quot;&gt;Y&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;&quot; data-was-disabled&#x3D;&quot;False&quot; data-alpha&#x3D;&quot;Z&quot;&gt;
+                    &lt;a href&#x3D;&quot;#z&quot; class&#x3D;&quot;anchor-link &quot;&gt;Z&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class&#x3D;&quot;disabled&quot; data-was-disabled&#x3D;&quot;True&quot; data-alpha&#x3D;&quot;0&quot;&gt;
+                    &lt;a href&#x3D;&quot;#0&quot; class&#x3D;&quot;anchor-link &quot;&gt;0-9&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2&quot;&gt;
-      &lt;p&gt;filter2&lt;/p&gt;
+    &lt;div class&#x3D;&quot;card-filtering-info-bar container is-narrow is-d-none&quot;&gt;
+        &lt;div class&#x3D;&quot;has-py-3 is-d-flex is-justify-between is-align-center&quot;&gt;
+            &lt;p class&#x3D;&quot;has-bg-50 has-m-0&quot;&gt;&lt;span class&#x3D;&quot;card-filtering-results-count&quot;&gt;69&lt;/span&gt; search results&lt;/p&gt;
+            &lt;p class&#x3D;&quot;has-bg-50 has-ml-2&quot;&gt;&lt;/p&gt;
+            &lt;button class&#x3D;&quot;card-filtering-clear-all has-font-weight-bold&quot;&gt;
+                Clear filters (&lt;span class&#x3D;&quot;filter-count-text&quot;&gt;1&lt;/span&gt;)
+            &lt;/button&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter3&quot;&gt;
-      &lt;p&gt;filter3&lt;/p&gt;
+    &lt;div class&#x3D;&quot;container is-narrow card-filtering-noresults has-text-center has-my-6 is-d-none&quot;&gt;
+        &lt;h2&gt;Nothing matches your search&lt;/h2&gt;
+        &lt;p&gt;
+            This copy is in the CMS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum est
+            tincidunt ultrices lacinia. Vivamus sapien orci, dignissim mattis lorem et, feugiat ultrices ligula.
+        &lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filterA&quot;&gt;
-      &lt;p&gt;filterA&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filterB&quot;&gt;
-      &lt;p&gt;filterB&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filterC&quot;&gt;
-      &lt;p&gt;filterC&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1 filterA&quot;&gt;
-      &lt;p&gt;filter1 filterA&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2 filterA&quot;&gt;
-      &lt;p&gt;filter2 filterA&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter3 filterA&quot;&gt;
-      &lt;p&gt;filter3 filterA&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1 filterB&quot;&gt;
-      &lt;p&gt;filter1 filterB&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2 filterB&quot;&gt;
-      &lt;p&gt;filter2 filterB&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter3 filterB&quot;&gt;
-      &lt;p&gt;filter3 filterB&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1 filterC&quot;&gt;
-      &lt;p&gt;filter1 filterC&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2 filterC&quot;&gt;
-      &lt;p&gt;filter2 filterC&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter3 filterC&quot;&gt;
-      &lt;p&gt;filter3 filterC&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter1 filter3 filterA filterC&quot;&gt;
-      &lt;p&gt;filter1 filter3 filterA filterC&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-xs-lg-6 col-sm-3 element-item filter2 filter3 filterB filterC&quot;&gt;
-      &lt;p&gt;filter2 filter3 filterB filterC&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/section&gt;</code></pre>
                 </div>
               </div>
 
@@ -1795,7 +2255,7 @@
 
 
 
-                  <div class="kss-modifiers__example"><section class="siema carousel-header-block has-dots">
+                  <div class="kss-modifiers__example"><section class="siema carousel-header-block has-dots has-siema-controls">
   <div class="siema-slides-wrapper">
     <div class="slide is-d-flex is-justify-center is-align-end picturefill-background bg-cover is-focus-center-top">
       <span class="picturefill-background-source" data-src="https://source.unsplash.com/random/1600x900"></span>
@@ -1828,14 +2288,18 @@
       </div>
     </div>
   </div>
-  <button class="btn-play is-playing" aria-label="stop carousel"></button>
+  <div class="container is-d-none is-d-md-block has-text-right has-mt-neg-10">
+     <div class="controls-wrapper has-py-1 has-pl-3 has-pr-1">
+         <button class="btn-play is-playing" aria-label="stop carousel"></button>
+     </div>
+  </div>
 </section></div>
 
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;siema carousel-header-block has-dots&quot;&gt;
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;siema carousel-header-block has-dots has-siema-controls&quot;&gt;
   &lt;div class&#x3D;&quot;siema-slides-wrapper&quot;&gt;
     &lt;div class&#x3D;&quot;slide is-d-flex is-justify-center is-align-end picturefill-background bg-cover is-focus-center-top&quot;&gt;
       &lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/random/1600x900&quot;&gt;&lt;/span&gt;
@@ -1868,7 +2332,11 @@
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;button class&#x3D;&quot;btn-play is-playing&quot; aria-label&#x3D;&quot;stop carousel&quot;&gt;&lt;/button&gt;
+  &lt;div class&#x3D;&quot;container is-d-none is-d-md-block has-text-right has-mt-neg-10&quot;&gt;
+     &lt;div class&#x3D;&quot;controls-wrapper has-py-1 has-pl-3 has-pr-1&quot;&gt;
+         &lt;button class&#x3D;&quot;btn-play is-playing&quot; aria-label&#x3D;&quot;stop carousel&quot;&gt;&lt;/button&gt;
+     &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/section&gt;</code></pre>
                 </div>
               </div>
@@ -1885,7 +2353,7 @@
                 </a>
                 <p class="kss-section__source">Source:
                   <span>organisms/_carousel-header-block.scss</span>, line
-                  <span>116</span>
+                  <span>120</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
@@ -1901,7 +2369,7 @@
 
 
                   <div class="kss-modifiers__example"><div class="block carouselbannerblock col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
-  <section class="siema carousel-header-block has-dots">
+  <section class="siema carousel-header-block has-dots has-siema-controls">
     <div class="siema-slides-wrapper">
       <div class="slide is-d-flex is-justify-center is-align-end picturefill-background bg-cover is-focus-center-top">
         <span class="picturefill-background-source" data-src="https://source.unsplash.com/random/1600x900"></span>
@@ -1934,7 +2402,11 @@
         </div>
       </div>
     </div>
-    <button class="btn-play is-playing" aria-label="stop carousel"></button>
+  <div class="container is-d-none is-d-md-block has-text-right has-mt-neg-10">
+     <div class="controls-wrapper has-py-1 has-pl-3 has-pr-1">
+         <button class="btn-play is-playing" aria-label="stop carousel"></button>
+     </div>
+  </div>
   </section>
 </div>
 <div class="block iconctablock col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
@@ -1981,7 +2453,7 @@
 
                 <div class="kss-section__markup">
                   <pre><code class="language-markup">&lt;div class&#x3D;&quot;block carouselbannerblock col-lg-12 col-md-12 col-sm-12 col-xs-12  &quot;&gt;
-  &lt;section class&#x3D;&quot;siema carousel-header-block has-dots&quot;&gt;
+  &lt;section class&#x3D;&quot;siema carousel-header-block has-dots has-siema-controls&quot;&gt;
     &lt;div class&#x3D;&quot;siema-slides-wrapper&quot;&gt;
       &lt;div class&#x3D;&quot;slide is-d-flex is-justify-center is-align-end picturefill-background bg-cover is-focus-center-top&quot;&gt;
         &lt;span class&#x3D;&quot;picturefill-background-source&quot; data-src&#x3D;&quot;https://source.unsplash.com/random/1600x900&quot;&gt;&lt;/span&gt;
@@ -2014,7 +2486,11 @@
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;button class&#x3D;&quot;btn-play is-playing&quot; aria-label&#x3D;&quot;stop carousel&quot;&gt;&lt;/button&gt;
+  &lt;div class&#x3D;&quot;container is-d-none is-d-md-block has-text-right has-mt-neg-10&quot;&gt;
+     &lt;div class&#x3D;&quot;controls-wrapper has-py-1 has-pl-3 has-pr-1&quot;&gt;
+         &lt;button class&#x3D;&quot;btn-play is-playing&quot; aria-label&#x3D;&quot;stop carousel&quot;&gt;&lt;/button&gt;
+     &lt;/div&gt;
+  &lt;/div&gt;
   &lt;/section&gt;
 &lt;/div&gt;
 &lt;div class&#x3D;&quot;block iconctablock col-lg-12 col-md-12 col-sm-12 col-xs-12  &quot;&gt;
@@ -3105,7 +3581,7 @@
                 </a>
                 <p class="kss-section__source">Source:
                   <span>organisms/__documentation.scss</span>, line
-                  <span>482</span>
+                  <span>712</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
@@ -3233,7 +3709,7 @@
                 </a>
                 <p class="kss-section__source">Source:
                   <span>organisms/__documentation.scss</span>, line
-                  <span>188</span>
+                  <span>418</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
@@ -4332,7 +4808,7 @@
                 </a>
                 <p class="kss-section__source">Source:
                   <span>organisms/__documentation.scss</span>, line
-                  <span>502</span>
+                  <span>732</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
@@ -5130,7 +5606,7 @@
                 </a>
                 <p class="kss-section__source">Source:
                   <span>organisms/__documentation.scss</span>, line
-                  <span>549</span>
+                  <span>779</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
@@ -6047,7 +6523,7 @@ and <code>tab</code> to navigate inside, using trapTabKey js function so we don'
                 </a>
                 <p class="kss-section__source">Source:
                   <span>organisms/__documentation.scss</span>, line
-                  <span>364</span>
+                  <span>594</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
@@ -7062,7 +7538,7 @@ and <code>tab</code> to navigate inside, using trapTabKey js function so we don'
                 </a>
                 <p class="kss-section__source">Source:
                   <span>organisms/__documentation.scss</span>, line
-                  <span>337</span>
+                  <span>567</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
