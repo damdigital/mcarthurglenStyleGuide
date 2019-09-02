@@ -1091,86 +1091,74 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-atoms-modifiers-flex-justify">
+          <header class="kss-section" id="kssref-organisms-cookiebanner">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-atoms-modifiers-flex-justify">
-                  <h4 class="kss-h4">
-                    <span class="kss-section__ref">1.16.5.2</span> -
-                    <span class="kss-section__name">Justify content</span>
-                  </h4>
+                <a class="kss-section__permalink" href="#kssref-organisms-cookiebanner">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">3.5</span> -
+                    <span class="kss-section__name">Cookie banner</span>
+                  </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>atoms/modifiers/_flex.scss</span>, line
-                  <span>128</span>
+                  <span>organisms/_cookie-banner.scss</span>, line
+                  <span>37</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-atoms-modifiers-flex-justify.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-cookiebanner.html" target="_blank">Open in new
                     window</a>
                 </div>
-                 
-                <div class="kss-section__description"><p>Flex utilities helps to justify flex content.</p>
-<p><code>.is-justify-{breakpoint}-{alignment value}</code>, breakpoint is optional.</p>
-<p><strong>alignment value:</strong></p>
-<ul>
-<li>end</li>
-<li>start</li>
-<li>center</li>
-<li>between</li>
-<li>around</li>
-</ul>
-</div>
-                               </div>
+                                </div>
 
               <div class="kss-section__example-container">
                 <div class="kss-section__examples">
-                  <p class="kss-modifiers__heading">Examples:</p>
+                  <p class="kss-modifiers__heading">Example:</p>
 
-                  <code class="kss-modifiers__name">Default styling</code> 
 
-                  <div class="kss-modifiers__example"><div class="is-d-flex [modifier]">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.[modifier]</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.[modifier]</div>
+
+                  <div class="kss-modifiers__example"><div class="cookie-banner has-px-5 has-pt-5 has-pb-10" role="dialog" aria-live="polite" aria-label="cookieconsent">
+    <p class="has-font-size-6 has-font-weight-normal has-mb-10">
+        Like most websites, we use small pieces of code called 'cookies' to improve your web browsing experience. By continuing to browse, we'll assume
+        you agree to this.
+    </p>
+    <div class="is-d-flex is-justify-between">
+        <div>
+            <a href="#" target="_blank" class="is-d-block has-mb-2"
+                >Read policy</a
+            >
+            <a href="#" target="_blank" class="is-d-block">
+                Update settings</a
+            >
+        </div>
+        <button type="button" aria-label="dismiss cookie message" class="btn save-cookie-consent has-font-weight-bold">
+            Use cookies
+        </button>
+    </div>
 </div></div>
 
-                  <code class="kss-modifiers__name">.is-justify-end</code>
-                  <p class="kss-modifiers__description">is-justify-end</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-end">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-end</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-end</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-start</code>
-                  <p class="kss-modifiers__description">is-justify-start</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-start">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-start</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-start</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-center</code>
-                  <p class="kss-modifiers__description">is-justify-center</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-center">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-center</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-center</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-between</code>
-                  <p class="kss-modifiers__description">is-justify-between</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-between">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-between</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-between</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-around</code>
-                  <p class="kss-modifiers__description">is-justify-around</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-around">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-around</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-around</div>
-</div></div>
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;is-d-flex [modifier]&quot;&gt;
-  &lt;div class&#x3D;&quot;kss-box&quot; style&#x3D;&quot;flex: 0 0 60px&quot;&gt;Parent .is-d-flex.[modifier]&lt;/div&gt;
-  &lt;div class&#x3D;&quot;kss-box&quot; style&#x3D;&quot;flex: 0 0 60px&quot;&gt;Parent .is-d-flex.[modifier]&lt;/div&gt;
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;cookie-banner has-px-5 has-pt-5 has-pb-10&quot; role&#x3D;&quot;dialog&quot; aria-live&#x3D;&quot;polite&quot; aria-label&#x3D;&quot;cookieconsent&quot;&gt;
+    &lt;p class&#x3D;&quot;has-font-size-6 has-font-weight-normal has-mb-10&quot;&gt;
+        Like most websites, we use small pieces of code called &#x27;cookies&#x27; to improve your web browsing experience. By continuing to browse, we&#x27;ll assume
+        you agree to this.
+    &lt;/p&gt;
+    &lt;div class&#x3D;&quot;is-d-flex is-justify-between&quot;&gt;
+        &lt;div&gt;
+            &lt;a href&#x3D;&quot;#&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;is-d-block has-mb-2&quot;
+                &gt;Read policy&lt;/a
+            &gt;
+            &lt;a href&#x3D;&quot;#&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;is-d-block&quot;&gt;
+                Update settings&lt;/a
+            &gt;
+        &lt;/div&gt;
+        &lt;button type&#x3D;&quot;button&quot; aria-label&#x3D;&quot;dismiss cookie message&quot; class&#x3D;&quot;btn save-cookie-consent has-font-weight-bold&quot;&gt;
+            Use cookies
+        &lt;/button&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
               </div>

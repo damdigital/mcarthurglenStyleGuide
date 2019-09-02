@@ -1091,87 +1091,115 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-atoms-modifiers-flex-justify">
+          <header class="kss-section" id="kssref-organisms-promoblock">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-atoms-modifiers-flex-justify">
-                  <h4 class="kss-h4">
-                    <span class="kss-section__ref">1.16.5.2</span> -
-                    <span class="kss-section__name">Justify content</span>
-                  </h4>
+                <a class="kss-section__permalink" href="#kssref-organisms-promoblock">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">3.29</span> -
+                    <span class="kss-section__name">Loyalty promo block</span>
+                  </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>atoms/modifiers/_flex.scss</span>, line
-                  <span>128</span>
+                  <span>organisms/_loyalty-promo-block.scss</span>, line
+                  <span>26</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-atoms-modifiers-flex-justify.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-promoblock.html" target="_blank">Open in new
                     window</a>
                 </div>
-                 
-                <div class="kss-section__description"><p>Flex utilities helps to justify flex content.</p>
-<p><code>.is-justify-{breakpoint}-{alignment value}</code>, breakpoint is optional.</p>
-<p><strong>alignment value:</strong></p>
-<ul>
-<li>end</li>
-<li>start</li>
-<li>center</li>
-<li>between</li>
-<li>around</li>
-</ul>
-</div>
-                               </div>
+                                </div>
 
               <div class="kss-section__example-container">
                 <div class="kss-section__examples">
-                  <p class="kss-modifiers__heading">Examples:</p>
+                  <p class="kss-modifiers__heading">Example:</p>
 
-                  <code class="kss-modifiers__name">Default styling</code> 
 
-                  <div class="kss-modifiers__example"><div class="is-d-flex [modifier]">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.[modifier]</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.[modifier]</div>
-</div></div>
 
-                  <code class="kss-modifiers__name">.is-justify-end</code>
-                  <p class="kss-modifiers__description">is-justify-end</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-end">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-end</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-end</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-start</code>
-                  <p class="kss-modifiers__description">is-justify-start</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-start">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-start</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-start</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-center</code>
-                  <p class="kss-modifiers__description">is-justify-center</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-center">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-center</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-center</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-between</code>
-                  <p class="kss-modifiers__description">is-justify-between</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-between">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-between</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-between</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-around</code>
-                  <p class="kss-modifiers__description">is-justify-around</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-around">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-around</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-around</div>
-</div></div>
+                  <div class="kss-modifiers__example"><section class="loyalty-promo-block">
+    <div class="container has-bg-gray-20">
+        <ul class="row list-unstyled is-justify-center has-mb-0 loyaltypromoblock">
+                <li class="col-md-4 has-py-5">
+                    <div class="promo-wrapper is-d-flex">
+                        <div class="promo-round-icon has-mr-3 has-mr-md-0 has-mb-md-3">
+                            <i class="mag-font mag-font_shopping_bag"></i>
+                        </div>
+                        <div class="promo-text">
+                            <p class="has-text-uppercase has-mb-2 has-mb-md-3 has-font-weight-normal">Redeem your points</p>
+                            <p class="has-m-0">Redeem your points to get up to 25% reward discount in participating stores and restaurants</p>
+                        </div>
+                    </div>
+				</li>
+				<li class="col-md-4 has-py-5">
+                    <div class="promo-wrapper is-d-flex">
+                        <div class="promo-round-icon has-mr-3 has-mr-md-0 has-mb-md-3">
+                            <i class="mag-font mag-font_shopping_bag"></i>
+                        </div>
+                        <div class="promo-text">
+                            <p class="has-text-uppercase has-mb-2 has-mb-md-3 has-font-weight-normal">Redeem your points</p>
+                            <p class="has-m-0">Redeem your points to get up to 25% reward discount in participating stores and restaurants</p>
+                        </div>
+                    </div>
+				</li>
+				<li class="col-md-4 has-py-5">
+                    <div class="promo-wrapper is-d-flex">
+                        <div class="promo-round-icon has-mr-3 has-mr-md-0 has-mb-md-3">
+                            <i class="mag-font mag-font_shopping_bag"></i>
+                        </div>
+                        <div class="promo-text">
+                            <p class="has-text-uppercase has-mb-2 has-mb-md-3 has-font-weight-normal">Redeem your points</p>
+                            <p class="has-m-0">Redeem your points to get up to 25% reward discount in participating stores and restaurants</p>
+                        </div>
+                    </div>
+                </li>
+        </ul>
+    </div>
+</section></div>
+
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;is-d-flex [modifier]&quot;&gt;
-  &lt;div class&#x3D;&quot;kss-box&quot; style&#x3D;&quot;flex: 0 0 60px&quot;&gt;Parent .is-d-flex.[modifier]&lt;/div&gt;
-  &lt;div class&#x3D;&quot;kss-box&quot; style&#x3D;&quot;flex: 0 0 60px&quot;&gt;Parent .is-d-flex.[modifier]&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;loyalty-promo-block&quot;&gt;
+    &lt;div class&#x3D;&quot;container has-bg-gray-20&quot;&gt;
+        &lt;ul class&#x3D;&quot;row list-unstyled is-justify-center has-mb-0 loyaltypromoblock&quot;&gt;
+                &lt;li class&#x3D;&quot;col-md-4 has-py-5&quot;&gt;
+                    &lt;div class&#x3D;&quot;promo-wrapper is-d-flex&quot;&gt;
+                        &lt;div class&#x3D;&quot;promo-round-icon has-mr-3 has-mr-md-0 has-mb-md-3&quot;&gt;
+                            &lt;i class&#x3D;&quot;mag-font mag-font_shopping_bag&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;promo-text&quot;&gt;
+                            &lt;p class&#x3D;&quot;has-text-uppercase has-mb-2 has-mb-md-3 has-font-weight-normal&quot;&gt;Redeem your points&lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-m-0&quot;&gt;Redeem your points to get up to 25% reward discount in participating stores and restaurants&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;col-md-4 has-py-5&quot;&gt;
+                    &lt;div class&#x3D;&quot;promo-wrapper is-d-flex&quot;&gt;
+                        &lt;div class&#x3D;&quot;promo-round-icon has-mr-3 has-mr-md-0 has-mb-md-3&quot;&gt;
+                            &lt;i class&#x3D;&quot;mag-font mag-font_shopping_bag&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;promo-text&quot;&gt;
+                            &lt;p class&#x3D;&quot;has-text-uppercase has-mb-2 has-mb-md-3 has-font-weight-normal&quot;&gt;Redeem your points&lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-m-0&quot;&gt;Redeem your points to get up to 25% reward discount in participating stores and restaurants&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;col-md-4 has-py-5&quot;&gt;
+                    &lt;div class&#x3D;&quot;promo-wrapper is-d-flex&quot;&gt;
+                        &lt;div class&#x3D;&quot;promo-round-icon has-mr-3 has-mr-md-0 has-mb-md-3&quot;&gt;
+                            &lt;i class&#x3D;&quot;mag-font mag-font_shopping_bag&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;promo-text&quot;&gt;
+                            &lt;p class&#x3D;&quot;has-text-uppercase has-mb-2 has-mb-md-3 has-font-weight-normal&quot;&gt;Redeem your points&lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-m-0&quot;&gt;Redeem your points to get up to 25% reward discount in participating stores and restaurants&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
                 </div>
               </div>
 

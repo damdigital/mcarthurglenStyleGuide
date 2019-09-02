@@ -1091,87 +1091,283 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-atoms-modifiers-flex-justify">
+          <header class="kss-section" id="kssref-organisms-rewardblock">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-atoms-modifiers-flex-justify">
-                  <h4 class="kss-h4">
-                    <span class="kss-section__ref">1.16.5.2</span> -
-                    <span class="kss-section__name">Justify content</span>
-                  </h4>
+                <a class="kss-section__permalink" href="#kssref-organisms-rewardblock">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">3.34</span> -
+                    <span class="kss-section__name">Loyalty reward block</span>
+                  </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>atoms/modifiers/_flex.scss</span>, line
-                  <span>128</span>
+                  <span>organisms/_loyalty-reward-block.scss</span>, line
+                  <span>36</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-atoms-modifiers-flex-justify.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-rewardblock.html" target="_blank">Open in new
                     window</a>
                 </div>
-                 
-                <div class="kss-section__description"><p>Flex utilities helps to justify flex content.</p>
-<p><code>.is-justify-{breakpoint}-{alignment value}</code>, breakpoint is optional.</p>
-<p><strong>alignment value:</strong></p>
-<ul>
-<li>end</li>
-<li>start</li>
-<li>center</li>
-<li>between</li>
-<li>around</li>
-</ul>
-</div>
-                               </div>
+                                </div>
 
               <div class="kss-section__example-container">
                 <div class="kss-section__examples">
-                  <p class="kss-modifiers__heading">Examples:</p>
+                  <p class="kss-modifiers__heading">Example:</p>
 
-                  <code class="kss-modifiers__name">Default styling</code> 
 
-                  <div class="kss-modifiers__example"><div class="is-d-flex [modifier]">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.[modifier]</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.[modifier]</div>
-</div></div>
 
-                  <code class="kss-modifiers__name">.is-justify-end</code>
-                  <p class="kss-modifiers__description">is-justify-end</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-end">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-end</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-end</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-start</code>
-                  <p class="kss-modifiers__description">is-justify-start</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-start">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-start</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-start</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-center</code>
-                  <p class="kss-modifiers__description">is-justify-center</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-center">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-center</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-center</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-between</code>
-                  <p class="kss-modifiers__description">is-justify-between</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-between">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-between</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-between</div>
-</div></div>
-                  <code class="kss-modifiers__name">.is-justify-around</code>
-                  <p class="kss-modifiers__description">is-justify-around</p>
-                  <div class="kss-modifiers__example"><div class="is-d-flex is-justify-around">
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-around</div>
-  <div class="kss-box" style="flex: 0 0 60px">Parent .is-d-flex.is-justify-around</div>
-</div></div>
+                  <div class="kss-modifiers__example"><section class="loyalty-rewards-block">
+    <div class="container">
+        <header class="section-header">
+            <p class="is-h4 has-text-center has-font-weight-normal has-mb-0">Rewards</p>
+        </header>
+        <div class="siema is-four-slide-carousel has-no-pagination has-arrow-top has-pt-6">
+            <div class="siema-slides-wrapper has-mb-3" style="overflow: hidden; direction: ltr; cursor: -webkit-grab;">
+                <div class="slide has-mx-2 has-mx-sm-4">
+                    <div class="aspect-ratio-container is-1x1">
+                        <div class="aspect-ratio-content has-bg-primary has-p-3">
+                            <div class="brand-with-line with-icon has-text-center has-mb-2">
+                                <i class="has-text-gray-0 mag-font mag-font_shopping_bag"></i>
+                            </div>
+                            <p class="reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2">
+                                500 Points
+                            </p>
+                            <p class="reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2">
+                                €5 off
+                            </p>
+                            <p class="has-text-center has-font-size-6">a spend of €20 or more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide has-mx-2 has-mx-sm-4">
+                    <div class="aspect-ratio-container is-1x1">
+                        <div class="aspect-ratio-content has-bg-primary has-p-3">
+                            <div class="brand-with-line with-icon has-text-center has-mb-2">
+                                <i class="has-text-gray-0 mag-font mag-font_food_drink"></i>
+                            </div>
+                            <p class="reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2">
+                                500 Points
+                            </p>
+                            <p class="reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2">
+                                €5 off
+                            </p>
+                            <p class="has-text-center has-font-size-6">a spend of €20 or more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide has-mx-2 has-mx-sm-4">
+                    <div class="aspect-ratio-container is-1x1">
+                        <div class="aspect-ratio-content has-bg-primary has-p-3">
+                            <div class="brand-with-line with-icon has-text-center has-mb-2">
+                                <i class="has-text-gray-0 mag-font mag-font_food_drink"></i>
+                            </div>
+                            <p class="reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2">
+                                750 Points
+                            </p>
+                            <p class="reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2">
+                                €7.50 off
+                            </p>
+                            <p class="has-text-center has-font-size-6">a spend of €30 or more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide has-mx-2 has-mx-sm-4">
+                    <div class="aspect-ratio-container is-1x1">
+                        <div class="aspect-ratio-content has-bg-primary has-p-3">
+                            <div class="brand-with-line with-icon has-text-center has-mb-2">
+                                <i class="has-text-gray-0 mag-font mag-font_food_drink"></i>
+                            </div>
+                            <p class="reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2">
+                                1000 Points
+                            </p>
+                            <p class="reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2">
+                                €10 off
+                            </p>
+                            <p class="has-text-center has-font-size-6">a spend of €40 or more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide has-mx-2 has-mx-sm-4">
+                    <div class="aspect-ratio-container is-1x1">
+                        <div class="aspect-ratio-content has-bg-primary has-p-3">
+                            <div class="brand-with-line with-icon has-text-center has-mb-2">
+                                <i class="has-text-gray-0 mag-font mag-font_shopping_bag"></i>
+                            </div>
+                            <p class="reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2">
+                                1500 Points
+                            </p>
+                            <p class="reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2">
+                                €15 off
+                            </p>
+                            <p class="has-text-center has-font-size-6">a spend of €60 or more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide has-mx-2 has-mx-sm-4">
+                    <div class="aspect-ratio-container is-1x1">
+                        <div class="aspect-ratio-content has-bg-primary has-p-3">
+                            <div class="brand-with-line with-icon has-text-center has-mb-2">
+                                <i class="has-text-gray-0 mag-font mag-font_shopping_bag"></i>
+                            </div>
+                            <p class="reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2">
+                                2500 Points
+                            </p>
+                            <p class="reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2">
+                                €25 off
+                            </p>
+                            <p class="has-text-center has-font-size-6">a spend of €100 or more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide has-mx-2 has-mx-sm-4">
+                    <div class="aspect-ratio-container is-1x1">
+                        <div class="aspect-ratio-content has-bg-primary has-p-3">
+                            <div class="brand-with-line with-icon has-text-center has-mb-2">
+                                <i class="has-text-gray-0 mag-font mag-font_shopping_bag"></i>
+                            </div>
+                            <p class="reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2">
+                                5000 Points
+                            </p>
+                            <p class="reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2">
+                                €50 off
+                            </p>
+                            <p class="has-text-center has-font-size-6">a spend of €200 or more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section></div>
+
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;is-d-flex [modifier]&quot;&gt;
-  &lt;div class&#x3D;&quot;kss-box&quot; style&#x3D;&quot;flex: 0 0 60px&quot;&gt;Parent .is-d-flex.[modifier]&lt;/div&gt;
-  &lt;div class&#x3D;&quot;kss-box&quot; style&#x3D;&quot;flex: 0 0 60px&quot;&gt;Parent .is-d-flex.[modifier]&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;loyalty-rewards-block&quot;&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+        &lt;header class&#x3D;&quot;section-header&quot;&gt;
+            &lt;p class&#x3D;&quot;is-h4 has-text-center has-font-weight-normal has-mb-0&quot;&gt;Rewards&lt;/p&gt;
+        &lt;/header&gt;
+        &lt;div class&#x3D;&quot;siema is-four-slide-carousel has-no-pagination has-arrow-top has-pt-6&quot;&gt;
+            &lt;div class&#x3D;&quot;siema-slides-wrapper has-mb-3&quot; style&#x3D;&quot;overflow: hidden; direction: ltr; cursor: -webkit-grab;&quot;&gt;
+                &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                        &lt;div class&#x3D;&quot;aspect-ratio-content has-bg-primary has-p-3&quot;&gt;
+                            &lt;div class&#x3D;&quot;brand-with-line with-icon has-text-center has-mb-2&quot;&gt;
+                                &lt;i class&#x3D;&quot;has-text-gray-0 mag-font mag-font_shopping_bag&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;p class&#x3D;&quot;reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2&quot;&gt;
+                                500 Points
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2&quot;&gt;
+                                €5 off
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-text-center has-font-size-6&quot;&gt;a spend of €20 or more&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                        &lt;div class&#x3D;&quot;aspect-ratio-content has-bg-primary has-p-3&quot;&gt;
+                            &lt;div class&#x3D;&quot;brand-with-line with-icon has-text-center has-mb-2&quot;&gt;
+                                &lt;i class&#x3D;&quot;has-text-gray-0 mag-font mag-font_food_drink&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;p class&#x3D;&quot;reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2&quot;&gt;
+                                500 Points
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2&quot;&gt;
+                                €5 off
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-text-center has-font-size-6&quot;&gt;a spend of €20 or more&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                        &lt;div class&#x3D;&quot;aspect-ratio-content has-bg-primary has-p-3&quot;&gt;
+                            &lt;div class&#x3D;&quot;brand-with-line with-icon has-text-center has-mb-2&quot;&gt;
+                                &lt;i class&#x3D;&quot;has-text-gray-0 mag-font mag-font_food_drink&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;p class&#x3D;&quot;reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2&quot;&gt;
+                                750 Points
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2&quot;&gt;
+                                €7.50 off
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-text-center has-font-size-6&quot;&gt;a spend of €30 or more&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                        &lt;div class&#x3D;&quot;aspect-ratio-content has-bg-primary has-p-3&quot;&gt;
+                            &lt;div class&#x3D;&quot;brand-with-line with-icon has-text-center has-mb-2&quot;&gt;
+                                &lt;i class&#x3D;&quot;has-text-gray-0 mag-font mag-font_food_drink&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;p class&#x3D;&quot;reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2&quot;&gt;
+                                1000 Points
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2&quot;&gt;
+                                €10 off
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-text-center has-font-size-6&quot;&gt;a spend of €40 or more&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                        &lt;div class&#x3D;&quot;aspect-ratio-content has-bg-primary has-p-3&quot;&gt;
+                            &lt;div class&#x3D;&quot;brand-with-line with-icon has-text-center has-mb-2&quot;&gt;
+                                &lt;i class&#x3D;&quot;has-text-gray-0 mag-font mag-font_shopping_bag&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;p class&#x3D;&quot;reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2&quot;&gt;
+                                1500 Points
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2&quot;&gt;
+                                €15 off
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-text-center has-font-size-6&quot;&gt;a spend of €60 or more&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                        &lt;div class&#x3D;&quot;aspect-ratio-content has-bg-primary has-p-3&quot;&gt;
+                            &lt;div class&#x3D;&quot;brand-with-line with-icon has-text-center has-mb-2&quot;&gt;
+                                &lt;i class&#x3D;&quot;has-text-gray-0 mag-font mag-font_shopping_bag&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;p class&#x3D;&quot;reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2&quot;&gt;
+                                2500 Points
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2&quot;&gt;
+                                €25 off
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-text-center has-font-size-6&quot;&gt;a spend of €100 or more&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;slide has-mx-2 has-mx-sm-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;aspect-ratio-container is-1x1&quot;&gt;
+                        &lt;div class&#x3D;&quot;aspect-ratio-content has-bg-primary has-p-3&quot;&gt;
+                            &lt;div class&#x3D;&quot;brand-with-line with-icon has-text-center has-mb-2&quot;&gt;
+                                &lt;i class&#x3D;&quot;has-text-gray-0 mag-font mag-font_shopping_bag&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;p class&#x3D;&quot;reward-points has-text-center has-text-uppercase has-text-gray-0 has-mb-2&quot;&gt;
+                                5000 Points
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;reward-discount has-text-center has-text-gray-0 has-font-size-3 has-mb-2&quot;&gt;
+                                €50 off
+                            &lt;/p&gt;
+                            &lt;p class&#x3D;&quot;has-text-center has-font-size-6&quot;&gt;a spend of €200 or more&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
                 </div>
               </div>
 
