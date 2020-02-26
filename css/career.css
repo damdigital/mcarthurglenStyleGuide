@@ -213,7 +213,9 @@ html {
 .career-block #lumesseJobDetailWidget .jdesc-navigation .btn.btn-primary.btn-lg.pull-right {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
-  flex: 0 0 100%; }
+  flex: 0 0 100%;
+  -ms-flex: none;
+      flex: none; }
 
 @media only screen and (min-width: 600px) {
   .career-block #lumesseJobDetailWidget .jdesc-navigation .btn.btn-primary.btn-lg.pull-right {
@@ -2194,7 +2196,6 @@ html {
   color: #555; }
 
 .career-block .form-control {
-  display: block;
   width: 100%;
   height: 34px;
   padding: 6px 12px;
@@ -7539,4 +7540,15 @@ html {
       font-weight: normal; }
   .career-block .pagination-wrapper select {
     height: 40px; }
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front {
+  padding: 1rem; }
+
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+  padding-left: 0;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem; }
+  .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix .ui-dialog-title {
+    font-size: 2rem; }
 
