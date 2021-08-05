@@ -1157,27 +1157,26 @@
           the "#if @first" block as seen below.
         -->
            
-          <header class="kss-section" id="kssref-organisms-rowcardwithimg">
+          <header class="kss-section" id="kssref-organisms-googlemap">
 
               <div class="kss-section__content">
-                <a class="kss-section__permalink" href="#kssref-organisms-rowcardwithimg">
+                <a class="kss-section__permalink" href="#kssref-organisms-googlemap">
                   <h2 class="kss-h2">
-                    <span class="kss-section__ref">3.38</span> -
-                    <span class="kss-section__name">Row card with image</span>
+                    <span class="kss-section__ref">3.13</span> -
+                    <span class="kss-section__name">Google Map (Header map)</span>
                   </h2>
                 </a>
                 <p class="kss-section__source">Source:
-                  <span>organisms/_rows-card-with-img.scss</span>, line
-                  <span>57</span>
+                  <span>organisms/_centre-map.scss</span>, line
+                  <span>20</span>
                 </p>
                 <div>
                   <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
-                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-rowcardwithimg.html" target="_blank">Open in new
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-googlemap.html" target="_blank">Open in new
                     window</a>
                 </div>
                  
-                <div class="kss-section__description"><p>Use in home page, <code>.has-bg-decorative-{num}</code>, need to get a random number from 1 to 4, <code>.has-bg-decorative-0</code> will output a transparent background.</p>
-<p>To change the position of the image to the right add <code>.has-img-right</code> to <code>.row-card-with-img</code>.</p>
+                <div class="kss-section__description"><p>The map style can be updated in <code>header-map.js</code></p>
 </div>
                                </div>
 
@@ -1187,173 +1186,25 @@
 
 
 
-                  <div class="kss-modifiers__example"><div class="row-card-with-img container has-section-spacer">
-    <div class="row has-pb-md-6">
-        <div class="col-md-6 styled-img-container">
-            <div class="styled-img aspect-ratio-container is-1x1 has-bg-decorative-1">
-                <div class="aspect-ratio-content">
-                    <div class="aspect-ratio-container is-4x3">
-                        <div class="aspect-ratio-content has-border-decorative has-p-3 has-p-md-5">
-                          <img class="has-box-shadow media-cover"
-                          srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
-                          https://source.unsplash.com/random?preset=contain-sm 570w,
-                          https://source.unsplash.com/random?preset=contain-md 860w,
-                          https://source.unsplash.com/random?preset=contain-lg 1150w,
-                          https://source.unsplash.com/random?preset=contain-xl 1400w"
-                          src="https://source.unsplash.com/random?preset=contain-xl"
-                          alt="Alternative text">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 card">
-            <p class="is-h2">A great day out</p>
-            <p>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
-            <a class="btn has-mt-5" href="#">Learn more<span class="screen-reader-only"> about title</span></a>
-        </div>
-    </div>
+                  <div class="kss-modifiers__example"><div class="container has-section-spacer">
+    <div class="google-map-header" aria-hidden="true" data-map-focus-latitude="30" data-map-focus-longitude="0" data-map-zoom="2"></div>
 </div>
-<div class="row-card-with-img container has-img-right has-section-spacer">
-    <div class="row has-pb-md-6">
-        <div class="col-md-6 styled-img-container">
-            <div class="styled-img aspect-ratio-container is-1x1 has-bg-decorative-2">
-                <div class="aspect-ratio-content">
-                    <div class="aspect-ratio-container is-4x3">
-                        <div class="aspect-ratio-content has-border-decorative has-p-3 has-p-md-5">
-                          <img class="has-box-shadow media-cover"
-                          srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
-                          https://source.unsplash.com/random?preset=contain-sm 570w,
-                          https://source.unsplash.com/random?preset=contain-md 860w,
-                          https://source.unsplash.com/random?preset=contain-lg 1150w,
-                          https://source.unsplash.com/random?preset=contain-xl 1400w"
-                          src="https://source.unsplash.com/random?preset=contain-xl"
-                          alt="Alternative text">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 card">
-            <p class="is-h2">A great day out</p>
-            <p>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
-            <a class="btn has-mt-5" href="#">Learn more<span class="screen-reader-only"> about title</span></a>
-        </div>
-    </div>
-</div>
-<div class="row-card-with-img container has-section-spacer">
-    <div class="row has-pb-md-6">
-        <div class="col-md-6 styled-img-container">
-            <div class="styled-img aspect-ratio-container is-1x1 has-bg-decorative-3">
-                <div class="aspect-ratio-content">
-                    <div class="aspect-ratio-container is-4x3">
-                        <div class="aspect-ratio-content has-border-decorative has-p-3 has-p-md-5">
-                          <img class="has-box-shadow media-cover"
-                          srcset="https://source.unsplash.com/random?preset=contain-xs 320w,
-                          https://source.unsplash.com/random?preset=contain-sm 570w,
-                          https://source.unsplash.com/random?preset=contain-md 860w,
-                          https://source.unsplash.com/random?preset=contain-lg 1150w,
-                          https://source.unsplash.com/random?preset=contain-xl 1400w"
-                          src="https://source.unsplash.com/random?preset=contain-xl"
-                          alt="Alternative text">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 card">
-            <p class="is-h2">A great day out</p>
-            <p>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
-            <a class="btn has-mt-5" href="#">Learn more<span class="screen-reader-only"> about title</span></a>
-        </div>
-    </div>
-</div></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiBTxjcnZzsjl54nrVBEeq-4lRHE4kmYo"></script>
+<script>
+    var outletMapPointsJson = [{"Name":"Roermond","PageUrl":"/en/outlets/nl/designer-outlet-roermond/","Latitude":30.04442,"Longitude":31.2357121,"ImageUrl":null},{"Name":"Rosada","PageUrl":"/en/outlets/nl/designer-outlet-rosada/","Latitude":48.8566132,"Longitude":2.352222,"ImageUrl":null}];
+</script></div>
 
 
                 </div>
 
                 <div class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;row-card-with-img container has-section-spacer&quot;&gt;
-    &lt;div class&#x3D;&quot;row has-pb-md-6&quot;&gt;
-        &lt;div class&#x3D;&quot;col-md-6 styled-img-container&quot;&gt;
-            &lt;div class&#x3D;&quot;styled-img aspect-ratio-container is-1x1 has-bg-decorative-1&quot;&gt;
-                &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
-                    &lt;div class&#x3D;&quot;aspect-ratio-container is-4x3&quot;&gt;
-                        &lt;div class&#x3D;&quot;aspect-ratio-content has-border-decorative has-p-3 has-p-md-5&quot;&gt;
-                          &lt;img class&#x3D;&quot;has-box-shadow media-cover&quot;
-                          srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
-                          src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot;
-                          alt&#x3D;&quot;Alternative text&quot;&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;col-md-6 card&quot;&gt;
-            &lt;p class&#x3D;&quot;is-h2&quot;&gt;A great day out&lt;/p&gt;
-            &lt;p&gt;Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&lt;/p&gt;
-            &lt;a class&#x3D;&quot;btn has-mt-5&quot; href&#x3D;&quot;#&quot;&gt;Learn more&lt;span class&#x3D;&quot;screen-reader-only&quot;&gt; about title&lt;/span&gt;&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;container has-section-spacer&quot;&gt;
+    &lt;div class&#x3D;&quot;google-map-header&quot; aria-hidden&#x3D;&quot;true&quot; data-map-focus-latitude&#x3D;&quot;30&quot; data-map-focus-longitude&#x3D;&quot;0&quot; data-map-zoom&#x3D;&quot;2&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class&#x3D;&quot;row-card-with-img container has-img-right has-section-spacer&quot;&gt;
-    &lt;div class&#x3D;&quot;row has-pb-md-6&quot;&gt;
-        &lt;div class&#x3D;&quot;col-md-6 styled-img-container&quot;&gt;
-            &lt;div class&#x3D;&quot;styled-img aspect-ratio-container is-1x1 has-bg-decorative-2&quot;&gt;
-                &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
-                    &lt;div class&#x3D;&quot;aspect-ratio-container is-4x3&quot;&gt;
-                        &lt;div class&#x3D;&quot;aspect-ratio-content has-border-decorative has-p-3 has-p-md-5&quot;&gt;
-                          &lt;img class&#x3D;&quot;has-box-shadow media-cover&quot;
-                          srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
-                          src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot;
-                          alt&#x3D;&quot;Alternative text&quot;&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;col-md-6 card&quot;&gt;
-            &lt;p class&#x3D;&quot;is-h2&quot;&gt;A great day out&lt;/p&gt;
-            &lt;p&gt;Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&lt;/p&gt;
-            &lt;a class&#x3D;&quot;btn has-mt-5&quot; href&#x3D;&quot;#&quot;&gt;Learn more&lt;span class&#x3D;&quot;screen-reader-only&quot;&gt; about title&lt;/span&gt;&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class&#x3D;&quot;row-card-with-img container has-section-spacer&quot;&gt;
-    &lt;div class&#x3D;&quot;row has-pb-md-6&quot;&gt;
-        &lt;div class&#x3D;&quot;col-md-6 styled-img-container&quot;&gt;
-            &lt;div class&#x3D;&quot;styled-img aspect-ratio-container is-1x1 has-bg-decorative-3&quot;&gt;
-                &lt;div class&#x3D;&quot;aspect-ratio-content&quot;&gt;
-                    &lt;div class&#x3D;&quot;aspect-ratio-container is-4x3&quot;&gt;
-                        &lt;div class&#x3D;&quot;aspect-ratio-content has-border-decorative has-p-3 has-p-md-5&quot;&gt;
-                          &lt;img class&#x3D;&quot;has-box-shadow media-cover&quot;
-                          srcset&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xs 320w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-sm 570w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-md 860w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-lg 1150w,
-                          https://source.unsplash.com/random?preset&#x3D;contain-xl 1400w&quot;
-                          src&#x3D;&quot;https://source.unsplash.com/random?preset&#x3D;contain-xl&quot;
-                          alt&#x3D;&quot;Alternative text&quot;&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;col-md-6 card&quot;&gt;
-            &lt;p class&#x3D;&quot;is-h2&quot;&gt;A great day out&lt;/p&gt;
-            &lt;p&gt;Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&lt;/p&gt;
-            &lt;a class&#x3D;&quot;btn has-mt-5&quot; href&#x3D;&quot;#&quot;&gt;Learn more&lt;span class&#x3D;&quot;screen-reader-only&quot;&gt; about title&lt;/span&gt;&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;script src&#x3D;&quot;https://maps.googleapis.com/maps/api/js?key&#x3D;AIzaSyBiBTxjcnZzsjl54nrVBEeq-4lRHE4kmYo&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var outletMapPointsJson &#x3D; [{&quot;Name&quot;:&quot;Roermond&quot;,&quot;PageUrl&quot;:&quot;/en/outlets/nl/designer-outlet-roermond/&quot;,&quot;Latitude&quot;:30.04442,&quot;Longitude&quot;:31.2357121,&quot;ImageUrl&quot;:null},{&quot;Name&quot;:&quot;Rosada&quot;,&quot;PageUrl&quot;:&quot;/en/outlets/nl/designer-outlet-rosada/&quot;,&quot;Latitude&quot;:48.8566132,&quot;Longitude&quot;:2.352222,&quot;ImageUrl&quot;:null}];
+&lt;/script&gt;</code></pre>
                 </div>
               </div>
 
