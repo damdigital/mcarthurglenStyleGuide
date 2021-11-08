@@ -11367,6 +11367,8 @@ a.offer-card * {
       color: var(--color-gray-0); }
   .mag-club-wallet-card .btn {
     min-width: 250px; }
+  .mag-club-wallet-card.is-expired {
+    opacity: 50%; }
 .video-banner-block .title-subtitle-cta {
   position: absolute;
   bottom: 5rem;
