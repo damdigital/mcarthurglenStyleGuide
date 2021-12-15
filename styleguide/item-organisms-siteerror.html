@@ -1,0 +1,1276 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MAG outlets - UI/pattern library</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="generator" content="kss-node">
+
+  <link rel="stylesheet" href="kss-assets/css/vendors/prism.css">
+  <link rel="stylesheet" href="kss-assets/css/atomic-bulldog-kss-theme.min.css"> <link rel="stylesheet" href="../css/screen.css"/>
+
+
+<style>
+    @font-face {
+  font-family: 'magFont';
+  src: url("kss-assets/magfont/magFont.eot?ecqmrq");
+  src: url("kss-assets/magfont/magFont.eot?ecqmrq#iefix") format("embedded-opentype"), url("kss-assets/magfont/magFont.ttf?ecqmrq") format("truetype"), url("kss-assets/magfont/magFont.woff?ecqmrq") format("woff"), url("kss-assets/magfont/magFont.svg?ecqmrq#magFont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+</style>
+</head>
+
+<body class="kss-body"
+  style="--kssBrandColorH: 350; --kssBrandColorS: 84; --kssBrandColorL: 44;">
+
+  <div class="kss-page-container">
+    <div class="kss-burger-container">
+      <button class="kss-burger"><span class="burger-icon"><span></span></span></button>
+    </div>
+
+    <div class="kss-sidebar">
+      <div class="kss-brand">
+        <img src="https://www.mcarthurglen.com/Static/images/mag-logo.svg" alt="">
+        <p>MAG outlets - UI/pattern library</p>
+      </div>
+      <div class="kss-search">
+        <input type="text" id="kss-search__input" onkeyup="kssSearch()" placeholder="Search in this library..">
+        <ul id="kss-search__list">
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-atoms.html">
+              1 - Atoms
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-a11y">
+              1.1 - Accessibility (A11Y)
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-a11y-screenreaderonly">
+              1.1.1 - Screen reader Only
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-aspectratiocontainer">
+              1.2 - Aspect ratio container
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-backbutton">
+              1.3 - Back button
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-borderdecorative">
+              1.4 - Border decorative
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-brand">
+              1.5 - Brand
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-burger">
+              1.6 - Burger
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-button">
+              1.7 - Buttons
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-button-incrementbutons">
+              1.7.1 - Increment Buttons
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-button-play">
+              1.7.2 - Favourite Floating Button
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-button-play">
+              1.7.2 - Play Button
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-button-round-icon-btn">
+              1.7.3 - Round icon Buttons
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-cover-bg">
+              1.8 - Background cover
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-cover-media">
+              1.9 - Media cover
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-cover-media-video">
+              1.9.1 - Media cover responsive embedded video
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-detailselement">
+              1.10 - Details element
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-focus">
+              1.11 - Focus - global style
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-forms">
+              1.12 - Form elements
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-forms-formtext">
+              1.12.1 - Form Text
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-forms-inputs">
+              1.12.2 - Inputs
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-forms-label">
+              1.12.3 - Label
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-giftcardcurrency">
+              1.13 - Gift Card Currency
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-hr">
+              1.14 - Hr
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-images">
+              1.15 - Images
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-images-responsive">
+              1.15.1 - Responsive image, Srcset (&#x60;img&#x60; tag)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-links">
+              1.16 - Links
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers">
+              1.17 - Modifiers
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-bgcolors">
+              1.17.1 - Background colors
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-border">
+              1.17.2 - Border utilities
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-boxshadow">
+              1.17.3 - Box shadow
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-display">
+              1.17.4 - Display utilities
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-flex">
+              1.17.5 - Flex utilities
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-font-families">
+              1.17.6 - Font families
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-font-sizes">
+              1.17.7 - Font sizes
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-noscroll">
+              1.17.8 - No Scroll
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-rounded">
+              1.17.9 - Rounded element
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-spacing">
+              1.17.10 - Spacing
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-textcolor">
+              1.17.11 - Text colors
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-textposition">
+              1.17.12 - Text position
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-modifiers-texttransform">
+              1.17.13 - Text transform
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-overlay">
+              1.18 - Overlay
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-slider-switch">
+              1.19 - Slider switch
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography">
+              1.20 - Typography
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-blockquotes">
+              1.20.1 - Blockquotes
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-languages">
+              1.20.2 - Languages
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-list">
+              1.20.3 - List
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-paragraph">
+              1.20.4 - Paragraph
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-rteblocks">
+              1.20.5 - RTE blocks
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-atoms.html#kssref-atoms-typography-titles">
+              1.20.6 - Titles
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-molecules.html">
+              2 - Molecules
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-btngroup">
+              2.1 - Button group
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-btngroupinline">
+              2.2 - Button group inline
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-btngroupinline-is-category-list">
+              2.2.1 - Button group inline &#x60;.is-category-list&#x60;
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-centrelistingcard">
+              2.3 - Centre listing card
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-centrelistingcard">
+              2.3 - Centre listing card
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-dropdown">
+              2.4 - Dropdown
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-dropdown-country">
+              2.4.1 - Dropdown Country picker
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-figure">
+              2.5 - Figure
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-form">
+              2.6 - Form
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-form-formgroup">
+              2.6.1 - Form Group
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-form-inputgroup">
+              2.6.2 - Input group
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-imagestyled">
+              2.7 - Image Styled
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-navigation">
+              2.8 - Navigation
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-navigation-mainnavigation">
+              2.8.1 - Main navigation
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-navigation-skip">
+              2.8.2 - Skip Navigation
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-restaurantcard">
+              2.9 - Restaurant card
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-molecules.html#kssref-molecules-sharectas">
+              2.10 - Share ctas
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-organisms.html">
+              3 - Organisms
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-accordion">
+              3.1 - Accordion for Privacy policy
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-accordion-numbered">
+              3.1.1 - Accordion for Loyalty - mobile only
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-anchor-link-gallery">
+              3.2 - Anchor Link Gallery Block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-cardfiltering">
+              3.3 - Card filtering
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-carousel">
+              3.4 - Carousel (Siema)
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-carousel-fourslidecarouseloffset">
+              3.4.1 - Four slide mobile carousel
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-carousel-homepageheadercarousel">
+              3.4.2 - Homepage Header carousel
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-carousel-storelisting2">
+              3.4.3 - Store Listing Block (2)
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-carousel-threeslide">
+              3.4.4 - Three slide carousel
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-carousel-threeslideoffset">
+              3.4.5 - Three slide offset carousel
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-carousel-twoslide">
+              3.4.6 - Two slide carousel
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-carousel-whatsonlistingcarousel">
+              3.4.7 - What&#x27;s on listing carousel
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-catelisting">
+              3.5 - Category listing (What&#x27;s on)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-cookiebanner">
+              3.6 - Cookie banner
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-dialog">
+              3.7 - Dialog (a11y modal)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-editorialimagecarousel">
+              3.8 - Editorial image carousel (What&#x27;s on landing)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-expected-visits-module">
+              3.9 - Expected Visits
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-filters">
+              3.10 - Filter - listing pages
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-form">
+              3.11 - Form
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-fullwidthfeaturecard">
+              3.12 - Full width feature card (What&#x27;s on)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-googlemap">
+              3.13 - Google Map (Header map)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-googlemapsblock">
+              3.14 - GoogleMaps Block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-headerimgblock">
+              3.15 - Header with image block
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-headerimgblock-iswhatson">
+              3.15.1 - What&#x27;s on Header with image block
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-headerimgblock-iswhatsonlisting">
+              3.15.2 - What&#x27;s on listing Header with image block
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-headerimgblock-scrollspynavigation">
+              3.15.3 - ScrollSpy Navigation
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-headertitleblock">
+              3.16 - Header with title block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-howitworksblock">
+              3.17 - Loyalty how it works block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-iconctamodule">
+              3.18 - Icon Cta Module
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-iconctamodulerounded">
+              3.19 - Icon Cta Module Rounded
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-imagedivideblock">
+              3.20 - Image Divide Block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-imagedivideblocktwo">
+              3.21 - Image Divide Block 2
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-listingcardswhatson">
+              3.22 - listing cards (What&#x27;s on)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-mappedin">
+              3.23 - MappedIn Block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-navigationbar">
+              3.24 - Navigation Bar
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-offerlisting">
+              3.25 - Offer Listing
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-offerlistingwhaston">
+              3.26 - Offer Listing (What&#x27;s on)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-pdfdownloadblock">
+              3.27 - PDF download block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-planyourvisit">
+              3.28 - Plan your visit
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-productcarousel">
+              3.29 - Product carousel
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-productcollapsecarousel">
+              3.30 - Product collapse carousel
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-productfeature">
+              3.31 - Product feature block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-promoblock">
+              3.32 - Loyalty promo block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-quoteblock">
+              3.33 - Quote Block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-relatedtopics">
+              3.34 - Related Topics (What&#x27;s on)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-restaurantslisting">
+              3.35 - Restaurants listing block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-restaurantstoppicks">
+              3.36 - Top picks block for restaurants
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-rewardblock">
+              3.37 - Loyalty reward block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-rowcardwithimg">
+              3.38 - Row card with image
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-serviceslistingblock">
+              3.39 - Services Listing Block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-siteerror">
+              3.40 - Site error
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-spotlightlistblock">
+              3.41 - Loyalty Spotlight List block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-storeslisting">
+              3.42 - Stores listing block
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-storestoppicks">
+              3.43 - Top picks block for stores
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-textheaderblockwithimage">
+              3.44 - Text Header Block With Background Image
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-textheaderblockwithoutimage">
+              3.45 - Text Header Block Without Background Image
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-organisms.html#kssref-organisms-whatsonlistingblock">
+              3.46 - Whats on listing block carousel
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-layout.html">
+              4 - Layouts
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-container">
+              4.1 - Container
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-container-fixed">
+              4.1.1 - Container fixed
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-container-fluid">
+              4.1.2 - Container Fluid
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-container-narrow">
+              4.1.3 - Container &#x60;.is-narrow&#x60;
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-grid">
+              4.2 - Grid
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-grid-b">
+              4.2.1 - Grid - Set number of columns
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-grid-modifiers">
+              4.2.2 - Grid Modifiers
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-layout.html#kssref-layout-grid-z">
+              4.2.3 - Grid Fallback
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-templates.html">
+              5 - Templates
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-templates.html#kssref-templates-pagecontainer">
+              5.1 - Page Container
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-variables.html">
+              6 - Sass variables
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-aspectratio">
+              6.1 - Aspect ratios
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-boxshadow">
+              6.2 - Box shadow
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-breakpoints">
+              6.3 - Breakpoints
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-colors">
+              6.4 - Colors
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-colors-grays">
+              6.4.1 - Grays
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-colors-swatches">
+              6.4.2 - Color Swatches
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-container">
+              6.5 - Container Sizes
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-fontfamilies">
+              6.6 - Font Families
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-fontfamilies">
+              6.6 - Font Families
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-fontsizes">
+              6.7 - Font Sizes
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-grid">
+              6.8 - Grid
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-spacers">
+              6.9 - Spacers
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-themeclasses">
+              6.10 - Theme classes
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-variables.html#kssref-variables-zindex">
+              6.11 - z-index
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-mixins.html">
+              7 - Sass Mixins
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-mixins.html#kssref-mixins-colortransition">
+              7.1 - color-transition
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-mixins.html#kssref-mixins-focustyle">
+              7.2 - focus-style
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-mixins.html#kssref-mixins-max">
+              7.3 - max(#{bp(your bp)}){}
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-mixins.html#kssref-mixins-min">
+              7.4 - min(#{bp(your bp)}){}
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-functions.html">
+              8 - Sass Functions
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-functions.html#kssref-functions-em">
+              8.1 - em($size, $context: 16)
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-functions.html#kssref-functions-mapdeepget">
+              8.2 - map-deep-get($map, $keys...)
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-vendors.html">
+              9 - Vendors
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-a11ycss">
+              9.1 - a11y.css
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-family">
+              9.2 - Family.scss
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-reboot">
+              9.3 - bootstrap-reboot.scss
+            </a>
+          </li>
+          
+          <li class="">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-sass">
+              9.4 - Sass/CSS Vendors
+            </a>
+          </li>
+          
+          <li class="is-grandchild">
+            <a class="kss-nav-link" href="section-vendors.html#kssref-vendors-sass-bootstrapgrid">
+              9.4.1 - bootstrap grid 4.1.0 (Not used)
+            </a>
+          </li>
+           
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-settings.html">
+              10 - Project settings
+            </a>
+             
+          <li class="">
+            <a class="kss-nav-link" href="section-settings.html#kssref-settings-usecssvar">
+              10.1 - Use CSS variable Flag
+            </a>
+          </li>
+           
+          </li>
+        </ul>
+      </div>
+      <!-- navigation. -->
+      <nav class="kss-navigation">
+        <ul class="kss-nav">
+          <li>
+            <a class="kss-nav-link " href="index.html">
+              <span class="kss-nav__ref">0 - </span>
+              <span class="kss-nav__name">Introduction</span>
+            </a>
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-atoms.html">
+              <span class="kss-nav__ref">1 - </span>
+              <span class="kss-nav__name">Atoms</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-molecules.html">
+              <span class="kss-nav__ref">2 - </span>
+              <span class="kss-nav__name">Molecules</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-organisms.html">
+              <span class="kss-nav__ref">3 - </span>
+              <span class="kss-nav__name">Organisms</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-layout.html">
+              <span class="kss-nav__ref">4 - </span>
+              <span class="kss-nav__name">Layouts</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-templates.html">
+              <span class="kss-nav__ref">5 - </span>
+              <span class="kss-nav__name">Templates</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-variables.html">
+              <span class="kss-nav__ref">6 - </span>
+              <span class="kss-nav__name">Sass variables</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-mixins.html">
+              <span class="kss-nav__ref">7 - </span>
+              <span class="kss-nav__name">Sass Mixins</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-functions.html">
+              <span class="kss-nav__ref">8 - </span>
+              <span class="kss-nav__name">Sass Functions</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-vendors.html">
+              <span class="kss-nav__ref">9 - </span>
+              <span class="kss-nav__name">Vendors</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="kss-nav-link  has-children"
+              href="section-settings.html">
+              <span class="kss-nav__ref">10 - </span>
+              <span class="kss-nav__name">Project settings</span>
+            </a>
+            
+          </li>
+        </ul>
+      </nav>
+      <!-- /navigation. -->
+    </div>
+
+    <main class="kss-main">
+      <div class="kss-container">
+        <!-- documentation. -->
+        <section class="kss-documentation">
+
+          <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+           
+          <header class="kss-section" id="kssref-organisms-siteerror">
+
+              <div class="kss-section__content">
+                <a class="kss-section__permalink" href="#kssref-organisms-siteerror">
+                  <h2 class="kss-h2">
+                    <span class="kss-section__ref">3.40</span> -
+                    <span class="kss-section__name">Site error</span>
+                  </h2>
+                </a>
+                <p class="kss-section__source">Source:
+                  <span>organisms/_site-error.scss</span>, line
+                  <span>5</span>
+                </p>
+                <div>
+                  <button class="kss-btn kss-toggle-fullscreen">Toggle full screen</button>
+                  <a class="kss-btn kss-toggle-fullscreen" href="item-organisms-siteerror.html" target="_blank">Open in new
+                    window</a>
+                </div>
+                                </div>
+
+              <div class="kss-section__example-container">
+                <div class="kss-section__examples">
+                  <p class="kss-modifiers__heading">Example:</p>
+
+
+
+                  <div class="kss-modifiers__example"><section class="">
+    <header class="header-with-title-block">
+        <div class="header-image picturefill-background bg-cover is-focus-center-top is-d-flex is-align-end">
+            <span class="picturefill-background-source"
+                  data-src="https://source.unsplash.com/random">
+            </span>
+            <span class="picturefill-background-source"
+                  data-src="https://source.unsplash.com/random"
+                  data-media="(min-width: 600px)">
+            </span>
+            <span class="picturefill-background-source"
+                data-src="https://source.unsplash.com/random"
+                  data-media="(min-width: 900px)">
+            </span>
+            <span class="picturefill-background-source"
+                  data-src="https://source.unsplash.com/random"
+                  data-media="(min-width: 1200px)">
+            </span>
+            <div class="container is-narrow header-content">
+                <div class="has-mb-5 has-mb-sm-6 has-mb-md-7 has-text-gray-0 has-text-center">
+                    <h1 class="has-text-uppercase  has-mb-2 has-mb-md-0">OOPs!</h1>
+                    <p class="header-sub-title has-text-center has-text-gray-0 has-mt-2 has-mt-md-3 has-font-weight-normal">the page you are looking for appears to be missing and in its place is this 404 error message</p>
+                    <hr class="is-in-header" />
+                    <p class="has-text-gray-0 has-mt-3">Why not visit the <a href="" class="has-text-underline has-font-weight-normal">home page<span class="screen-reader-only">CallToActionAccessibilityText</span></a> and try again from there</p>
+                </div>
+            </div>
+        </div>
+    </header>
+</section></div>
+
+
+                </div>
+
+                <div class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;&quot;&gt;
+    &lt;header class&#x3D;&quot;header-with-title-block&quot;&gt;
+        &lt;div class&#x3D;&quot;header-image picturefill-background bg-cover is-focus-center-top is-d-flex is-align-end&quot;&gt;
+            &lt;span class&#x3D;&quot;picturefill-background-source&quot;
+                  data-src&#x3D;&quot;https://source.unsplash.com/random&quot;&gt;
+            &lt;/span&gt;
+            &lt;span class&#x3D;&quot;picturefill-background-source&quot;
+                  data-src&#x3D;&quot;https://source.unsplash.com/random&quot;
+                  data-media&#x3D;&quot;(min-width: 600px)&quot;&gt;
+            &lt;/span&gt;
+            &lt;span class&#x3D;&quot;picturefill-background-source&quot;
+                data-src&#x3D;&quot;https://source.unsplash.com/random&quot;
+                  data-media&#x3D;&quot;(min-width: 900px)&quot;&gt;
+            &lt;/span&gt;
+            &lt;span class&#x3D;&quot;picturefill-background-source&quot;
+                  data-src&#x3D;&quot;https://source.unsplash.com/random&quot;
+                  data-media&#x3D;&quot;(min-width: 1200px)&quot;&gt;
+            &lt;/span&gt;
+            &lt;div class&#x3D;&quot;container is-narrow header-content&quot;&gt;
+                &lt;div class&#x3D;&quot;has-mb-5 has-mb-sm-6 has-mb-md-7 has-text-gray-0 has-text-center&quot;&gt;
+                    &lt;h1 class&#x3D;&quot;has-text-uppercase  has-mb-2 has-mb-md-0&quot;&gt;OOPs!&lt;/h1&gt;
+                    &lt;p class&#x3D;&quot;header-sub-title has-text-center has-text-gray-0 has-mt-2 has-mt-md-3 has-font-weight-normal&quot;&gt;the page you are looking for appears to be missing and in its place is this 404 error message&lt;/p&gt;
+                    &lt;hr class&#x3D;&quot;is-in-header&quot; /&gt;
+                    &lt;p class&#x3D;&quot;has-text-gray-0 has-mt-3&quot;&gt;Why not visit the &lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;has-text-underline has-font-weight-normal&quot;&gt;home page&lt;span class&#x3D;&quot;screen-reader-only&quot;&gt;CallToActionAccessibilityText&lt;/span&gt;&lt;/a&gt; and try again from there&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+&lt;/section&gt;</code></pre>
+                </div>
+              </div>
+
+               
+          </header>
+  
+        </section>
+        <!-- /documentation. -->
+      </div>
+    </main>
+  </div>
+
+  <!-- scripts -->
+  <script src="kss-assets/js/vendors/jquery-3.3.1.min.js"></script>
+  <script src="kss-assets/js/vendors/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script> <script src="../js/index.js"></script>
+
+  <!-- end scripts -->
+
+</body>
+
+</html>
